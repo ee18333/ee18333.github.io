@@ -26,13 +26,20 @@ h3, p{
   
 }
 
-.chart{
-    background-color: white;
-    width:400px;
-    border-width: 10px;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: white;
+.chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    width: 400px;
+    height: 390px;
+    margin: 10px;
+    padding: 5px;
+    background-color: White;
+    border: #2a9d8f solid 5px;
+    border-radius: 10px;
+    /*font-family: 'Helvetica Neue', sans-serif;*/
+    font-family: Inter,sans-serif;
+    font-size: 10pxp;
 }
 
 .button {
