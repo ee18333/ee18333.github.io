@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": " Cumulated Death rate",
+    "subtitle": "death by 60 days",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=ltla&metric=cumDeaths60DaysByDeathDateRate&format=csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "areaName",
+        "oneOf": ["Hounslow", "Westminster","Surrey Heath"]
+      }
+    }
+  ],
+  "height": 300,
+  "width": 300,
+  "mark": {"type": "line", "point": false},
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "cumDeaths60DaysByDeathDateRate",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"grid": false}
+    },
+    "color": {
+      "field": "areaName",
+      "type": "nominal",
+      "scale": {"scheme": "yellowgreenblue"},
+      "title": null,
+      "legend": {"orient": "top-left", "fillColor": "#ffffff"}
+    }
+  }
+}
