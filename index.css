@@ -5,12 +5,25 @@
 /* This is my first proper css file */
 
 body{
-    background-color: rgb(233, 233, 233);
+
+    background-color: #778899 ;
+    max-width: 400px;
+    margin: auto;
 }
 
-h1, h3, p{
-    color:rgb(17, 17, 17);
-    font-family: 'Roboto', sans-serif;
+h1{
+
+    color: #DCDCDC;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+
+
+
+h3, p{
+    color:#DCDCDC;
+    font-family: 'Optima', sans-serif;
+  
 }
 
 .chart{
@@ -22,3 +35,16 @@ h1, h3, p{
     border-color: white;
 }
 
+.button {
+  background-color: transparent;
+  border: 1px solid #DCDCDC;
+  color: #DCDCDC;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 150px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+      
+}
