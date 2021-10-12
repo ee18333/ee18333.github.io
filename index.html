@@ -1,52 +1,70 @@
 <!DOCTYPE html>
 
+
 <!-- ///////////////////  HEAD //////////////////////////////////// -->
 
 <head>
-  
-  <link rel="stylesheet" href="index.css">
 
-<!--The next three lines allow the Vega embed-->
-<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+  <!--The next three lines allow the Vega embed-->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+  
+  <!-- Tab name -->
+  <title>Kate Yu</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="index.css">
+  
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+  </style>
 
 </head>
 
- <!-- Tab name -->
-  <title>Kate Yu</title>
-
-
 <!-- ///////////////////  HEAD //////////////////////////////////// -->
+
 
 
 
 <!-- ///////////////////  START BODY //////////////////////////////////// -->
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-    </style>
 
 <body>
+  
+  <!--Navigation bar and title-->
+  <container class="hcontainer">
 
-    <h1>Data Science Portfolio</h1>
+  </header>
+  <h1>Data Science Portfolio</h1>
+  <P><strong>Kate Yu</strong></P>
+  </header>
   
-    <P><strong>Kate Yu</strong></P>
   
+  
+
+  <!-- /////////////////// NAVIGATION BUTTONS //////////////////////////////////// -->
+
+<div class="multi-button">
+
+  <button style="color: rgb(17, 143, 242);" onclick="location.href='index.html'">home</button>
+  <button onclick="location.href='project.html'">project</button>
+  <button onclick="location.href='https://github.com/ee18333/ee18333.github.io'">github</button>
+  <button onclick="location.href='https://rapidcharts.io/datascience'">course</button>
+
+</div>
+
+<!-- /////////////////// END NAVIGATION BUTTONS //////////////////////////////////// -->
+
+  
+
     <h3>Covid-19</h3>
-   
     <p>The first chart tracks Covid-19 cases by UK region.</p>
-
-<!--Vaga embed, with notes for what is going on-->
+  
+  <!--Chart 1 showing Covid Cases by Region -->
 <div class="chart" id="firstChart">
-
   <script>
-    // Following the script tag we are using Javascript.
-    // One way to tell is to see how comments work...
-    // First job is to set the chart as a JS variable:
     var myChart1 = "chart1_covidUKRegions.json";
-    // Now we simply insert it, using Vega's embed code:
-    // The embed function needs to be told the location, and what to put there. 
     vegaEmbed('#firstChart', myChart1);
   </script>
 
