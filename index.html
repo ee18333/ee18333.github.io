@@ -40,7 +40,7 @@
   <P><strong>Kate Yu</strong></P>
   </header>
   
-  
+  </container>
   
 
   <!-- /////////////////// NAVIGATION BUTTONS //////////////////////////////////// -->
@@ -57,11 +57,12 @@
 <!-- /////////////////// END NAVIGATION BUTTONS //////////////////////////////////// -->
 
   
+<!-- /////////////////// CONTAINER WEEK 1  //////////////////////////////////// -->
+ 
+<!--Chart 1 showing Covid Cases by Region -->
+<p class="bodyText"><span style="color: rgb(19, 143, 242); font-weight: 700;">Week 1: </span>UK Covid Cases by Region</p>
 
-    <h3>Covid-19</h3>
-    <p>The first chart tracks Covid-19 cases by UK region.</p>
-  
-  <!--Chart 1 showing Covid Cases by Region -->
+<container class="bcontainer">
 <div class="chart" id="firstChart">
   <script>
     var myChart1 = "chart1_covidUKRegions.json";
@@ -69,11 +70,14 @@
   </script>
 
 </div> 
+</container>
 
-  <h3>Productivity puzzle</h3>
 
-  <p>My second chart looks at productivity in the UK</p>
 
+<!--Chart 2 showing UK productivity levels over time -->
+<p class="bodyText"><span style="color: rgb(19, 143, 242); font-weight: 700;">Week 1: </span>My second chart looks at productivity in the UK</p>
+
+<container class="bcontainer">
 <div class="chart" id="secondChart">
   <script>
     var myChart1 = "chart2_ukProductivity.json";
@@ -81,17 +85,27 @@
   </script>
 </div>
     
- <h3>Ageing Population</h3>
-
-    <p>The second chart shows the ageing population trend in South Korea.</p>    
-    
+<!--Ageing population -->
+<h3>Ageing Population in South Korea</h3>
 <div class="chart" id="thirdChart">    
     <script>
     var myChart1 = "chart3_Ageing population.json";
     vegaEmbed('#thirdChart', myChart1);
   </script>
  </div>
-    
+</container>  
+  
+<!-- /////////////////// END CONTAINER WEEK 1  //////////////////////////////////// -->
+
+
+
+<!-- ///////////////////  CONTAINER WITH WEEK 2 WORK //////////////////////////////////// -->
+
+<p class="bodyText"><span style="color: rgb(19, 143, 242); font-weight: 700;">Week 2: </span>Two charts - one hosted by an API and one from my own data</p>
+
+<container class="bcontainer">
+
+<!--Vaccinations Chart -->
     <h3>Covid</h3>
 
     <p>The first Covid chart shows the Number of LFD test taken. It uses the raw csv data.</p>    
@@ -111,7 +125,11 @@
     vegaEmbed('#fifthChart', myChart1);
   </script>
  </div>
-    
+  
+</container>
+
+<!-- ///////////////////  END CONTAINER WITH WEEK 2 WORK //////////////////////////////////// -->
+
 </body>
 
 
