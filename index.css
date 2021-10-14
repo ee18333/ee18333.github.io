@@ -11,6 +11,17 @@ body{
     margin: auto;
 }
 
+/* Flexbox container with header */
+.hcontainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  border: 3px solid white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
 h1{
 
     color: #DCDCDC;
@@ -41,6 +52,22 @@ h3, p{
     font-family: Inter,sans-serif;
     font-size: 10pxp;
 }
+
+/* --------------------------------------CONTENT IN BODY----------------------------------------------*/
+
+/* Flexbox container with home page graphs */
+.bcontainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;;
+  gap: 30px 30px;
+  margin-top: 30px;
+  border-style: solid;
+  border-color: white;
+  padding: 30px;
+  border-radius: 25px;
+}
+
 
 .button {
   background-color: transparent;
