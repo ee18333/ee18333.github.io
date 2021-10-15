@@ -12,8 +12,6 @@ body{
 }
 
 /* Flexbox container with header */
-
-/* Flexbox containing home page graphs */
 container {
     display: flex;
     flex-flow: row wrap;
@@ -21,6 +19,20 @@ container {
     align-content: center;
     gap: 30px 30px;
     margin-top: 30px;
+}
+
+/* Flexbox containing home page graphs */
+
+.bcontainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;;
+  gap: 30px 30px;
+  margin-top: 30px;
+  border-style: solid;
+  border-color: white;
+  padding: 30px;
+  border-radius: 25px;
 }
 
 
