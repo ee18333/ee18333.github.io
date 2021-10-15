@@ -12,13 +12,14 @@ body{
 }
 
 /* Flexbox container with header */
-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-    gap: 30px 30px;
-    margin-top: 30px;
+.hcontainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  border: 3px solid white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
 /* Flexbox containing home page graphs */
