@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "description": "Mannual input chart.json",
+  "description": "A basic line chart example.",
   "width": 350,
   "height": 200,
   "padding": 5,
@@ -25,8 +25,8 @@
     }
   ],
   "title": {
-    "text": "Cristiano Ronaldo Domestic League Football Goals",
-    "subtitle": "Soure: Football Critic",
+    "text": "Tiktok Anuual Revenue",
+    "subtitle": "Soure: Business of Apps",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
@@ -36,13 +36,10 @@
     {
       "name": "table",
       "values": [
-        {"x": "2014/15", "y": 48, "c": 0},
-        {"x": "2015/16", "y": 35, "c": 0},
-        {"x": "2016/17", "y": 25, "c": 0},
-        {"x": "2017/18", "y": 26, "c": 0},
-        {"x": "2018/19", "y": 21, "c": 0},
-        {"x": "2019/20", "y": 31, "c": 0},
-        {"x": "2020/21", "y": 29, "c": 0}
+        {"x": "2017", "y": 63, "c": 0},
+        {"x": "2018", "y": 150, "c": 0},
+        {"x": "2019", "y": 350, "c": 0},
+        {"x": "2020", "y": 1900, "c": 0}
       ]
     }
   ],
