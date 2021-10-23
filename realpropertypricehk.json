@@ -16,7 +16,7 @@
   "data": [
     {
       "name": "source_0",
-      "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Real%20Residential%20Property%20Prices%20for%20Hong%20Kong%20SAR%20.csv",
+      "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/RealResidentialPropertyPricesHK.csv",
       "format": {"type": "csv", "parse": {"Date": "date"}, "delimiter": ","}
     }
   ],
@@ -31,12 +31,12 @@
         "update": {
           "stroke": {"value": "#4c78a8"},
           "description": {
-            "signal": "\"Date: \" + (timeFormat(datum[\"Date\"], '%b %d, %Y')) + \"; GDP per capita: \" + (format(datum[\"Real Residential Property Price\"], \"\"))"
+            "signal": "\"Date: \" + (timeFormat(datum[\"Date\"], '%b %d, %Y')) + \"; Real Residential Property Price HK: \" + (format(datum[\"Real Residential Property Price HK\"], \"\"))"
           },
           "x": {"scale": "x", "field": "Date"},
-          "y": {"scale": "y", "field": "Real Residential Property Price"},
+          "y": {"scale": "y", "field": "Real Residential Property Price HK"},
           "defined": {
-            "signal": "isValid(datum[\"Date\"]) && isFinite(+datum[\"Date\"]) && isValid(datum[\"GDP per capita\"]) && isFinite(+datum[\"GDP per capita\"])"
+            "signal": "isValid(datum[\"Date\"]) && isFinite(+datum[\"Date\"]) && isValid(datum[\"GDP per capita\"]) && isFinite(+datum[\"Real Residential Property Price HK\"])"
           }
         }
       }
@@ -52,7 +52,7 @@
     {
       "name": "y",
       "type": "linear",
-      "domain": {"data": "source_0", "field": "Real Residential Property Price"},
+      "domain": {"data": "source_0", "field": "Real Residential Property Price HK"},
       "range": [{"signal": "height"}, 0],
       "nice": true,
       "zero": true
@@ -67,7 +67,6 @@
       "labelOverlap": true,
       "tickCount": {"signal": "ceil(width/40)"},
       "zindex": 0
-      "format":"%Y-%b-%D"
     },
     {
       "scale": "y",
