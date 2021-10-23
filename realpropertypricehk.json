@@ -1,80 +1,32 @@
 {
-  "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "background": "white",
-  "padding": 5,
-  "width": 300,
-  "height": 300,
   "title": {
     "text": "Real Residential Property Price in HK",
-    "subtitle": "Data in £ - created by manipulating CSV data",
+    "subtitle": "created by manipulating CSV data",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
     "color": "black"
   },
-  "style": "cell",
-  "data": [
-    {
-      "name": "source_0",
-      "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/RealResidentialPropertyPricesHK.csv",
-      "format": {"type": "csv", "parse": {"Date": "date"}, "delimiter": ","}
-    }
-  ],
-  "marks": [
-    {
-      "name": "marks",
-      "type": "line",
-      "style": ["line"],
-      "sort": {"field": "datum[\"Date\"]"},
-      "from": {"data": "source_0"},
-      "encode": {
-        "update": {
-          "stroke": {"value": "#4c78a8"},
-          "description": {
-            "signal": "\"Date: \" + (timeFormat(datum[\"Date\"], '%b %d, %Y')) + \"; Real Residential Property Price HK: \" + (format(datum[\"Real Residential Property Price HK\"], \"\"))"
-          },
-          "x": {"scale": "x", "field": "Date"},
-          "y": {"scale": "y", "field": "Real Residential Property Price HK"},
-          "defined": {
-            "signal": "isValid(datum[\"Date\"]) && isFinite(+datum[\"Date\"]) && isValid(datum[\"Real Residential Property Price HK\"]) && isFinite(+datum[\"Real Residential Property Price HK\"])"
-          }
-        }
-      }
-    }
-  ],
-  "scales": [
-    {
-      "name": "x",
-      "type": "time",
-      "domain": {"data": "source_0", "field": "Date"},
-      "range": [0, {"signal": "width"}]
+  "data": {
+    "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/RealResidentialPropertyPricesHK.csv",
+    "format": {"type": "csv"}
+  },
+  "height": 340,
+  "width": 310,
+  "mark": {"type": "line", "point": false},
+  "encoding": {
+    "x": {
+      "field": "DATE",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {"grid": false}
     },
-    {
-      "name": "y",
-      "type": "linear",
-      "domain": {"data": "source_0", "field": "Real Residential Property Price HK"},
-      "range": [{"signal": "height"}, 0],
-      "nice": true,
-      "zero": true
+    "y": {
+      "field": "Real Residential Property Price HK",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"grid": false},
+      "scheme": "yellowgreenblue"
     }
-  ],
-  "axes": [
-    {
-      "scale": "x",
-      "orient": "bottom",
-      "grid": false,
-      "labelFlush": true,
-      "labelOverlap": true,
-      "tickCount": {"signal": "ceil(width/40)"},
-      "zindex": 0
-    },
-    {
-      "scale": "y",
-      "orient": "left",
-      "grid": false,
-      "labelOverlap": true,
-      "tickCount": {"signal": "ceil(height/40)"},
-      "zindex": 0
-    }
-  ]
+  }
 }
