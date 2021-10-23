@@ -5,7 +5,7 @@
   "width": 300,
   "height": 300,
   "title": {
-    "text": "UK GDP Per capita",
+    "text": "Real Residential Property Price in HK",
     "subtitle": "Data in £ - created by manipulating CSV data",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
@@ -31,10 +31,10 @@
         "update": {
           "stroke": {"value": "#4c78a8"},
           "description": {
-            "signal": "\"Date: \" + (timeFormat(datum[\"Date\"], '%b %d, %Y')) + \"; GDP per capita: \" + (format(datum[\"GDP per capita\"], \"\"))"
+            "signal": "\"Date: \" + (timeFormat(datum[\"Date\"], '%b %d, %Y')) + \"; GDP per capita: \" + (format(datum[\"Real Residential Property Price\"], \"\"))"
           },
           "x": {"scale": "x", "field": "Date"},
-          "y": {"scale": "y", "field": "GDP per capita"},
+          "y": {"scale": "y", "field": "Real Residential Property Price"},
           "defined": {
             "signal": "isValid(datum[\"Date\"]) && isFinite(+datum[\"Date\"]) && isValid(datum[\"GDP per capita\"]) && isFinite(+datum[\"GDP per capita\"])"
           }
@@ -52,7 +52,7 @@
     {
       "name": "y",
       "type": "linear",
-      "domain": {"data": "source_0", "field": "GDP per capita"},
+      "domain": {"data": "source_0", "field": "Real Residential Property Price"},
       "range": [{"signal": "height"}, 0],
       "nice": true,
       "zero": true
