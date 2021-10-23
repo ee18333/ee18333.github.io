@@ -67,6 +67,7 @@
       "labelOverlap": true,
       "tickCount": {"signal": "ceil(width/40)"},
       "zindex": 0
+      "format":"%Y-%b-%D"
     },
     {
       "scale": "y",
