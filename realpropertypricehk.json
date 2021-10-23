@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "white",
+  "padding": 5,
+  "width": 300,
+  "height": 300,
+  "title": {
+    "text": "UK GDP Per capita",
+    "subtitle": "Data in £ - created by manipulating CSV data",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "style": "cell",
+  "data": [
+    {
+      "name": "source_0",
+      "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Real%20Residential%20Property%20Prices%20for%20Hong%20Kong%20SAR%20.csv",
+      "format": {"type": "csv", "parse": {"Date": "date"}, "delimiter": ","}
+    }
+  ],
+  "marks": [
+    {
+      "name": "marks",
+      "type": "line",
+      "style": ["line"],
+      "sort": {"field": "datum[\"Date\"]"},
+      "from": {"data": "source_0"},
+      "encode": {
+        "update": {
+          "stroke": {"value": "#4c78a8"},
+          "description": {
+            "signal": "\"Date: \" + (timeFormat(datum[\"Date\"], '%b %d, %Y')) + \"; GDP per capita: \" + (format(datum[\"GDP per capita\"], \"\"))"
+          },
+          "x": {"scale": "x", "field": "Date"},
+          "y": {"scale": "y", "field": "GDP per capita"},
+          "defined": {
+            "signal": "isValid(datum[\"Date\"]) && isFinite(+datum[\"Date\"]) && isValid(datum[\"GDP per capita\"]) && isFinite(+datum[\"GDP per capita\"])"
+          }
+        }
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "time",
+      "domain": {"data": "source_0", "field": "Date"},
+      "range": [0, {"signal": "width"}]
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": {"data": "source_0", "field": "GDP per capita"},
+      "range": [{"signal": "height"}, 0],
+      "nice": true,
+      "zero": true
+    }
+  ],
+  "axes": [
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "grid": false,
+      "labelFlush": true,
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(width/40)"},
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": false,
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "zindex": 0
+    }
+  ]
+}
