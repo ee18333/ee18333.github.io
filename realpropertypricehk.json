@@ -36,7 +36,7 @@
           "x": {"scale": "x", "field": "Date"},
           "y": {"scale": "y", "field": "Real Residential Property Price HK"},
           "defined": {
-            "signal": "isValid(datum[\"Date\"]) && isFinite(+datum[\"Date\"]) && isValid(datum[\"GDP per capita\"]) && isFinite(+datum[\"Real Residential Property Price HK\"])"
+            "signal": "isValid(datum[\"Date\"]) && isFinite(+datum[\"Date\"]) && isValid(datum[\"Real Residential Property Price HK\"]) && isFinite(+datum[\"Real Residential Property Price HK\"])"
           }
         }
       }
