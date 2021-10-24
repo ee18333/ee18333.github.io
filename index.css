@@ -10,7 +10,7 @@ h1{
     color: #011333;
     font-family: 'Georgia', serif;
     font-weight: bold;
-    font-size: 20px; 
+    font-size: 30px; 
     letter-spacing: 1px; 
     line-height: 1; 
     text-align: center;
@@ -88,24 +88,24 @@ h3, p{
   border: 1px solid #DCDCDC;
   color: #DCDCDC;
   font-family: 'Roboto', sans-serif;
-  border-radius: 150px;
+  border-radius: 100px;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;  
+  font-size: 10px;  
 }
 
 :root {
-    --border-size: 0.125rem;
-    --duration: 250ms;
+    --border-size: 0.100rem;
+    --duration: 200ms;
     --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
     --font-family: 'Inconsolata', monospace;
     --color-primary: white;
     --color-secondary: black;
     --color-tertiary: dodgerblue;
     --shadow: rgba(0, 0, 0, 0.1);
-    --space: 1rem;
+    --space: 0.5rem;
   }
   
   * {
@@ -114,7 +114,7 @@ h3, p{
 
   .multi-button {
     display: flex;
-    width: 100%;
+    width: 80%;
     box-shadow: var(--shadow) 4px 4px;
   }
   
@@ -129,7 +129,7 @@ h3, p{
     border: var(--border-size) solid black;
     color: var(--color-secondary);
     background-color: var(--color-primary);
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     font-family: var(--font-family);
     text-transform: lowercase;
     text-shadow: var(--shadow) 2px 2px;
