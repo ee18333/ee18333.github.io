@@ -44,14 +44,14 @@ h3, p{
     display: flex;
     align-items: center;
     justify-content: center;  
-    width: 45%;
-    min-width: 300px;
+    width: 90%;
+    min-width: 400px;
     height: 400px;
-    margin: 5px;
-    padding: 20px;
+    margin: 1px;
+    padding: 5px;
     background-color: White;
     border: #9c8e9b solid 5px;
-    border-radius: 10px;
+    border-radius: 5px;
     /*font-family: 'Helvetica Neue', sans-serif;*/
     font-family: Inter,sans-serif;
     font-size: 10pxp;
