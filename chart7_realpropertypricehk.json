@@ -12,7 +12,7 @@
     "format": {"type": "csv"}
   },
   "height": 300,
-  "width": 345,
+  "width": "container",
   "mark": {"type": "line", "point": false},
   "encoding": {
     "x": {
