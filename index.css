@@ -64,6 +64,11 @@ h3, p{
     /*font-family: 'Helvetica Neue', sans-serif;*/
     font-family: Inter,sans-serif;
     font-size: 10pxp;
+    text-align: center;
+    padding: 20px;
+    transition: border-radius 500ms, flex-grow 1000ms;
+    width: 45%;
+    min-width: 300px;
 }
 
 
