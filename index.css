@@ -1,6 +1,6 @@
 body{
     background-color: #E1FAF7 ;
-    max-width: 500px;
+    max-width: 600px;
     margin: auto;
 }
 
@@ -44,10 +44,10 @@ h3, p{
     display: flex;
     align-items: center;
     justify-content: center;  
-    width: 90%;
+    width: 100%;
     min-width: 400px;
     height: 400px;
-    margin: 1px;
+    margin: 5px;
     padding: 5px;
     background-color: White;
     border: #9c8e9b solid 5px;
