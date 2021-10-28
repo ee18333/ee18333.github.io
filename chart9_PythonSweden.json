@@ -1,0 +1,16 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "note": "Example of simple API with no bugs",
+      
+    "data": {"url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/data_covid19api-sweden.json"},
+    
+    "mark": "line",
+    
+    "encoding": {
+      
+      "x": {"field": "Date", "type": "temporal"},
+      
+      "y": {"field": "Cases", "type": "quantitative", "title": "Deaths"}
+    }
+}
