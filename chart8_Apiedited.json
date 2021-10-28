@@ -15,6 +15,7 @@
   },
   "mark": {"type": "trail", "color": "darkblue", "opacity": 1},
   "width": "container",
+  "height": "container",
   "encoding": {
     "x": {
       "field": "end",
