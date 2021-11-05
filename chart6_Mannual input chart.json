@@ -1,29 +1,6 @@
 {
-  "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "description": "A basic line chart example.",
-  "width": "container",
-  "height": 300,
-  "padding": 5,
-  "signals": [
-    {
-      "name": "interpolate",
-      "value": "linear",
-      "bind": {
-        "input": "select",
-        "options": [
-          "basis",
-          "cardinal",
-          "catmull-rom",
-          "linear",
-          "monotone",
-          "natural",
-          "step",
-          "step-after",
-          "step-before"
-        ]
-      }
-    }
-  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
   "title": {
     "text": "Tiktok Anuual Revenue",
     "subtitle": "Soure: Business of Apps",
@@ -32,66 +9,24 @@
     "anchor": "start",
     "color": "black"
   },
-  "data": [
-    {
-      "name": "table",
-      "values": [
-        {"x": "2017", "y": 63, "c": 0},
-        {"x": "2018", "y": 150, "c": 0},
-        {"x": "2019", "y": 350, "c": 0},
-        {"x": "2020", "y": 1900, "c": 0}
-      ]
-    }
-  ],
-  "scales": [
-    {
-      "name": "x",
-      "type": "point",
-      "range": "width",
-      "domain": {"data": "table", "field": "x"}
+  "height": "container",
+  "width": "container",
+  "data": {
+    "values": [
+      {"x": "2017", "y": 63},
+      {"x": "2018", "y": 150},
+      {"x": "2019", "y": 350},
+      {"x": "2020", "y": 1900}
+    ]
+  },
+  "mark": {"type": "line", "interpolate": "monotone", "color": "darkblue"},
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "axis": {"labelAngle": 0},
+      "title": ""
     },
-    {
-      "name": "y",
-      "type": "linear",
-      "range": "height",
-      "nice": true,
-      "zero": true,
-      "domain": {"data": "table", "field": "y"}
-    },
-    {
-      "name": "color",
-      "type": "ordinal",
-      "range": "category",
-      "domain": {"data": "table", "field": "c"}
-    }
-  ],
-  "axes": [
-    {"orient": "bottom", "scale": "x"},
-    {"orient": "left", "scale": "y"}
-  ],
-  "marks": [
-    {
-      "type": "group",
-      "from": {"facet": {"name": "series", "data": "table", "groupby": "c"}},
-      "marks": [
-        {
-          "type": "line",
-          "from": {"data": "series"},
-          "encode": {
-            "enter": {
-              "x": {"scale": "x", "field": "x"},
-              "y": {"scale": "y", "field": "y"},
-              "stroke": {"scale": "color", "field": "c"},
-              "strokeWidth": {"value": 2}
-            },
-            "update": {
-              "interpolate": {"signal": "interpolate"},
-              "strokeOpacity": {"value": 1}
-            },
-            "hover": {"strokeOpacity": {"value": 0.5}}
-          }
-        }
-      ]
-    }
-  ]
+    "y": {"field": "y", "type": "quantitative", "title": ""}
+  }
 }
