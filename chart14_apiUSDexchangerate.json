@@ -6,9 +6,7 @@
     "subtitle": "From the beginning of 2010 to 2020. Source: coinapi.io",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
-    "anchor": "start",
-    "color": "#000000",
-    "subtitleColor": "#000000"
+    "anchor": "start"
   },
   "config": {"background": "#ffffff", "view": {"stroke": "transparent"}},
   "data": {
