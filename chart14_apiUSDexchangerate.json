@@ -8,20 +8,19 @@
     "subtitleFontSize": 10,
     "anchor": "start",
     "color": "#000000",
-    "subtitleColor": "#a0db17"
+    "subtitleColor": "#000000"
   },
   "config": {"background": "#ffffff", "view": {"stroke": "transparent"}},
   "data": {
     "url": "https://rest.coinapi.io/v1/exchangerate/EUR/USD/history?apikey=B578B5D2-30DE-4330-B461-F63E36E6D125&period_id=10DAY&time_start=2010-01-01T00:00:00&time_end=2020-01-01T00:00:00&limit=100",
     "format": {"type": "json"}
   },
-  "height": 300,
-  "width": 280,
+  "height": "container",
+  "width": "container",
   "mark": {
     "type": "line",
     "point": false,
-    "interpolate": "linear",
-    "color": "#f46e45"
+    "interpolate": "linear"  
   },
   "encoding": {
     "x": {
@@ -29,12 +28,7 @@
       "type": "temporal",
       "axis": {
         "title": "Date",
-        "grid": true,
-        "labelSeparation": 10,
-        "domainColor": "dimgrey",
-        "labelColor": "#1f00a7",
-        "tickColor": "black",
-        "gridColor": "dimgrey"
+        "grid": true      
       }
     },
     "y": {
@@ -44,10 +38,6 @@
       "scale": {"domain": [1, 1.6]},
       "axis": {
         "grid": true,
-        "domainColor": "dimgrey",
-        "labelColor": "#1f00a7",
-        "tickColor": "black",
-        "gridColor": "dimgrey",
         "format": "$"
       }
     }
