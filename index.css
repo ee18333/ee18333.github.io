@@ -7,7 +7,7 @@ body{
 /* Data Science Title */
 h1{
     color: #011333;
-    font-family: 'Georgia', serif;
+    font-family: 'Merriweather', serif;
     font-weight: bold;
     font-size: 30px; 
     letter-spacing: 1px; 
@@ -17,7 +17,7 @@ h1{
 
 h3, p{
     color:#011333;
-    font-family: 'Optima', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .bold {
