@@ -1,0 +1,32 @@
+{
+  "title": {
+    "text": "Chinese trade to Africa as a percentage of the world",
+    "subtitle": "in percentage",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/w7.csv",
+    "format": {"type": "csv"}
+  },
+  "height": 300,
+  "width": "container",
+  "mark": {"type": "line", "point": false},
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "Chinese trade in US$ billions to Africa as a percentage of the world",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"grid": false},
+      "scale": {"domain": [1.5, 3.5]}
+    }
+  }
+}
