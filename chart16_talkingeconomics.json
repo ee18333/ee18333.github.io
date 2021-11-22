@@ -15,8 +15,8 @@
   "transform": [
     {"filter": {"field": "category", "oneOf": ["CPI: Energy for UK", "CPI of All Items in the UK"]}}
   ],
-  "height": 300,
-  "width": 310,
+  "height": "container",
+  "width": "container",
   "mark": {"type": "line", "point": false},
   "encoding": {
     "x": {
