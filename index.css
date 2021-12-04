@@ -65,92 +65,69 @@ h3, p{
   gap: 0px 0px;
   margin-top: 0px;
   border-style: solid;
-  border-color: #011333;
-  background-color: rgba(32, 42, 68,0.89);
+  border-color: rgb(1,19,51);
   padding: 5px;
-  border-radius: 0px;
-}
+  border-radius: 5px;
 
 /* Buttons on navigation bar */
-.button {
-  background-color: transparent;
-  border: 1px solid #DCDCDC;
-  color: #DCDCDC;
-  font-family: 'Roboto', sans-serif;
-  border-radius: 100px;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;  
+.button-56, .button-1{
+    align-items: center;
+    margin: 10px;
+    background-color: rgb(203, 221, 224);
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: rgb(55, 75, 51);
+    cursor: pointer;
+    display: flex;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 15px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    display:inline-block;
+    }
+
+.button-56:after {
+    background-color: #1B2519;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
 }
 
-:root {
-    --border-size: 0.125rem;
-    --duration: 250ms;
-    --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
-    --font-family: monospace;
-    --color-primary: white;
-    --color-secondary: black;
-    --color-tertiary: dodgerblue;
-    --shadow: rgba(0, 0, 0, 0.1);
-    --space: 1rem;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
+.button-56:hover:after {
+    transform: translate(0, 0);
+    background: rgb(219, 188, 188);
+}
 
-  .multi-button {
-    display: flex;
-    width: 100%;
-    box-shadow: var(--shadow) 4px 4px;
+.button-56:active {
+    background-color: rgb(203, 221, 224);
+    outline: 0;
+}
+
+.button-56:hover {
+    outline: 0;
+    background: rgb(203, 221, 224);
+}
+
+@media (min-width: 768px) {
+    .button-56 {
+    padding: 0 40px;
   }
-  
-  .multi-button button {
-    flex-grow: 1;
-    cursor: pointer;
-    position: relative;
-    padding:
-      calc(var(--space) / 1.125)
-      var(--space)
-      var(--space);
-    border: var(--border-size) solid black;
-    color: var(--color-secondary);
-    background-color: var(--color-primary);
-    font-size: 1.5rem;
-    font-family: var(--font-family);
-    text-transform: lowercase;
-    text-shadow: var(--shadow) 2px 2px;
-    transition: flex-grow var(--duration) var(--ease);
-  }
-  
-  .multi-button button + button {
-    border-left: var(--border-size) solid black;
-    margin-left: calc(var(--border-size) * -1);
-  }
-  
-  .multi-button button:hover,
-  .multi-button button:focus {
-    flex-grow: 2;
-    color: white;
-    outline: none;
-    text-shadow: none;
-    background-color: var(--color-secondary);
-  }
-  
-  .multi-button button:focus {
-    outline: var(--border-size) dashed var(--color-primary);
-    outline-offset: calc(var(--border-size) * -3);
-  }
-  
-  .multi-button:hover button:focus:not(:hover) {
-    flex-grow: 1;
-    color: var(--color-secondary);
-    background-color: var(--color-primary);
-    outline-color: var(--color-tertiary);
-  }
-  
-  .multi-button button:active {
-    transform: translateY(var(--border-size));
-  }
+}
