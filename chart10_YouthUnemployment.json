@@ -1,0 +1,33 @@
+ {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Youth Unemployment Rate for Hong Kong SAR, China",
+    "subtitle": "Source: FRED",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Youth%20Unemployment%20Rate%20for%20Hong%20Kong%20SAR%2C%20China.json",
+    "format": {"type": "json", "property": "observations"}
+  },
+  "height": "container",
+  "width": "container",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false}
+
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"grid": true}
+    }
+  }
+}
