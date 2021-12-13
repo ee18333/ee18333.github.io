@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Military spending as a % of GDP",
+    "subtitle": "Source: FRED",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Military%20spending%20as%20%25%20of%20GDP.csv"
+  },
+  "transform": [
+    {"fold": ["Japan","Afghanistan", "United Arab Emirates", "China", "Russian Federation", "World"]},
+    {"calculate": "year(datum.Year)", "as": "Year2"},
+    {"filter": "datum.Year2>minYear"},
+    {"filter": "datum.Year2<maxYear"}
+  ],
+  "height": "container",
+  "width": "container",
+  "mark": "line",
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1960,
+      "bind": {
+        "input": "range",
+        "min": 1960,
+        "max": 2000,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2020,
+      "bind": {
+        "input": "range",
+        "min": 2010,
+        "max": 2020,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal"},
+    "y": {"field": "value", "type": "quantitative", "title":"%"},
+    "color": {"field": "key", "type": "nominal"},
+    "tooltip": [
+      {"field": "key", "type": "nominal"},
+      {"field": "value", "type": "quantitative"},
+      {"field": "Year", "type": "temporal"}
+    ]
+  }
+}
