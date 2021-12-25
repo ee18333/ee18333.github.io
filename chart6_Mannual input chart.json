@@ -9,6 +9,7 @@
     "anchor": "start",
     "color": "black"
   },
+  "config": {"background": "#e8f4ea"},
   "height": "container",
   "width": "container",
   "data": {
