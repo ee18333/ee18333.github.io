@@ -7,9 +7,10 @@
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
-    "color": "black"
+    "color": "black",
+    "font": "Italic"
   },
-  "config": {"background": "#e8f4ea"},
+  "config": {"background": "#e0f0e3"},
   "height": "container",
   "width": "container",
   "data": {
