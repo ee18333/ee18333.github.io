@@ -1,7 +1,9 @@
 body{
-    background-color: #e8f4ea ;
-    max-width: 600px;
+    background-color: #e0f0e3 ;
+    max-width: auto;
     margin: auto;
+    text-align: center;
+    width: 100%;
 }
 
 /* Data Science Title */
@@ -44,7 +46,7 @@ h3, p{
     height: 400px;
     margin: 5px;
     padding: 5px;
-    background-color:#e8f4ea;
+    background-color:#e0f0e3;
     border: #e8f4ea;
     border-radius: 5px;
     font-family: 'Bodoni Moda', serif;
