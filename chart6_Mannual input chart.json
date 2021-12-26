@@ -10,7 +10,7 @@
     "color": "black",
     "font": "Italic"
   },
-  "config": {"background": "#e0f0e3"},
+  "config": {"background": "#fffdfd"},
   "height": "container",
   "width": "container",
   "data": {
