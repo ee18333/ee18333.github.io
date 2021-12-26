@@ -1,5 +1,5 @@
 body{
-    background-color: #ffead6;
+    background-color: #fffdfd;
     max-width: auto;
     margin: auto;
     text-align: center;
@@ -35,7 +35,7 @@ p{font-size:20px}
     height: 400px;
     margin: 5px;
     padding: 5px;
-    background-color:#ffead6;
+    background-color:#fffdfd;
     border: #ffead6;
     border-radius: 5px;
     font-family: 'Bodoni Moda', serif;
