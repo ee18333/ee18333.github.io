@@ -5,12 +5,13 @@
     "text": "Tiktok Anuual Revenue",
     "subtitle": "Soure: Business of Apps",
     "subtitleFontStyle": "italic",
-    "subtitleFontSize": 10,
+    "subtitleFontSize": 12,
     "anchor": "start",
     "color": "black",
+    "fontSize": 16,
     "font": "Italic"
   },
-  "config": {"background": "#fffdfd"},
+ "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "height": "container",
   "width": "container",
   "data": {
@@ -21,7 +22,7 @@
       {"x": "2020", "y": 1900}
     ]
   },
-  "mark": {"type": "line", "interpolate": "monotone", "color": "darkblue"},
+  "mark": {"type": "line", "interpolate": "monotone", "color": "darkolivegreen", "strokeWidth":4},
   "encoding": {
     "x": {
       "field": "x",
