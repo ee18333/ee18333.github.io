@@ -59,88 +59,35 @@ p{font-size:20px}
   border-color: rgb(219, 188, 188);
   padding: 25px;
   border-radius: 35px;
-.button-56 {
-    align-items: center;
-    margin: 10px;
-    background-color: #f5f5dc;
-    border: 2px solid #111;
-    border-radius: 8px;
-    box-sizing: border-box;
-    color: #111;
-    cursor: pointer;
-    display: flex;
-    font-family: Inter,sans-serif;
-    font-size: 16px;
-    height: 48px;
-    justify-content: center;
-    line-height: 24px;
-    max-width: 100%;
-    padding: 0 25px;
-    position: relative;
-    text-align: center;
+    
+.dashboardButton {
+    background-color: rgb(5, 56, 107);
+    border: 1px solid rgb(5, 56, 107);
+    color: rgb(237, 245, 225);
+    font-family: 'Poppins',sans-serif;
+    line-height: 16px;
+    font-weight: 600;
+    border-radius: 150px;
+    box-sizing: content-box;
+    align-items: flex-start;
+    display: inline-block;
+    font-size: 12px;
+    margin: 1px 2px 1px 2px;
     text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    }
+    max-width: 100px;
+    outline-offset: 2px;
+    overflow: hidden;
+    padding: 5px 12px;
+    text-align: left;
+    text-overflow: ellipsis;
+    transition: border-color,background-color .5s ease;
+    white-space: nowrap;
+  }
 
-.button-56:after {
-    background-color: #111;
-    border-radius: 8px;
-    content: "";
-    display: block;
-    height: 48px;
-    left: 0;
-    width: 100%;
-    position: absolute;
-    top: -2px;
-    transform: translate(8px, 8px);
-    transition: transform .2s ease-out;
-    z-index: -1;
+  .dashboardButton:hover, .dashboardButton:active {
+    background-color: rgb(92, 219, 149);
+    color: rgb(5, 56, 107);
 }
-
-.button-56:hover:after {
-    transform: translate(0, 0);
-}
-
-.button-56:active {
-    background-color: #274754;
-    outline: 0;
-}
-
-    .button-56:hover {
-    outline: 0;
-}
-
-@media (max-width: 480px) {
-    .button-56 {
-        margin: 5px;
-        font-size: 12px;
-    }
-    header {
-        font-size: 65px; 
-    }
-    .chart {
-        width: 380px;
-    }
-    .title1 {
-        font-size: 15px;
-    }
-    #loadermsg {
-        font-size: 15px;
-    }
-    #loader {
-        margin: 50px auto 50px auto;
-    }
-    .pngchart {
-        width: 390px;
-    }
-    .button-56 {
-        padding: 0 20px;
-    } 
-    .button-56:after {
-        transform: translate(6px, 6px);
-    }
     
     /* The progress container (grey background) */
 .progress-container {
