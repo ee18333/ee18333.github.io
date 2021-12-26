@@ -61,64 +61,36 @@ p{font-size:20px}
   border-radius: 35px;
 
 /* Buttons on navigation bar */
-.button-56, .button-1{
-    align-items: center;
-    margin: 10px;
-    background-color: rgb(203, 221, 224);
-    border: 2px solid #111;
-    border-radius: 8px;
-    box-sizing: border-box;
-    color: rgb(55, 75, 51);
-    cursor: pointer;
-    display: flex;
-    font-family: 'Bodoni Moda', serif;
-    font-size: 15px;
-    height: 48px;
-    justify-content: center;
-    line-height: 24px;
-    max-width: 100%;
-    padding: 0 25px;
-    position: relative;
-    text-align: center;
+.dashboardButtonMore {
+    background-color: transparent;
+    border: 1px solid rgb(126, 114, 114);
+    color: rgb(126, 114, 114);
+    font-family: 'Poppins', sans-serif ;
+    line-height: 16px;
+    font-weight: 600;
+    border-radius: 150px;
+    box-sizing: content-box;
+    align-items: flex-start;
+    display: inline-block;
+    font-size: 12px;
+    margin: 1px 2px 1px 2px;
     text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    display:inline-block;
-    }
-
-.button-56:after {
-    background-color: #1B2519;
-    border-radius: 8px;
-    content: "";
-    display: block;
-    height: 48px;
-    left: 0;
-    width: 100%;
-    position: absolute;
-    top: -2px;
-    transform: translate(8px, 8px);
-    transition: transform .2s ease-out;
-    z-index: -1;
-}
-
-.button-56:hover:after {
-    transform: translate(0, 0);
-    background: rgb(219, 188, 188);
-}
-
-.button-56:active {
-    background-color: rgb(203, 221, 224);
-    outline: 0;
-}
-
-.button-56:hover {
-    outline: 0;
-    background: rgb(203, 221, 224);
-}
-
-@media (min-width: 768px) {
-    .button-56 {
-    padding: 0 40px;
+    max-width: 100px;
+    outline-offset: 2px;
+    overflow: hidden;
+    padding: 5px 12px;
+    text-align: left;
+    text-overflow: ellipsis;
+   /* transition: border-color,background-color .5s ease;*/
+    white-space: nowrap;
+    background-color: #f4c245;
+    border: 1px solid #f4c245;
+    color: rgb(255,255,255,0.8) !important;
   }
-}
+
+  /*.dashboardButtonMore a:hover {
+    background-color: #f4c245;
+    opacity: 0.1;
+  }*/
+
+a:hover { background-color: #ffb700; }
