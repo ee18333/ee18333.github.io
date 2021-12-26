@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/regression%20csv.csv"
+  },
+  "title": {
+    "text": "Regression: CPI% & Industrial added value %",
+    "subtitle": "Source: The PRC State's Council ",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black",
+    "fontSize": 16,
+    "font": "Italic"
+  },
+  "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
+  "height": "container",
+  "width": "container",
+
+  "layer": [
+    {
+      "mark": {"type": "point", "filled": true, "size":80 },
+      "encoding": {
+        "x": {"field": "CPI %", "type": "quantitative", "title": "CPI %"},
+        "y": {
+          "field": "Industrial added value %",
+          "type": "quantitative",
+          "scale": {"domain": [-5, 14]}
+        
+        },
+        "tooltip": [
+          {"field": "CPI %", "type": "quantitative", "title": "CPI %"},
+          {
+            "field": "Industrial added value %",
+            "type": "quantitative",
+            "title": "Industrial added value %"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "firebrick","strokeWidth":4 },
+      "transform": [{"regression": "CPI %", "on": "Industrial added value %"}],
+      "encoding": {
+        "x": {"field": "CPI %", "type": "quantitative"},
+        "y": {
+          "field": "Industrial added value %",
+          "type": "quantitative",
+          "scale": {"domain": [-5, 14]}
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "Industrial added value %",
+          "on": "CPI %",
+          "params": true
+        },
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "center",
+        "y": 0
+      },
+      "encoding": {"text": {"type": "nominal", "field": "R2"}}
+    }
+  ]
+}
