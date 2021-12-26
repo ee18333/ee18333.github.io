@@ -1,32 +1,21 @@
 body{
-    background-color: #e0f0e3 ;
+    background-color: #e0f0e3;
     max-width: auto;
     margin: auto;
     text-align: center;
     width: 100%;
 }
 
-/* Data Science Title */
-h1{
+h1, h3, p{
     color: #011333;
     font-family: 'Bodoni Moda', serif;
-    font-weight: bold;
-    font-size: 40px; 
-    letter-spacing: -1px;
-    text-align: center;
 }
 
-h2{
-    color: #6A5ACD;
-    font-family: 'Bodoni Moda', serif;
-    text-align: center;
-}
+h1{font-size:50px}
+h2{font-size:45px}
+h3{font-size:30px}
+p{font-size:20px}
 
-h3, p{
-    color:#011333;
-    font-family: 'Bodoni Moda', serif;;
-    text-align: center;
-}
 
 .bold {
     font-weight:bold
