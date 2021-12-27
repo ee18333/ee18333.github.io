@@ -1,0 +1,95 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "title": {
+    "text": "Covid Data",
+    "subtitle": "of the UK. Source: FRED",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black",
+    "fontSize": 16,
+    "font": "Italic"
+  },
+  "selection": {
+    "Region": {
+      "type": "single",
+      "fields": ["Country"],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "France",
+          "Norway",
+          "Spain",
+          "Germany",
+          "Sweden",
+          "United Kingdom"
+        ],
+        "name": "Pick a country: "
+      }
+    }
+  },
+  "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
+  "height": "container",
+  "width": "container",
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/data_covid19api-germany.json"
+      },
+      "mark": "line"
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/data_covid19api-france.json"
+      },
+      "mark": "line"
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/data_covid19api-germany.json"
+      },
+      "mark": "line"
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/data_covid19api-sweden.json"
+      },
+      "mark": "line"
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/data_covid19api-germany.json"
+      },
+      "mark": "line"
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/data_covid19api-uk.json"
+      },
+      "mark": "line"
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/data_covid19api-norway.json"
+      },
+      "mark": "line"
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/data_covid19api-spain.json"
+      },
+      "mark": "line"
+    }
+  ],
+  "encoding": {
+    "x": {"field": "Date", "type": "temporal"},
+    "y": {"field": "Cases", "type": "quantitative"},
+    "color": {"field": "Country", "type": "nominal"},
+    "tooltip": [
+      {"field": "Country", "type": "nominal", "title": "Country"},
+      {"field": "Cases", "type": "quantitative", "title": "Cases"}
+    ]
+  }
+}
