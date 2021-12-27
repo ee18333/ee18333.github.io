@@ -1,54 +1,56 @@
 <!DOCTYPE html>
 
-<!-- Kate Yu, Data Science -->
-
 
 <!-- ///////////////////  HEAD //////////////////////////////////// -->
 
 <head>
 
-<!--The next three lines allow the Vega embed-->
-<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
-
-<!-- CSS -->
-<link rel="stylesheet" href="style.css">
-
-<title>Kate Yu</title>
-
-    <style>
+  <!--The next three lines allow the Vega embed-->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+  
+  <!-- Tab name -->
+  <title>Kate Yu</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="index.css">
+  
+      <style>
    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
    @import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&family=Bodoni+Moda&family=Cinzel&family=Merriweather:wght@300&family=Roboto:wght@100&display=swap');
    @import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&family=Bodoni+Moda&family=Merriweather:wght@300&family=Roboto:wght@100&display=swap');
+    
     </style>
-
+    
 </head>
 
 <!-- ///////////////////  HEAD //////////////////////////////////// -->
 
 
 <!-- ///////////////////  START BODY //////////////////////////////////// -->
-
 <body>
 
-<!--Navigation bar and title-->
-<header>
-<h1>My Project</h1>
-</header>
-
-
-<!-- /////////////////// NAVIGATION BUTTONS //////////////////////////////////// -->
+  </header>
+  <h1>Kate Yu's Page</h1>
+  
+  </header>
+  
+  <!-- /////////////////// NAVIGATION BUTTONS //////////////////////////////////// -->
 
 <div class="multi-button">
-  <button onclick="location.href='index.html'">home</button>
-  <button style="color: rgb(17, 143, 242);" onclick="location.href='project.html'">project</button>
-  <button onclick="location.href='https://github.com/ee18333/ee18333.github.io'">github</button>
-  <button onclick="location.href='https://rapidcharts.io/datascience'">course</button>
+
+  <button style="color: rgb(17, 143, 242);" onclick="location.href='index.html'">Portfolio</button>
+  <button onclick="location.href='project.html'">Project</button>
+  <button onclick="location.href='https://github.com/ee18333/ee18333.github.io'">Github</button>
+  <button onclick="location.href='https://rapidcharts.io/datascience'">Course</button>
+
 </div>
+
 <!-- /////////////////// END NAVIGATION BUTTONS //////////////////////////////////// -->
 
+  
 <!-- /////////////////// CONTAINER WEEK 1  //////////////////////////////////// -->
  
 <h3> <br> W1: Getting started</h3>
@@ -87,8 +89,214 @@
 <!-- /////////////////// END CONTAINER WEEK 1  //////////////////////////////////// -->
 
 
-</body>
 
-<!-- ///////////////////  END BODY //////////////////////////////////// -->
+<!-- ///////////////////  CONTAINER WITH WEEK 2 WORK //////////////////////////////////// -->
+
+<h3> <br>W2: Hosting Data </h3>
+<container class="bcontainer">
+
+<!--Vaccinations Chart 1 --> 
+    <p>The Number of LFD test taken in the UK. It uses the <strong>raw csv data</strong>.</p>
+    <div class="chart" id="fourthChart">    
+    <script>
+    var myChart4 = "chart4_Number of LFD test taken.json";
+    vegaEmbed('#fourthChart', myChart4);
+  </script>
+ </div>
+   
+ <!--Vaccinations chart 2--> 
+    <p>The cummulated deaths rate by 60 days from Covid-19 in the UK. It uses <strong>API live data</strong>.</p>
+    <div class="chart" id="fifthChart">    
+    <script>
+    var myChart5 = "chart5_Cumulated Death rate.json";
+    vegaEmbed('#fifthChart', myChart5);
+  </script>
+ </div>
+  
+</container>
+
+<!-- ///////////////////  END CONTAINER WITH WEEK 2 WORK //////////////////////////////////// -->
+
+
+
+<!-- ///////////////////  CONTAINER WITH WEEK 3 WORK //////////////////////////////////// -->
+
+<h3> <br> W3: Editing and writing Data</h3>
+<container class="bcontainer">
+
+<!--Mannual input Chart -->   
+    <p>THis chart shows the annual revenue of TikTok from 2017 to 2020. Data is <strong>mannually</strong> entered as <strong>values</strong> in a <strong>JSON file<strong>.</p>
+    <div class="chart" id="sixthChart">    
+    <script>
+    var myChart6 = "chart6_Mannual input chart.json";
+    vegaEmbed('#sixthChart', myChart6);
+  </script>
+ </div>
+  
+  <!--Manipulate CSV data -->  
+    <p>This chart looks at Real Residential Property Price in HK. I have put  <strong>a predicated value for 2050</strong>  in the  <strong>csv file<strong> .</p>
+  <div class="chart" id="seventhChart">    
+    <script>
+    var myChart7 = "chart7_realpropertypricehk.json";
+    vegaEmbed('#seventhChart', myChart7);
+  </script>
+ </div>
+</container>
+
+<!-- ///////////////////  END CONTAINER WITH WEEK 3 WORK //////////////////////////////////// -->
+
+
+<!-- ///////////////////  CONTAINER WITH WEEK 4 WORK //////////////////////////////////// -->
+
+<h3> <br> W4: APIs</h3>
+<container class="bcontainer">
+
+<!--API edited -->   
+  <h3>API Driven Charts - Two charts from an API I have found and gained access to.</h3>
+  
+    <p>It looks at the emission data in the US by changing the country code name and the time period of the API.</p>
+  <div class="chart" id="EighthChart">      
+    <script>
+    var myChart8 = "chart8_Apiedited.json";
+    vegaEmbed('#EighthChart', myChart8);
+  </script>
+ </div>
+  
+  <p>I gained access to this API by signing up to the website <a href = "https://www.coinapi.io/."> CoinAPI</a> for the unique API key. It looks at the 10 day average price of US dollars.</p>
+   <div class="chart" id="fourteenthChart">      
+    <script>
+    var myChart14 = "chart14_apiUSDexchangerate.json";
+    vegaEmbed('#fourteenthChart', myChart14);
+  </script>
+ </div>
+
+</container>
+<!-- ///////////////////  END CONTAINER WITH WEEK 4 WORK //////////////////////////////////// -->
+  
+    
+<!-- ///////////////////  CONTAINER WITH WEEK 5 WORK //////////////////////////////////// -->
+
+<h3> <br> W5: Loops and API fetch</h3>
+<container class="bcontainer">
+
+  <h3>The charts below looks at the economy in HK.</h3>
+  
+  <p><strong></strong></p>
+  <div class="chart" id="NinthChart">      
+    <script>
+    var myChart9 = "chart9_NetMigration.json";
+    vegaEmbed('#NinthChart', myChart9);
+  </script>
+ </div>
+
+
+<p><strong></strong></p>
+  <div class="chart" id="TenthChart">      
+    <script>
+    var myChart10 = "chart10_YouthUnemployment.json";
+    vegaEmbed('#TenthChart', myChart10);
+  </script>
+ </div>
+
+
+<p><strong></strong></p>
+  <div class="chart" id="EleventhChart">      
+    <script>
+    var myChart11 = "chart11_GDPhk.json";
+    vegaEmbed('#EleventhChart', myChart11);
+  </script>
+ </div>
+  
+  <div class="chart" id="TwelvethChart">      
+    <script>
+    var myChart12 = "chart12_loopApiCovid.json";
+    vegaEmbed('#TwelvethChart', myChart12);
+  </script>
+ </div>
+  
+</container>
+<!-- ///////////////////  END CONTAINER WITH WEEK 5 WORK //////////////////////////////////// -->
+    
+ 
+<!-- ///////////////////  CONTAINER WITH WEEK 6 WORK //////////////////////////////////// -->
+
+<h3> <br> W6: Scrapers</h3>
+<container class="bcontainer">
+
+<!--python -->   
+  <h3>Scrapping table no.3 from <a href = "https://en.wikipedia.org/wiki/Africa%E2%80%93China_economic_relations#"> wikipedia</a>. 
+  To see <a href = "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/W7_HW.ipynb"> my scrapping code</a>.</h3>
+    <p><strong> </strong> </p>
+  
+   <div class="chart" id="fifteenthChart">      
+    <script>
+    var myChart15 = "chart15_ChinaAfrica.json";
+    vegaEmbed('#fifteenthChart', myChart15);
+  </script>
+ </div>
+
+</container>
+<!-- ///////////////////  END CONTAINER WITH WEEK 6 WORK //////////////////////////////////// -->
+
+
+<!-- ///////////////////  CONTAINER WITH WEEK 7 WORK //////////////////////////////////// -->
+
+<h3> <br> W7: Data story</h3>
+<container class="bcontainer">
+
+<!--Talking economics -->   
+   <div class="chart" id="sixteenthChart">      
+    <script>
+    var myChart16 = "chart16_talkingeconomics.json";
+    vegaEmbed('#sixteenthChart', myChart16);
+  </script>
+ </div>
+<p>Dawn Holland from NIESR believes that the rise in inflation is a temporary phenomenon because the rise in energy price is transitory. However, the chart shows that the sharp increase in energy price around April 2021 <strong>intersects at where general price starts to increase<strong>. Since then, energy price <strong>keeps increasing persistently<strong>, with little signs of coming back down. The continuous increase in energy price has created an <strong>inflationary environment that could be lasting<strong>.</p>
+
+</container>
+<!-- ///////////////////  END CONTAINER WITH WEEK 7 WORK //////////////////////////////////// -->
+
+
+ <!-- ///////////////////  CONTAINER WITH WEEK 8 WORK //////////////////////////////////// -->
+
+<h3> <br> W8: Advanced Analytics</h3>
+<container class="bcontainer">
+  
+<!--Regression -->   
+   <div class="chart" id="seventeenthChart">      
+    <script>
+    var myChart17 = "chart17_regression.json";
+    vegaEmbed('#seventeenthChart', myChart17);
+  </script>
+ </div>
+
+</container>
+<!-- ///////////////////  END CONTAINER WITH WEEK 8 WORK //////////////////////////////////// -->
+
+
+  
+ <!-- ///////////////////  CONTAINER WITH WEEK 9 WORK //////////////////////////////////// -->
+
+<h3> <br> W9: Interactivity</h3>
+<container class="bcontainer">
+     
+   <div class="chart" id="eighteenthChart">      
+    <script>
+    var myChart18 = "chart18_interactivity.json";
+    vegaEmbed('#eighteenthChart', myChart18);
+  </script>
+ </div>
+
+
+</container>
+<!-- ///////////////////  END CONTAINER WITH WEEK 9 WORK //////////////////////////////////// -->
+
+
+  
+  </body>
+ 
+
 
 </html>
+
+
