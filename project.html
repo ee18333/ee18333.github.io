@@ -1,100 +1,76 @@
 <!DOCTYPE html>
 
+
 <!-- ///////////////////  HEAD //////////////////////////////////// -->
 
 <head>
 
-<title>Taha Adamaly</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta charset="UTF-8">
-
-
-<!--The next three lines allow the Vega embed-->
-<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
-
-<link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/png" href="favicon.png">
-
+  <!--The next three lines allow the Vega embed-->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+  
+  <!-- Tab name -->
+  <title>Kate Yu</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="index.css">
+  
+      <style>
+   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&family=Bodoni+Moda&family=Cinzel&family=Merriweather:wght@300&family=Roboto:wght@100&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&family=Bodoni+Moda&family=Merriweather:wght@300&family=Roboto:wght@100&display=swap');
+    
+    </style>
+    
 </head>
 
-<!-- ///////////////////  END HEAD //////////////////////////////////// -->
-
-
+<!-- ///////////////////  HEAD //////////////////////////////////// -->
 
 
 <!-- ///////////////////  START BODY //////////////////////////////////// -->
 <body>
 
-<!--Navigation bar and title-->
-<container class="hcontainer">
+  </header>
+  <h1>Project</h1>
+  
+  </header>
+  
+  <!-- /////////////////// NAVIGATION BUTTONS //////////////////////////////////// -->
 
-<header>
-<h1>Data Science</h1>
-<h2>ECON30006: Taha Adamaly - <span style="color: rgb(19, 143, 242); font-weight: 700;">Formula 1 Project</span></h2>
-</header>
-
-</container>
-
-
-
-<!-- /////////////////// NAVIGATION BUTTONS //////////////////////////////////// -->
-<container class="hcontainer" style="border-bottom: none;">
 <div class="multi-button">
 
-  <button onclick="location.href='index.html'">portfolio</button>
-  <button style="color: rgb(17, 143, 242);" onclick="location.href='project.html'">project</button>
-  <button onclick="location.href='https://github.com/ee18333/ee18333.github.io'">github</button>
-  <button onclick="location.href='https://rapidcharts.io/datascience'">course</button>
+  <button style="color: rgb(17, 143, 242);" onclick="location.href='index.html'">Portfolio</button>
+  <button onclick="location.href='project.html'">Project</button>
+  <button onclick="location.href='https://github.com/ee18333/ee18333.github.io'">Github</button>
+  <button onclick="location.href='https://rapidcharts.io/datascience'">Course</button>
 
 </div>
-</container>
+
 <!-- /////////////////// END NAVIGATION BUTTONS //////////////////////////////////// -->
 
-
-<!-- ///////////////////  CONTAINER WITH FIRST CHART //////////////////////////////////// -->
-
-<p class="bodyText"><span style="color: rgb(19, 143, 242); font-weight: 700;">Section 1: </span>Historical Points and R&D Comparison</p>
-
+  
+<!-- /////////////////// CONTAINER WEEK 1  //////////////////////////////////// -->
+ 
+<h3> <br> W1: Getting started</h3>
+   
 <container class="bcontainer">
-
-<!-- RBR and Mercedes Points Chart -->
-<div class="chart" id="chartf1pointsmercredbull">
+  
+<!--Chart 1 showing Covid Cases by Region -->
+<p>UK Covid-19 cases <strong>by region</strong>.</p>
+<div class="chart" id="firstChart">
   <script>
-    var merc_redbull_points = "charts/chart_redbull_mercedes_points.json";
-    vegaEmbed('#chartf1pointsmercredbull', merc_redbull_points);
+    var myChart1 = "chart1_covidUKRegions.json";
+    vegaEmbed('#firstChart', myChart1);
   </script>
-</div>
+</div> 
 
-<!-- RBR R&D expenditure -->
-<div class="chart" id="redbullRD">
-  <script>
-    var redbull_expenditure = "charts/chart_redbull_expenditure.json";
-    vegaEmbed('#redbullRD', redbull_expenditure);
-  </script>
-</div>
-
-
-</container>
-
-<!-- ///////////////////  END CONTAINER WITH FIRST CHART //////////////////////////////////// -->
-
-
-
-
-<!-- ///////////////////  FOOTER //////////////////////////////////// -->
-
-<footer>
-</footer>
-
-<!-- ///////////////////  END FOOTER //////////////////////////////////// -->
-
-</body>
-
-<!-- ///////////////////  END BODY //////////////////////////////////// -->
-
+  
+  </body>
+ 
 
 
 </html>
+
+
