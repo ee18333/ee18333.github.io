@@ -1,13 +1,13 @@
-﻿Title,Worldwide gross,China gross,Worldwide gross in millions,China gross in millions,Rank in the world,rank in China
-Avatar,2847246203,274057600,2847,274,0,8
-Avengers: Endgame,2797501328,680040000,2797,680,1,1
-Avengers: Infinity War,2048359754,382486400,2048,382,4,4
-Jurassic World,1671713208,227316800,1671,227,5,15
-Furious 7,1516045911,388254400,1516,388,8,3
-Avengers: Age of Ultron,1402805868,234302400,1402,234,10,13
-Jurassic World: Fallen Kingdom,1309484461,271340800,1309,271,14,9
-The Fate of the Furious,1238764765,427353600,1238,427,18,2
-Aquaman,1148485886,322113600,1148,322,22,5
-Spider-Man: Far From Home,1131927996,226838400,1131,226,24,16
-Transformers: Age of Extinction,1104054072,316403200,1104,316,28,6
-Zootopia,1023784195,244857600,1023,244,44,11
+﻿Title,Worldwide gross,China gross,Worldwide gross in millions,China gross in millions,Rank in the world,rank in China,Rank in the world (reversed)
+Avatar,2847246203,274057600,2847,274,44,8,45
+Avengers: Endgame,2797501328,680040000,2797,680,28,1,29
+Avengers: Infinity War,2048359754,382486400,2048,382,24,4,25
+Jurassic World,1671713208,227316800,1671,227,22,15,23
+Furious 7,1516045911,388254400,1516,388,18,3,19
+Avengers: Age of Ultron,1402805868,234302400,1402,234,14,13,15
+Jurassic World: Fallen Kingdom,1309484461,271340800,1309,271,10,9,11
+The Fate of the Furious,1238764765,427353600,1238,427,8,2,9
+Aquaman,1148485886,322113600,1148,322,5,5,6
+Spider-Man: Far From Home,1131927996,226838400,1131,226,4,16,5
+Transformers: Age of Extinction,1104054072,316403200,1104,316,1,6,2
+Zootopia,1023784195,244857600,1023,244,0,11,1
