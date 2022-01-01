@@ -3,15 +3,19 @@
     "text": "Chinese trade to Africa as a percentage of the world",
     "subtitle": "in percentage",
     "subtitleFontStyle": "italic",
-    "subtitleFontSize": 10,
+    "subtitleFontSize": 12,
     "anchor": "start",
-    "color": "black"
+    "color": "black",
+    "fontSize": 16,
+    "font": "Italic"
   },
+  
   "data": {
     "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/w7.csv",
     "format": {"type": "csv"}
   },
-  "height": 300,
+  "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
+  "height": "container",
   "width": "container",
   "mark": {"type": "line", "point": false},
   "encoding": {
