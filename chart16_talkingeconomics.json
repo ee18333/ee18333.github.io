@@ -4,10 +4,13 @@
     "text": "CPI of all items and energy price comparison",
     "subtitle": "of the UK. Source: FRED",
     "subtitleFontStyle": "italic",
-    "subtitleFontSize": 10,
+    "subtitleFontSize": 12,
     "anchor": "start",
-    "color": "black"
+    "color": "black",
+    "fontSize": 16,
+    "font": "Italic"
   },
+  
   "data": {
     "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/W8.csv",
     "format": {"type": "csv"}
@@ -15,6 +18,7 @@
   "transform": [
     {"filter": {"field": "category", "oneOf": ["CPI: Energy for UK", "CPI of All Items in the UK"]}}
   ],
+  "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "height": "container",
   "width": "container",
   "mark": {"type": "line", "point": false},
