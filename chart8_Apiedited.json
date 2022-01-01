@@ -5,15 +5,18 @@
   "text": "Emissions data using satellite imagary",
   "subtitle": "US. From 01/07/2012 to 01/07/2022.",
   "subtitleFontStyle": "italic",
-  "subtitleFontSize": 10,
-  "anchor": "start",
-  "color": "black"
+  "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black",
+    "fontSize": 16,
+    "font": "Italic"
   },
   
   "data": {
     "url": "https://api.v2.emissions-api.org/api/v2/carbonmonoxide/average.json?country=us&begin=2012-07-01&end=2022-07-01"
   },
   "mark": {"type": "trail", "color": "darkblue", "opacity": 1},
+  "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "width": "container",
   "height": "container",
   "encoding": {
