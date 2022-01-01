@@ -16,7 +16,7 @@
   },
 
 
-
+  "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "height": 300,
   
   "width": "container",
