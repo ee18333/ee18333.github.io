@@ -5,14 +5,18 @@
     "text": "USD: 10-day Average Price",
     "subtitle": "From the beginning of 2010 to 2020. Source: coinapi.io",
     "subtitleFontStyle": "italic",
-    "subtitleFontSize": 10,
-    "anchor": "start"
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black",
+    "fontSize": 16,
+    "font": "Italic"
   },
-  "config": {"background": "#ffffff", "view": {"stroke": "transparent"}},
+ 
   "data": {
     "url": "https://rest.coinapi.io/v1/exchangerate/EUR/USD/history?apikey=B578B5D2-30DE-4330-B461-F63E36E6D125&period_id=10DAY&time_start=2010-01-01T00:00:00&time_end=2020-01-01T00:00:00&limit=100",
     "format": {"type": "json"}
   },
+  "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "height": "container",
   "width": "container",
   "mark": {
