@@ -4,14 +4,18 @@
     "text": "Net migration for Hong Kong SAR, China",
     "subtitle": "Source: FRED",
     "subtitleFontStyle": "italic",
-    "subtitleFontSize": 10,
+    "subtitleFontSize": 12,
     "anchor": "start",
-    "color": "black"
+    "color": "black",
+    "fontSize": 16,
+    "font": "Italic"
   },
+  
   "data": {
     "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Net%20migration%20for%20Hong%20Kong%20SAR%2C%20China%20.json",
     "format": {"type": "json", "property": "observations"}
   },
+  "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "height": "container",
   "width": "container",
   "mark": "line",
