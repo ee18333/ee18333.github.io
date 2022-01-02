@@ -26,7 +26,7 @@
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "height": "container",
   "width": "container",
-  "mark": {"type": "line", "point": false},
+  "mark": {"type": "line", "point": false, "strokeWidth":4},
   "encoding": {
     "x": {
       "field": "date",
