@@ -23,7 +23,8 @@
     "type": "line",
     "point": false,
     "interpolate": "monotone",
-    "color": "blueviolet"
+    "color": "blueviolet",
+    "strokeWidth":4
   },
   "encoding": {
     "x": {
