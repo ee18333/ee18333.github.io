@@ -29,7 +29,7 @@ p{font-size:20px}
   width: 60px;
   height: 100%;
   background: #dbbcbc no-repeat center fixed;
-  transition: 0.5s;
+  transition: 0.6s;
   overflow: hidden;
   color: #7a6a6a;
   font-family: 'Poppins',sans-serif;
@@ -37,7 +37,7 @@ p{font-size:20px}
 
 .navigation:hover,
 .navigation.active {
-  width: 15%;
+  width: 12%;
 }
 
 .navigation ul {
@@ -94,7 +94,7 @@ p{font-size:20px}
   position: relative;
   display: block;
   padding: 0 10px;
-  height: 100px;
+  height: 60px;
   line-height: 60px;
   text-align: start;
   white-space: nowrap;
@@ -138,10 +138,10 @@ p{font-size:20px}
   display: flex;
   flex-flow: row wrap;
   justify-content: center;;
-  gap: 10px 10px;
-  margin-top: 10px;
+  gap: 15px 15px;
+  margin-top: 15px;
   border-style: solid;
   border-color: rgb(219, 188, 188);
-  padding: 15px;
+  padding: 20px;
   border-radius: 100px;
 
