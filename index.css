@@ -26,18 +26,18 @@ p{font-size:20px}
   position: fixed;
   margin: 0;
   padding: 0;
-  width: 40px;
-  height: 80%;
+  width: 60px;
+  height: 100%;
   background: #dbbcbc no-repeat center fixed;
   transition: 0.5s;
   overflow: hidden;
   color: #7a6a6a;
-  font-family: 'Bodoni Moda', serif;
+  font-family: 'Poppins',sans-serif;
 }
 
 .navigation:hover,
 .navigation.active {
-  width: 10%;
+  width: 15%;
 }
 
 .navigation ul {
@@ -72,7 +72,7 @@ p{font-size:20px}
 }
 
 .navigation li a.active {
-    background-color: #e1cac0;
+    background-color: #e2cbbf;
     color: white;
     font-weight: 900;
 }
@@ -94,7 +94,7 @@ p{font-size:20px}
   position: relative;
   display: block;
   padding: 0 10px;
-  height: 60px;
+  height: 100px;
   line-height: 60px;
   text-align: start;
   white-space: nowrap;
@@ -125,8 +125,8 @@ p{font-size:20px}
 }
 
 .chart:hover {
-    transform: scale(1.1, 1.1);
-    transition: 0.6s;
+    transform: scale(1.05, 1.05);
+    transition: 0.8s;
       
     }
 
