@@ -26,8 +26,8 @@ p{font-size:20px}
   position: fixed;
   margin: 0;
   padding: 0;
-  width: 60px;
-  height: 100%;
+  width: 40px;
+  height: 80%;
   background: #dbbcbc no-repeat center fixed;
   transition: 0.5s;
   overflow: hidden;
@@ -37,7 +37,7 @@ p{font-size:20px}
 
 .navigation:hover,
 .navigation.active {
-  width: 15%;
+  width: 10%;
 }
 
 .navigation ul {
@@ -72,7 +72,7 @@ p{font-size:20px}
 }
 
 .navigation li a.active {
-    background-color: #dbbcbc;
+    background-color: #e1cac0;
     color: white;
     font-weight: 900;
 }
@@ -87,7 +87,7 @@ p{font-size:20px}
 }
 
 .navigation ul li a .icon .fa {
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .navigation ul li a .title {
