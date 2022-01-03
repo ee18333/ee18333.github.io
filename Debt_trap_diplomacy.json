@@ -14,7 +14,7 @@
     "subtitleFontSize": 10,
     "anchor": "start",
     "color": "black",
-    "fontSize": 15,
+    "fontSize": 18,
     "font": "Italic"
   },
   "mark": {"type": "circle", "stroke": "#2e2f2f"},
