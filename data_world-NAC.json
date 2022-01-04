@@ -1,0 +1,413 @@
+[
+    {
+        "page": 1,
+        "pages": 1,
+        "per_page": 50,
+        "total": 25,
+        "sourceid": "2",
+        "sourcename": "World Development Indicators",
+        "lastupdated": "2021-12-16"
+    },
+    [
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "2019",
+            "value": null,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "2018",
+            "value": 195979164.526511,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "2017",
+            "value": 203049505.311222,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "2016",
+            "value": 194541891.9692,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "2015",
+            "value": 186370342.356653,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "2014",
+            "value": 185471171.842372,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "2013",
+            "value": 184783041.348684,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "2012",
+            "value": 181538426.055771,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "2011",
+            "value": 176031381.726924,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "2010",
+            "value": 175227229.231393,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "2009",
+            "value": 177468654.284234,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "2008",
+            "value": 187920636.346794,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "2007",
+            "value": 190430547.917603,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "2006",
+            "value": 195430387.686843,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "2005",
+            "value": 104333993.267673,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "2004",
+            "value": 104905769.208404,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "2003",
+            "value": 99924089.173072,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "2002",
+            "value": 106505427.415,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "2001",
+            "value": 111588318.363978,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "2000",
+            "value": 115825132.811447,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "1999",
+            "value": 111305249.654778,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "1998",
+            "value": 108959070.865035,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "1997",
+            "value": 103327978.449924,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "1996",
+            "value": 101118725.919516,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        },
+        {
+            "indicator": {
+                "id": "ST.INT.DPRT",
+                "value": "International tourism, number of departures"
+            },
+            "country": {
+                "id": "XU",
+                "value": "North America"
+            },
+            "countryiso3code": "NAC",
+            "date": "1995",
+            "value": 97469114.4688058,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 0
+        }
+    ]
+]
