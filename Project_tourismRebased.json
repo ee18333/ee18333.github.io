@@ -20,8 +20,7 @@
       {"calculate": "datum.China/5324000*100", "as": "China_Index"},
       {"calculate": "datum.Europe_Central_Asia/379353565.4*100", "as": "Europe_Central_Asia_Index"},
       {"calculate": "datum.OECD_members/576749178.2*100", "as": "OECD_members_Index"},
-      {"calculate": "datum.World/894106626.9*100", "as": "World_Index"},
-      {"calculate": "datum.High_income/78481000,*100", "as": "High_income_Index"}
+      {"calculate": "datum.World/894106626.9*100", "as": "World_Index"}
       ],
       
   "XYZrepeat": {"layer": ["United_States","Europe_Central_Asia", "China", "OECD_members", "World", "High_income"]},
