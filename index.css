@@ -124,11 +124,6 @@ p{font-size:18px}
     transition: border-radius 500ms, flex-grow 1000ms;
 }
 
-.chart:hover {
-    transform: scale(1.05, 1.05);
-    transition: 0.8s;
-      
-    }
 
 
 /* --------------------------------------CONTENT IN BODY----------------------------------------------*/
