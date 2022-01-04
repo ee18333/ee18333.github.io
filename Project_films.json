@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Highest Grossing films and how much China contribute",
+    "subtitle": ["source: Wikipedia. Amount grossed in US dollar ($)"],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black",
+    "fontSize": 18,
+    "font": "Italic"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Films.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": {
+    "type": "circle",
+    "size": 190,
+    "color": "rgb(41, 140, 130)",
+    "opacity": 0.6
+  },
+  "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
+  "height": "container",
+  "width": "container",
+  "encoding": {
+    "x": {
+      "field": "China gross in millions",
+      "type": "quantitative",
+      "scale": {"domain": [150, 720]},
+      "title": null
+    },
+    "y": {
+      "field": "Worldwide gross in millions",
+      "type": "quantitative",
+      "scale": {"domain": [850, 3200]},
+      "title": null
+    },
+    "size": {
+      "field": "Rank in the world (reversed)",
+      "type": "quantitative",
+      "title": "$ grossed",
+      "scale": {"range": [50, 1400]}
+    },
+    "tooltip": [
+      {"field": "Title"},
+      {"field": "Rank in the world"},
+      {"field": "Rank in China"},
+      {"field": "Worldwide gross in millions"},
+      {"field": "China gross in millions"}
+    ]
+  }
+}
