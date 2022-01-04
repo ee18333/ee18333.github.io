@@ -76,12 +76,22 @@
   
 <!-- -->
 <p> <strong> </strong> </p>
+
+<div class="chart" id="secondChart">
+  <script>
+    var myChart2 = "Project_films.json";
+    vegaEmbed('#secondChart', myChart2);
+  </script>
+</div> 
+
 <div class="chart" id="firstChart">
   <script>
     var myChart1 = "Debt_trap_diplomacy.json";
     vegaEmbed('#firstChart', myChart1);
   </script>
 </div> 
+
+
 
 <a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Debt_trap_diplomacy.json">Code</a>
 <a class="dashboardButton " href="https://github.com/ee18333/ee18333.github.io/blob/main/debt.csv">Data</a>
