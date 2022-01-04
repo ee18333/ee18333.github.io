@@ -27,7 +27,7 @@
       "as": ["indicator", "value"]
     }
   ],
-  "mark": {"type": "line", "strokeWidth": 3},
+  "mark": {"type": "line", "strokeWidth": 4},
   "encoding": {
     "x": {
       "field": "Date",
