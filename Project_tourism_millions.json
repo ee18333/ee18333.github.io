@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text": "Tourism departure",
+      "subtitle":["in millions. Source: World Bank.",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black",
+      "fontSize": 18,
+      "font": "Italic"},
+
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Tourism_countries.csv",
+    "format": {"type": "csv"}
+  },
+ "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
+  "height": 400,
+  "width": 400,
+ 
+  "mark": {"type": "line", "point": false, "strokeWidth":3},
+  
+  "encoding": {
+    
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false}},
+ 
+    "y": {
+      "field": "Tourism in millions",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"grid": false}},
+
+    "color": {
+      "field": "Country_name",
+      "type": "nominal",
+      "scale": {"scheme": "set1"},
+      "title": null,
+      "legend": {"orient": "top-left"},
+
+
+    "tooltip": [
+      {"field": "key", "type": "nominal"},
+      {"field": "value", "type": "quantitative"},
+      {"field": "Year", "type": "temporal"}]
+ 
+   }
+}
+}
