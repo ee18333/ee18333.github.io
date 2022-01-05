@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+       
+  "title": {
+      "text": "Tourism departure",
+      "subtitle":["Rebased,1997=100. Source: World Bank.",""],
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black",
+      "fontSize": 18,
+      "font": "Italic"},
+      
+  "data": {
+      "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Tourism_countries_rebased.csv"
+      },
+  
+  "transform": [
+      {"calculate": "datum.China/5324000*100", "as": "China_Index"},
+      {"calculate": "datum.UK/45957000*100", "as": "UK_Index"},
+      {"calculate": "datum.Germany/55800000*100", "as": "Germany_Index"},
+      {"calculate": "datum.Italy/40196000*100", "as": "Italy_Index"},
+      {"calculate": "datum.Japan/15298000*100", "as": "Japan_Index"},
+      {"calculate": "datum.Russian_Federation/11182000*100", "as": "Russian_Federation_Index"}],
+      
+  "XYZrepeat": {"layer": ["China", "UK", "Germany", "Italy"]},
+  "repeat": {"layer": ["China_Index", "Germany_Index","Italy_Index","Japan_Index","Russian_Federation_index", "UK_Index" ]},
+  
+  "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
+  "height": 400,
+  "width": 400,
+  
+  "spec": {
+      "mark": {   
+          "type":"line",
+          "strokeWidth":3},    
+  
+      "encoding": {
+          "x": {
+              "field": "Date",
+              "type": "temporal",
+              "title":null,
+              "axis":{
+                "grid": false
+              }},
+  
+          "y": {
+              "field": {"repeat": "layer"},
+              "type": "quantitative",
+              "title": null},
+  
+          "color": {
+              "datum": {"repeat": "layer"},
+              "scale": {"range": ["red", "black", "green", "orange", "pink","plum"]},
+              "legend": {
+                "orient":"top-left",
+                "fillColor":"#fffdfd"}}
+                } 
+          }
+  }
