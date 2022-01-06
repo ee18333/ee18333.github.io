@@ -17,7 +17,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/GI4.DataHub.GrowthInnovationOutputperHour.csv"},
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
-  "height": "container",
+  "height": 300,
   "width": "container",
   "mark": {
     "type": "line",
