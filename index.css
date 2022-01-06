@@ -37,15 +37,13 @@ p{font-size:18px}
   position: fixed;
   margin: 0;
   padding: 0;
+  width: 60px;
   height: 100%;
   background: #dbbcbc no-repeat center fixed;
   transition: 0.6s;
   overflow: hidden;
   color: #7a6a6a;
   font-family: 'Poppins',sans-serif;
-  top: 0;
-  z-index: 99;
-  border-width: 4px;
 }
 
 .navigation:hover,
