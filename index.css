@@ -1,8 +1,11 @@
 body{
     background-color: #fffdfd;
-    margin: 0;
+    margin: auto;
+    max-width: auto;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    width: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -68,19 +71,19 @@ p{font-size:18px}
 
 .navigation:hover,
 .navigation.active {
-  width: 40px;
+  width: 100px;
 }
 
 .navigation ul {
   position: absolute;
   top: 0;
-  left: 40;
-  width: 40%;
+  left: 0;
+  width: 100%;
 }
 
 .navigation ul li {
   position: relative;
-  width: 40%;
+  width: 100%;
   list-style: none;
 }
 
@@ -92,7 +95,7 @@ p{font-size:18px}
 
 .navigation ul li a {
   position: relative;
-  width: 40%;
+  width: 100%;
   display: flex;
   text-decoration: none;
   color: #DBBCBC;
