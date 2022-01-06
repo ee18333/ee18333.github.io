@@ -23,19 +23,18 @@
       "field": "Country",
       "type": "ordinal",
       "title": null,
-      "sort": ["Maldives", "Pakistan", "Africa","Tajikistan"
-      ]
+      "sort": ["Maldives", "Pakistan", "Africa", "Tajikistan"]
     },
     "x": {
       "field": "Date",
-      "type": "ordinal",
+      "type": "temporal",
       "title": null,
       "axis": {"grid": true, "gridColor": "black"}
     },
     "size": {
       "field": "debt",
       "type": "quantitative",
-      "scale": {"rangeMin": 0, "rangeMax": 4500},
+      "scale": {"rangeMin": 0, "rangeMax": 7000},
       "legend": null
     },
     "color": {
