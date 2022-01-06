@@ -2,11 +2,14 @@ body{
     background-color: #fffdfd;
     max-width: 90%;
     margin: auto;
+    min-width: 320px;
 }
 
 h1, h2, h3, p{
     color: #000000;
     font-family: 'Bodoni Moda', serif;
+    text-align: center;
+    letter-spacing: -2.0px;
 }
 
 h1{font-size:40px}
@@ -20,15 +23,16 @@ p{font-size:18px}
 }
 
 .chart {
-    width: 45%;
-    min-width: 350px;
-    padding: 20px;
+    padding: 5px;
     background-color:#fffdfd;
     border: #fffdfd;
     border-radius: 5px;
+    margin: auto;
     font-family: 'Bodoni Moda', serif;
     font-size: 10pxp;
-    text-align: center
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     transition: border-radius 400ms, flex-grow 1000ms;
 }
 
