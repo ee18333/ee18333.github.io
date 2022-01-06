@@ -11,17 +11,20 @@ body{
     min-height: 100vh;
 }
 
-body::-webkit-scrollbar {
-  width: 0.5rem;
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #fffdfd;
+}
+::-webkit-scrollbar-thumb {
+  background: #dbbcbc;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(230, 140, 140);
 }
 
-body::-webkit-scrollbar-track {
-  background: #282828;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #BB86FC;
-}
 
 h1, h2, h3, p{
     color: #000000;
@@ -65,7 +68,7 @@ p{font-size:18px}
   position: fixed;
   margin: 0;
   padding: 0;
-  width: 60px;
+  width: 40px;
   height: 100%;
   background: #dbbcbc no-repeat center fixed;
   transition: 1s;
@@ -119,14 +122,14 @@ p{font-size:18px}
 .navigation ul li a .icon {
   position: relative;
   display: block;
-  min-width: 60px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
+  min-width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
 }
 
 .navigation ul li a .icon .fa {
-  font-size: 24px;
+  font-size: 12px;
 }
 
 .navigation ul li a .title {
