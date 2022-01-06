@@ -25,8 +25,8 @@ p{font-size:18px}
 .navigation {
   position: fixed;
   margin: 0;
-  padding: 90px 10px;
-  width: 100%;
+  padding: 0;
+  width: 80%;
   background: #dbbcbc no-repeat center fixed;
   transition: 0.6s;
   overflow: hidden;
