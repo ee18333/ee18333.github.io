@@ -26,8 +26,8 @@
   "repeat": {"layer": ["China_Index", "Germany_Index","Italy_Index","Japan_Index","Russian_Federation_index", "UK_Index" ]},
   
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
-  "height": 400,
-  "width": 400,
+  "height": 300,
+  "width": 300,
   
   "spec": {
       "mark": {   
