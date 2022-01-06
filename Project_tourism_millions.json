@@ -17,8 +17,8 @@
     "format": {"type": "csv"}
   },
  "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
-  "height": 400,
-  "width": 400,
+  "height": 300,
+  "width": 300,
  
   "mark": {"type": "line", "point": false, "strokeWidth":3},
   
