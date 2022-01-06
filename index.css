@@ -12,14 +12,14 @@ body{
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 }
 ::-webkit-scrollbar-track {
   background: #fffdfd;
 }
 ::-webkit-scrollbar-thumb {
   background: #dbbcbc;
-  border-radius: 50px;
+  border-radius: 40px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(230, 140, 140);
@@ -110,21 +110,21 @@ p{font-size:18px}
 }
 
 .navigation ul li a:hover {
-  color: white;
+  color:#7a6a6a;
 }
 
 .navigation li a.active {
-    background-color: #e2cbbf;
-    color: white;
+    background-color: #caa08a;
+    color: #7a6a6a;
     font-weight: 900;
 }
 
 .navigation ul li a .icon {
   position: relative;
   display: block;
-  min-width: 60px;
-  height: 60px;
-  line-height: 60px;
+  min-width: 80px;
+  height: 80px;
+  line-height: 80px;
   text-align: left;
 }
 
@@ -149,11 +149,11 @@ p{font-size:18px}
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  gap: 5px 5px;
-  margin-top: 5px;
+  gap: 0px 0px;
+  margin-top: 0px;
   border-style: solid;
   border-color: rgb(219, 188, 188);
-  padding: 5px;
+  padding: 0px;
   border-radius: 50px;
   text-align: center;
     
