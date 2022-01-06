@@ -6,7 +6,7 @@
   },
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "height": 300,
-  "width": "container",
+  "width": 300,
   "title": {
     "text": "Debt-trap diplomacy",
     "subtitle": "Debt measured in US dollars in billions. Source: Wikipedia",
