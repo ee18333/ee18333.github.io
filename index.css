@@ -3,6 +3,24 @@ body{
     max-width: 100%;
     margin: auto;
     min-width: 320px;
+    background-size: cover;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #282828;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #BB86FC;
 }
 
 h1, h2, h3, p{
@@ -27,22 +45,28 @@ p{font-size:18px}
     background-color:#fffdfd;
     border: #fffdfd;
     border-radius: 5px;
-    margin: auto;
+    margin: 0px auto;
     font-family: 'Bodoni Moda', serif;
     font-size: 10pxp;
     text-align: center;
     justify-content: center;
     align-items: center;
+    max-width: 350px;
     transition: border-radius 400ms, flex-grow 1000ms;
 }
 
 /*inspired by Chris Brierley */
+.main {
+  opacity: 0;
+  display: none;
+  transition: opacity 1s ease-in;
+}
 .navigation {
   position: fixed;
   margin: 0;
   padding: 0;
-  width: 60px;
-  height: 28%;
+  width: 100px;
+  height: 100%;
   background: #dbbcbc no-repeat center fixed;
   transition: 1s;
   overflow: hidden;
@@ -52,19 +76,19 @@ p{font-size:18px}
 
 .navigation:hover,
 .navigation.active {
-  width: 12%;
+  width: 300px;
 }
 
 .navigation ul {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 100%;
 }
 
 .navigation ul li {
   position: relative;
-  width: 50%;
+  width: 100%;
   list-style: none;
 }
 
@@ -76,7 +100,7 @@ p{font-size:18px}
 
 .navigation ul li a {
   position: relative;
-  width: 50%;
+  width: 100%;
   display: flex;
   text-decoration: none;
   color: #fffdfd;
@@ -102,7 +126,7 @@ p{font-size:18px}
 }
 
 .navigation ul li a .icon .fa {
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .navigation ul li a .title {
