@@ -1,17 +1,6 @@
 body{
     background-color: #fffdfd;
-    max-width: 90%;
-    margin: auto;
-    background-size: cover;
-    margin: 0;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.pagecontainer {
-    display: grid;
+    min-width: 320px;
 }
 
 ::-webkit-scrollbar {
@@ -51,7 +40,7 @@ p{font-size:18px}
     background-color:#fffdfd;
     border: #fffdfd;
     border-radius: 5px;
-    margin: 0px auto;
+    margin: auto;
     font-family: 'Bodoni Moda', serif;
     font-size: 10pxp;
     text-align: center;
@@ -62,16 +51,11 @@ p{font-size:18px}
 }
 
 /*inspired by Chris Brierley */
-.main {
-  opacity: 0;
-  display: none;
-  transition: opacity 1s ease-in;
-}
 .navigation {
   position: fixed;
   margin: 0;
   padding: 0;
-  width: 20px;
+  width: 30px;
   height: 100%;
   background: #fffdfd no-repeat center fixed;
   transition: 1s;
@@ -82,19 +66,19 @@ p{font-size:18px}
 
 .navigation:hover,
 .navigation.active {
-  width: 10px;
+  width: 20px;
 }
 
 .navigation ul {
   position: absolute;
   top: 0;
-  left: 10;
-  width: 10%;
+  left: 20;
+  width: 20%;
 }
 
 .navigation ul li {
   position: relative;
-  width: 10%;
+  width: 20%;
   list-style: none;
 }
 
@@ -106,7 +90,7 @@ p{font-size:18px}
 
 .navigation ul li a {
   position: relative;
-  width: 10%;
+  width: 20%;
   display: flex;
   text-decoration: none;
   color: #DBBCBC;
@@ -125,9 +109,9 @@ p{font-size:18px}
 .navigation ul li a .icon {
   position: relative;
   display: block;
-  min-width: 80px;
-  height: 80px;
-  line-height: 80px;
+  min-width: 70px;
+  height: 70px;
+  line-height: 70px;
   text-align: left;
 }
 
@@ -138,7 +122,7 @@ p{font-size:18px}
 .navigation ul li a .title {
   position: relative;
   display: block;
-  padding: 0 10px;
+  padding: 10 10px;
   height: 60px;
   line-height: 60px;
   text-align: start;
