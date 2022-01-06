@@ -2,7 +2,6 @@ body{
     background-color: #fffdfd;
     max-width: 100%;
     margin: auto;
-    min-width: 320px;
     background-size: cover;
     margin: 0;
     align-items: center;
@@ -86,12 +85,12 @@ p{font-size:18px}
   position: absolute;
   top: 0;
   left: 0;
-  width: 10%;
+  width: 50%;
 }
 
 .navigation ul li {
   position: relative;
-  width: 10%;
+  width: 50%;
   list-style: none;
 }
 
@@ -103,7 +102,7 @@ p{font-size:18px}
 
 .navigation ul li a {
   position: relative;
-  width: 10%;
+  width: 50%;
   display: flex;
   text-decoration: none;
   color: #DBBCBC;
