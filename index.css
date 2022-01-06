@@ -1,6 +1,6 @@
 body{
     background-color: #fffdfd;
-    max-width: 90%;
+    max-width: 100%;
     margin: auto;
     min-width: 320px;
 }
@@ -41,8 +41,8 @@ p{font-size:18px}
   position: fixed;
   margin: 0;
   padding: 0;
-  width: 40px;
-  height: 30%;
+  width: 60px;
+  height: 28%;
   background: #dbbcbc no-repeat center fixed;
   transition: 1s;
   overflow: hidden;
@@ -59,24 +59,24 @@ p{font-size:18px}
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 50%;
 }
 
 .navigation ul li {
   position: relative;
-  width: 100%;
+  width: 50%;
   list-style: none;
 }
 
 .navigation ul li:hover {
   background: #555;
-  transition: 0.5s ease;
+  transition: 1s ease;
   color: #555
 }
 
 .navigation ul li a {
   position: relative;
-  width: 100%;
+  width: 50%;
   display: flex;
   text-decoration: none;
   color: #fffdfd;
