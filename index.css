@@ -19,7 +19,7 @@ body{
   border-radius: 40px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(230, 140, 140);
+  background: #555;
 }
 
 
@@ -71,7 +71,7 @@ p{font-size:18px}
 
 .navigation:hover,
 .navigation.active {
-  width: 100px;
+  width: 30px;
 }
 
 .navigation ul {
@@ -102,7 +102,7 @@ p{font-size:18px}
 }
 
 .navigation ul li a:hover {
-  color:#7a6a6a;
+  color:#6a6a7a;
 }
 
 .navigation li a.active {
