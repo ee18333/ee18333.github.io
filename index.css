@@ -41,7 +41,7 @@ p{font-size:18px}
 }
 
 .chart {
-    padding: 5px;
+    padding: 0px;
     background-color:#fffdfd;
     border: #fffdfd;
     border-radius: 5px;
@@ -121,7 +121,7 @@ p{font-size:18px}
 }
 
 .navigation ul li a .title {
-  position: relative;
+  position: left;
   display: block;
   padding: 0 0px;
   height: 60px;
@@ -133,7 +133,7 @@ p{font-size:18px}
 /* --------------------------------------CONTENT IN BODY----------------------------------------------*/
 
 /* Flexbox container with home page graphs */
-.bcontainer {
+.container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
