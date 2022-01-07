@@ -3,7 +3,7 @@
   "title": {
     "text": "Military spending as a % of GDP",
     "subtitle": "Source: FRED",
-   "subtitleFontStyle": "italic",
+    "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
     "anchor": "start",
     "color": "black",
@@ -31,10 +31,7 @@
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "height": 300,
   "width": "container",
-  "mark": {   
-            "type":"line",
-            "strokeWidth":4},    
-
+  "mark": {"type": "line", "strokeWidth": 4},
   "params": [
     {
       "name": "minYear",
@@ -62,7 +59,12 @@
   "encoding": {
     "x": {"field": "Year", "type": "temporal"},
     "y": {"field": "value", "type": "quantitative", "title": "%"},
-    "color": {"field": "key", "type": "nominal"},
+    "color": {
+      "field": "key", 
+      "type": "nominal",
+      "title": "Region",
+      "legend": {"orient": "top-", "fillColor": "#fffdfd"}
+      },
     "tooltip": [
       {"field": "key", "type": "nominal"},
       {"field": "value", "type": "quantitative"},
