@@ -46,13 +46,9 @@ p{font-size:18px}
     border: #fffdfd;
     border-radius: 5px;
     margin: auto;
-    font-family: 'Bodoni Moda', serif;
-    font-size: 10pxp;
     text-align: center;
     justify-content: center;
     align-items: center;
-    max-width: 350px;
-    transition: border-radius 400ms, flex-grow 1000ms;
 }
 
 /*inspired by Chris Brierley */
