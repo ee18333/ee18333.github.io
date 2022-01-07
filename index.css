@@ -49,6 +49,10 @@ p{font-size:18px}
     text-align: center;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    transition: border-radius 400ms, flex-grow 1000ms;
+    width: 45%;
+    min-width: 350px;
 }
 
 /*inspired by Chris Brierley */
