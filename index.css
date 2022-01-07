@@ -133,7 +133,7 @@ p{font-size:18px}
 /* --------------------------------------CONTENT IN BODY----------------------------------------------*/
 
 /* Flexbox container with home page graphs */
-.container {
+.containerborder {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
