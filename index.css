@@ -56,10 +56,10 @@ p{font-size:18px}
 
 /*inspired by Chris Brierley */
 .navigation {
-  position: left;
+  position: fixed;
   margin: 0;
   padding: 0;
-  width: 10px;
+  width: 30px;
   height: 100%;
   background: #fffdfd no-repeat center fixed;
   transition: 0.7s;
@@ -70,7 +70,7 @@ p{font-size:18px}
 
 .navigation:hover,
 .navigation.active {
-  width: 10px;
+  width: 30px;
 }
 
 .navigation ul {
