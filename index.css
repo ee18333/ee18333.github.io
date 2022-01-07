@@ -5,7 +5,7 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 100%;
+    width: 90%;
 }
 
 ::-webkit-scrollbar {
@@ -41,7 +41,6 @@ p{font-size:18px}
 }
 
 .chart {
-    padding: 0px;
     background-color:#fffdfd;
     border: #fffdfd;
     border-radius: 5px;
@@ -49,9 +48,9 @@ p{font-size:18px}
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     transition: border-radius 400ms, flex-grow 1000ms;
-    width: 45%;
+    width: 60%;
     min-width: 350px;
 }
 
@@ -142,11 +141,11 @@ p{font-size:18px}
     flex-flow: row wrap;
     justify-content: center;
     gap: 10px 10px;
-    margin-top: 25px;
+    margin-top: 10px;
     border-style: solid;
     border-color: rgb(219, 188, 188);
-    padding: 20px;
-    border-radius: 35px;
+    padding: 10px;
+    border-radius: 50px;
     text-align: center;
     
 .image-wk9 {
