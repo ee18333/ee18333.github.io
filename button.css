@@ -1,10 +1,10 @@
 .dashboardButton {
     background-color: #fffdfd;
-    border: 3px solid rgb(219, 188, 188);
+    border: 1px solid rgb(219, 188, 188);
     color: rgb(219, 188, 188);
     font-family: 'Poppins',sans-serif;
-    line-height: 16px;
-    font-weight: 600;
+    line-height: 10px;
+    font-weight: 400;
     border-radius: 100px;
     box-sizing: content-box;
     align-items: flex-start;
