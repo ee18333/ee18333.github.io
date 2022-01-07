@@ -59,8 +59,8 @@ p{font-size:18px}
   position: left;
   margin: 0;
   padding: 0;
-  width: 30px;
-  height: 30%;
+  width: 10px;
+  height: 100%;
   background: #fffdfd no-repeat center fixed;
   transition: 0.7s;
   overflow: hidden;
@@ -70,11 +70,11 @@ p{font-size:18px}
 
 .navigation:hover,
 .navigation.active {
-  width: 30px;
+  width: 10px;
 }
 
 .navigation ul {
-  position: absolute;
+  position: left;
   top: 0;
   left: 0;
   width: 30%;
@@ -87,14 +87,14 @@ p{font-size:18px}
 }
 
 .navigation ul li:hover {
-  background: #555;
+  background: #fffdfd;
   transition: 1s ease;
   color: #555
 }
 
 .navigation ul li a {
   position: left;
-  width: 0%;
+  width: 30%;
   display: flex;
   text-decoration: none;
   color: #DBBCBC;
