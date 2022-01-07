@@ -11,7 +11,6 @@
     "fontSize": 16,
     "font": "Italic"
   },
- 
   "data": {
     "url": "https://rest.coinapi.io/v1/exchangerate/EUR/USD/history?apikey=B578B5D2-30DE-4330-B461-F63E36E6D125&period_id=10DAY&time_start=2010-01-01T00:00:00&time_end=2020-01-01T00:00:00&limit=100",
     "format": {"type": "json"}
@@ -19,29 +18,19 @@
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "height": 300,
   "width": "container",
-  "mark": {
-    "type": "line",
-    "point": false,
-    "interpolate": "linear"  
-  },
+  "mark": {"type": "line", "point": false, "interpolate": "linear","strokeWidth":3},
   "encoding": {
     "x": {
       "field": "time_period_end",
       "type": "temporal",
-      "axis": {
-        "title": "Date",
-        "grid": true      
-      }
+      "axis": {"title": null, "grid": true}
     },
     "y": {
       "field": "rate_open",
       "type": "quantitative",
       "title": "",
       "scale": {"domain": [1, 1.6]},
-      "axis": {
-        "grid": true,
-        "format": "$"
-      }
+      "axis": {"grid": true, "format": "$"}
     }
   }
 }
