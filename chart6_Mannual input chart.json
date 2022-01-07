@@ -12,7 +12,7 @@
     "font": "Italic"
   },
  "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
-  "height": "container",
+  "height": 300
   "width": "container",
   "data": {
     "values": [
