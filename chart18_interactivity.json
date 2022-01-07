@@ -29,7 +29,7 @@
     {"filter": "datum.Year2<maxYear"}
   ],
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
-  "height": "container",
+  "height": 300,
   "width": "container",
   "mark": {   
             "type":"line",
