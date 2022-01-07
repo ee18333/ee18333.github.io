@@ -14,7 +14,7 @@
     "format": {"type": "csv"}
   },
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
-  "height": "container",
+  "height": 300,
   "width": "container",
   "mark": {"type": "line", "point": false, "strokeWidth":4, "color": "darkgoldenrod"},
   "encoding": {
