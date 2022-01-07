@@ -15,7 +15,7 @@
     "format": {"type": "json", "property": "observations"}
   },
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
-  "height": "container",
+  "height": 300,
   "width": "container",
   "mark": "line",
   "encoding": {
