@@ -138,16 +138,16 @@ p{font-size:18px}
 
 /* Flexbox container with home page graphs */
 .bcontainer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  gap: 0px 0px;
-  margin-top: 0px;
-  border-style: solid;
-  border-color: rgb(219, 188, 188);
-  padding: 0px;
-  border-radius: 50px;
-  text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 25px 25px;
+    margin-top: 25px;
+    border-style: solid;
+    border-color: rgb(219, 188, 188);
+    padding: 25px;
+    border-radius: 35px;
+    text-align: center;
     
 .image-wk9 {
   width: 50%;
