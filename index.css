@@ -5,7 +5,7 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 90%;
+    width: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -56,7 +56,7 @@ p{font-size:18px}
 
 /*inspired by Chris Brierley */
 .navigation {
-  position: fixed;
+  position: left;
   margin: 0;
   padding: 0;
   width: 30px;
@@ -81,7 +81,7 @@ p{font-size:18px}
 }
 
 .navigation ul li {
-  position: relative;
+  position: left;
   width: 0%;
   list-style: none;
 }
@@ -93,7 +93,7 @@ p{font-size:18px}
 }
 
 .navigation ul li a {
-  position: relative;
+  position: left;
   width: 0%;
   display: flex;
   text-decoration: none;
@@ -111,16 +111,16 @@ p{font-size:18px}
 }
 
 .navigation ul li a .icon {
-  position: relative;
+  position: left;
   display: block;
-  min-width: 70px;
-  height: 70px;
+  min-width: 50px;
+  height: 0px;
   line-height: 70px;
   text-align: left;
 }
 
 .navigation ul li a .icon .fa {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .navigation ul li a .title {
