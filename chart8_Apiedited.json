@@ -2,20 +2,19 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "emissions data using satellite imagary",
   "title": {
-  "text": "Emissions data using satellite imagary",
-  "subtitle": "US. From 01/07/2012 to 01/07/2022.",
-  "subtitleFontStyle": "italic",
-  "subtitleFontSize": 12,
+    "text": "Emissions data of US using satellite imagary",
+    "subtitle": "in mol/m2. From 01/07/2012 to 01/07/2022.",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
     "anchor": "start",
     "color": "black",
     "fontSize": 16,
     "font": "Italic"
   },
-  
   "data": {
     "url": "https://api.v2.emissions-api.org/api/v2/carbonmonoxide/average.json?country=us&begin=2012-07-01&end=2022-07-01"
   },
-  "mark": {"type": "trail", "color": "darkblue", "opacity": 1},
+  "mark": {"type": "trail", "color": "darkblue", "opacity": 1, "strokeWidth":3},
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "width": "container",
   "height": 300,
