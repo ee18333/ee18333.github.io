@@ -18,7 +18,7 @@
   "mark": {"type": "trail", "color": "darkblue", "opacity": 1},
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "width": "container",
-  "height": "container",
+  "height": 300,
   "encoding": {
     "x": {
       "field": "end",
