@@ -133,15 +133,15 @@ p{font-size:18px}
 /* --------------------------------------CONTENT IN BODY----------------------------------------------*/
 
 /* Flexbox container with home page graphs */
-.containerborder {
+.bcontainer{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 25px 25px;
+    gap: 10px 10px;
     margin-top: 25px;
     border-style: solid;
     border-color: rgb(219, 188, 188);
-    padding: 25px;
+    padding: 0px;
     border-radius: 35px;
     text-align: center;
     
