@@ -86,13 +86,13 @@ p{font-size:20px}
 
 .navigation ul {
   position: left;
-  top: 0;
-  left: 0;
+  top: 100%;
+  left: 100%;
   width: 30%;
 }
 
 .navigation ul li {
-  position: left;
+  position: top;
   width: 30%;
   list-style: none;
 }
@@ -104,7 +104,7 @@ p{font-size:20px}
 }
 
 .navigation ul li a {
-  position: left;
+  position: top;
   width: 30%;
   display: flex;
   text-decoration: none;
@@ -122,7 +122,7 @@ p{font-size:20px}
 }
 
 .navigation ul li a .icon {
-  position: left;
+  position: top;
   display: block;
   min-width: 50px;
   height: 0px;
