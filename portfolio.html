@@ -5,20 +5,15 @@
 
 <head>
   
-<meta charset="utf-8">
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 
   <!--The next three lines allow the Vega embed-->
-<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
-  <!-- Tab name -->
-  <title>Kate Yu</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
   
   <!-- CSS -->
   <link rel="stylesheet" href="index.css">
@@ -79,14 +74,14 @@
   
 <!-- /////////////////// CONTAINER WEEK 1  //////////////////////////////////// -->
  
-<h3> <br> W1: Getting started</h3>
+<h3></span> W1: Getting started</span></h3>
    
 <container class="bcontainer">
   
-
+ <div class="wrap">
  <h3> These charts were taken from <a class="textLink" href="https://rapidcharts.io/launch" target="_blank"> Rapid Charts</a> website. 
  The charts plots the COVID-19 cases by UK regions, UK labour productivity and the increasing trend of aging populations. </h3> 
-
+ </div> 
   
   <!--Chart 1 showing Covid Cases by Region -->
      
@@ -97,8 +92,12 @@
   </script>
 </div> 
   
+<div class="bcontainer" id="containerbutton">
+<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/chart1_covidUKRegions.json">Code</a>
+<a class="dashboardButton " href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-CDSI.json">Data</a>
+<a class="dashboardButton " href="https://rapidcharts.io/library" >Source</a> 
+</div>
 
-  
 <!--Chart 2 showing UK productivity levels over time -->
 <div class="chart" id="secondChart">
   <script>
@@ -107,6 +106,11 @@
   </script>
 </div>
     
+<div class="bcontainer" id="containerbutton">
+<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/chart2_ukProductivity.json">Code</a>
+<a class="dashboardButton " href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/GI4.DataHub.GrowthInnovationOutputperHour.csv">Data</a>
+<a class="dashboardButton " href="https://rapidcharts.io/library" >Source</a> 
+</div>
 
   
 <!--Chart 3 showing Ageing population -->
@@ -117,24 +121,33 @@
   </script>
  </div>
   
+<div class="bcontainer" id="containerbutton">
+<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/chart3_Ageing%20population.json">Code</a>
+<a class="dashboardButton " href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/demographicsUN.csv">Data</a>
+<a class="dashboardButton " href="https://rapidcharts.io/library" >Source</a> 
+</div>
 
   
+</container>
+
 </container>
   
 <!-- /////////////////// END CONTAINER WEEK 1  //////////////////////////////////// -->
 
-
+<br>
+<br>
 
 <!-- ///////////////////  CONTAINER WITH WEEK 2 WORK //////////////////////////////////// -->
 
-<h3> <br>W2: Hosting Data </h3>
+<h3><span>W2: Hosting Data <span></h3>
 
 <container class="bcontainer">
 
-
+<div class="wrapper">
 <h3>The Number of LFD test taken in the UK. It uses the <strong>raw csv data</strong>.    The cummulated deaths rate by 60 days from Covid-19 in the UK. It uses <strong>API live data</strong>.</h3>
-
+<div class="wrapper">
   
+<container>
 <!--Vaccinations Chart 1 --> 
     <div class="chart" id="fourthChart">    
     <script>
@@ -142,9 +155,12 @@
     vegaEmbed('#fourthChart', myChart4);
   </script>
  </div>
- 
 
-  
+<div class="bcontainer" id="containerbutton">
+<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/chart4_Number%20of%20LFD%20test%20taken.json">Code</a>
+<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/cumLFTDate.csv">Data</a>
+<a class="dashboardButton " href="https://coronavirus.data.gov.uk/details/download" >Source</a>
+
  <!--Vaccinations chart 2--> 
     
     <div class="chart" id="fifthChart">    
@@ -153,9 +169,13 @@
     vegaEmbed('#fifthChart', myChart5);
   </script>
  </div>
+
   
 </container>
-  
+</container>
+
+    <br>
+    <br>  
 
 <!-- ///////////////////  END CONTAINER WITH WEEK 2 WORK //////////////////////////////////// -->
 
@@ -163,7 +183,7 @@
 
 <!-- ///////////////////  CONTAINER WITH WEEK 3 WORK //////////////////////////////////// -->
 
-<h3> <br> W3: Editing and writing Data</h3>
+<h3><span>W3: Editing and writing Data<span></h3>
 <container class="bcontainer">
 
 <!--Mannual input Chart -->   
@@ -173,7 +193,10 @@
     var myChart6 = "chart6_Mannual input chart.json";
     vegaEmbed('#sixthChart', myChart6);
   </script>
-      
+  
+<div class="bcontainer" id="containerbutton">
+<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/chart6_Mannual%20input%20chart.json">Code</a>
+<a class="dashboardButton " href="https://www.businessofapps.com/data/tik-tok-statistics/" >Source</a>  
 
   
   <!--Manipulate CSV data -->  
@@ -184,13 +207,17 @@
   </script>
  </div>
 </container>
+</container>
+
+    <br>
+    <br>
 
 <!-- ///////////////////  END CONTAINER WITH WEEK 3 WORK //////////////////////////////////// -->
 
 
 <!-- ///////////////////  CONTAINER WITH WEEK 4 WORK //////////////////////////////////// -->
 
-<h3> <br> W4: APIs</h3>
+<h3><span>W4: APIs<span></h3>
 <container class="bcontainer">
 
 <!--API edited -->   
