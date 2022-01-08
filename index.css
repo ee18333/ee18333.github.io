@@ -1,7 +1,9 @@
 body{
     background-color: #fffdfd;
-    max-width: 560px;
+    max-width: auto;
     margin: auto;
+    text-align: center;
+    width: 100%;
 }
 
 ::-webkit-scrollbar {
