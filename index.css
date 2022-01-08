@@ -37,8 +37,8 @@ p{font-size:18px}
 }
 
 .chart {
-    width: auto;
-    height: auto;
+     width: 45%;
+  min-width: 350px;
     margin: 5px;
     padding: 5px;
     background-color: #fffdfd;
