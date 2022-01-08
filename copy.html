@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+        <!-- START ANALYTICS -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- This stuff provided by Google from the Admin page of Analysics account -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP82FVH378"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JP82FVH378');
+    </script>
+    <!-- END ANALYTICS -->
+
+    <!--Meta stuff-->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!--Facebook meta - this comes up when you post a link to the site-->
+    <meta property="og:title" content="Rapid Charts">
+    <meta property="og:description" content="Live price charts running directly from official data. Auto-updates daily.">
+    <meta property="og:image" content="covidCases.png">
+    <meta property="og:url" content="http://rapidcharts.io/index.htm">
+    
+    <!--Favicon-->
+    <link rel="icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
+    
+    <!--Title - this is the bit that comes up in the tab-->
+    <title>Rapid Prices</title>
+    
+    <!--Main Stylesheet-->
+    <link rel="stylesheet" href="css/main2.css">
+    <link rel="stylesheet" href="css/covid_live.css">
+    
+    
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+    
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+
+<body>
+
+    
+
+<!-- heading for page-->
+    <div class="wrap">
+        <h1>chart<span style="color: #86d0bb">library</span></h1>
+        <span style="display:block; height: 10px;"></span>
+        <p id="rubric" class="rubric">A collection of charts types, with usage advice and links to data and code.</p>
+        <span style="display:block; height: 10px;"></span>
+    </div>
+  
+
+<!-- Line charts -->
+    <div class="wrap">
+    <p class="rubric"><strong>Line charts</strong></p>
+    </div>
+    
+    <div class="grid_items">
+        
+
+        <div class="grid_item">
+            <p><strong>One line</strong></p>
+            <p>The simplest line chart, in this case running live from the ONS API.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartLine1"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr>
+            <a class="libraryButton" href="https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/mgsc/dataset/lms/data">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartLine1.json">Code</a>
+            <a class="libraryButton" href="jobs">Dashboard</a>                           
+        </div>
+        
+
+        <div class="grid_item">
+            <p><strong>Many lines | Long Form</strong></p>
+            <p>This chart uses "long form" data, which is the ideal format if working with csv files.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartLine2"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr>       
+            <a class="libraryButton" href="https://api.coronavirus.data.gov.uk/v2/data?areaType=nation&metric=newCasesByPublishDateRollingRate&format=csv">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartLine2.json">Code</a>
+            <a class="libraryButton" href="covidUK">Dashboard</a>
+            <a class="libraryButtonAPI" href="https://api.coronavirus.data.gov.uk">API</a>    
+        </div>
+
+
+        <div class="grid_item">
+            <p><strong>Many lines | Wide Form</strong></p>
+            <p>This chart uses "wide form" data, which is familiar from Excel. It is a little more complex to use in most visualisation libraries.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartLine3"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/demographicsUNPopChange.csv">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartLine3.json">Code</a>
+            <a class="libraryButton" href="korea">Dashboard</a>    
+        </div>
+
+
+        <div class="grid_item">
+            <p><strong>Many lines | Multiple sources</strong></p>
+            <p>Some APIs return only one series. This chart runs from JSON data, and uses "layers" to add each country. It is in effect four charts, one for each country, overlaid on one another.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartLine4"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://api.covid19api.com/total/country/korea-south/status/confirmed">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartLine4.json">Code</a>
+            <a class="libraryButton" href="korea">Dashboard</a>
+            <a class="libraryButtonAPI" href="https://api.covid19api.com">API</a>    
+                       
+        </div>
+
+        <div class="grid_item">
+            <p><strong>Lines with two y-axes</strong></p>
+            <p>When plotting two lines with very different scales is may be helpful to separate the y dimesion for each line.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartLine5"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/crypto/dataETH.csv">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartLine5.json">Code</a>
+            <a class="libraryButton" href="crypto">Dashboard</a>             
+        </div>
+
+        <div class="grid_item">
+            <p><strong>Highlighting most recent data</strong></p>
+            <p>Adding a point and the data value to the most recent data point. This uses a layer, which finds the maximum value of the data series, and puts both the point and the value at the max. This ensures the chart is responsive, so the location of the point and value both update when the data refreshes.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartLine6"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-D7G7.json">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartLine6.json">Code</a>
+            <a class="libraryButton" href="inflation">Dashboard</a>             
+        </div>
+
+        <div class="grid_item">
+            <p><strong>Two lines: filled range</strong></p>
+            <p>A useful chart to demonstrate the varying distance between series, in this case the Bitcoin high and low trading price.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartLine7"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/crypto/data_ohlcv_BTC.json"">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartLine7.json">Code</a>
+            <a class="libraryButton" href="crypto">Dashboard</a>
+            <a class="libraryButtonAPI" href="https://www.coinapi.io">API</a>                
+        </div>
+
+
+        <div class="grid_item">
+            <p><strong>Interactive line: data selector</strong></p>
+            <p>This chart uses a very long run of data, allowing users to focus on a particular period using the sliders.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartLine8"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-CDSI.json">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartLine8.json">Code</a>
+            <a class="libraryButton" href="inflation">Dashboard</a>             
+        </div>
+
+        <div class="grid_item">
+            <p><strong>Line with tooltip</strong></p>
+            <p>A simple line chart with a tooltip that moves along the series as the user hovers.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartLine9"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/m3BankRate.csv">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartLine9.json">Code</a>
+            <a class="libraryButton" href="inflation">Dashboard</a>             
+        </div>
+
+        <div class="grid_item">
+            <p><strong>Re-based data (wide form)</strong></p>
+            <p>An example of which transposes the data, rebasing so that 1980=100.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartLine10"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/fourCountriesGDP.csv">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartLine10.json">Code</a>             
+        </div>
+
+
+        <div class="grid_item">
+            <p><strong>Wide form data, folded to long form</strong></p>
+            <p>Turing wide data into long form to allow easy use of the facet encoding.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartLine11"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/fourCountriesGDP.csv">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartLine11.json">Code</a>             
+        </div>
+
+
+        
+      
+    </div> 
+
+<!-- /////////////////////////////////////////////// BAR CHARTS START HERE  /////////////////////////////////////////   -->
+<!-- Bar charts -->
+<div class="wrap">
+    <span style="display:block; height: 50px;"></span>
+    <p class="rubric"><strong>Bar charts</strong></p>
+    </div>
+    
+    <div class="grid_items">
+        
+        <div class="grid_item">
+            <p><strong>Simple vertical bar chart</strong></p>
+            <p>This is a straightforward bar chart that plots a y variable against an x variable. In this case, the x variable is the year and the y variable is the share of green seats in the European parliament.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartBar1"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/chartENV19.csv">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartBar1.json">Code</a>
+            <a class="libraryButton" href="environment">Dashboard</a>             
+        </div>
+
+        <div class="grid_item">
+            <p><strong>Simple horizontal bar chart</strong></p>
+            <p>By flipping the x and y variables in the code, it is possible to plot a horizontal bar chart.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartBar2"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/chartENV17.csv">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartBar2.json">Code</a>
+            <a class="libraryButton" href="environment">Dashboard</a>             
+        </div>
+
+        <div class="grid_item">
+            <p><strong>Stacked vertical bar chart</strong></p>
+            <p>Stacked bar charts are useful when there are a number of components that make up a given value. For example, here we split food emissions up by each stage in the production process.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartBar3"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/MW17668/MW17668.github.io/main/myDataJuly1.csv">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartBar3.json">Code</a>
+            <a class="libraryButton" href="environment">Dashboard</a>             
+        </div>
+
+        <div class="grid_item">
+            <p><strong>Stacked horizontal bar chart</strong></p>
+            <p>Using the same flip trick, we can create a horizontal version of the stacked chart.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartBar4"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/MW17668/MW17668.github.io/main/myDataJuly1.csv">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartBar4.json">Code</a>
+            <a class="libraryButton" href="environment">Dashboard</a>             
+        </div>
+
+        <div class="grid_item">
+            <p><strong>Grouped vertical bar chart</strong></p>
+            <p>In the case where several variables are being displayed in distinct clusters, grouped bar charts are useful. In this example, GDP growth for all four UK nations are displayed per quarter, allowing the reader to easily compare each country.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartBar5"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/observatory/main/DATA_BP_C2_formatted.csv">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartBar5.json">Code</a>
+            <a class="libraryButton" href="https://www.economicsobservatory.com/data-national-and-regional-gdp-what-do-the-latest-data-reveal">Article</a>             
+        </div>
+
+        <div class="grid_item">
+            <p><strong>Layered bar chart</strong></p>
+            <p>Layer commands can be useful when more than one piece of information is being conveyed. In this case, the simple veritcal bar chart shows the number of products at each sugar intensity. The line tracks the tax rate. Two distinct y axes provide the values.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartBar6"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/observatory/main/sugar_C4b.csv">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartBar6.json">Code</a>
+            <a class="libraryButton" href="https://www.economicsobservatory.com/would-taxes-on-unhealthy-foods-reduce-obesity">Article</a>             
+        </div> 
+
+        <div class="grid_item">
+            <p><strong>Interactive bar chart | Tooltip</strong></p>
+            <p>Adding a tooltip allows the reader to see underlying values by hovering their mouse over the bars. This is one of the main advantages of building charts live in the page (as opposed to using image files).</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartBar7"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/jw2v/dataset/pusf/data">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartBar7.json">Code</a>
+            <a class="libraryButton" href="fiscal.html">Dashboard</a>             
+        </div> 
+
+        <div class="grid_item">
+            <p><strong>Interactive bar chart | Tooltip + slider</strong></p>
+            <p>More interactive features such as sliders allow the reader to adjust the chart itself to their needs. It also allows for an additional dimension such as change over time (as in this example).</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartBar8"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/tree/main/charts/ONSinflation">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartBar8.json">Code</a>
+            <a class="libraryButton" href="inflation">Dashboard</a>             
+        </div> 
+
+        <div class="grid_item">
+            <p><strong>Trellis chart</strong></p>
+            <p>Many small charts put together in a "trellis". This is an alternative to using colours on a single chart.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartBar9"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://app.sportdataapi.com/api/v1/soccer/matches?apikey=b8bb8050-f3d3-11eb-808b-334144de1112&season_id=352&date_from=2020-09-19">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartBar9.json">Code</a>
+            <a class="libraryButton" href="football">Dashboard</a>
+            <a class="libraryButtonAPI" href="https://sportdataapi.com">API</a>              
+        </div> 
+
+        <div class="grid_item">
+            <p><strong>Bar with hover</strong></p>
+            <p>A chart with a tooltip revealing more information about the data. The opacity of the bars adjusts with mouse hover, helping the user identify which bar has been selected.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartBar10"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://app.sportdataapi.com/api/v1/soccer/matches?apikey=b8bb8050-f3d3-11eb-808b-334144de1112&season_id=352&date_from=2020-09-19">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartBar10.json">Code</a>
+            <a class="libraryButton" href="football">Dashboard</a>
+            <a class="libraryButtonAPI" href="https://sportdataapi.com">API</a>              
+        </div> 
+</div>
+<!-- /////////////////////////////////////////////// BAR CHARTS END HERE  /////////////////////////////////////////   -->    
+
+
+<!-- /////////////////////////////////////////////// SCATTER CHARTS START HERE  /////////////////////////////////////////   -->    
+
+<!-- Scatter and bubble charts -->
+<div class="wrap">
+    <span style="display:block; height: 50px;"></span>
+    <p class="rubric"><strong>Scatter and bubble</strong></p>
+    </div>
+    
+    <div class="grid_items">
+        
+        <div class="grid_item">
+            <p><strong>Basic scatter</strong></p>
+            <p>The simplest scatter plot</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartScatter1"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-CDSI.json">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartScatter1.json">Code</a>
+            <a class="libraryButton" href="usa">Dashboard</a>             
+        </div>
+    
+        <div class="grid_item">
+            <p><strong>Basic scatter</strong></p>
+            <p>The simplest scatter plot</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartScatter2"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-CDSI.json">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartScatter2.json">Code</a>
+            <a class="libraryButton" href="usa">Dashboard</a>             
+        </div>
+    
+        <div class="grid_item">
+            <p><strong>Bubble: x, y, colour, size.</strong></p>
+            <p>The simplest scatter plot</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartScatter3"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-CDSI.json">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartScatter3.json">Code</a>
+            <a class="libraryButton" href="usa">Dashboard</a>             
+        </div>
+    
+        <div class="grid_item">
+            <p><strong>Scatter: Five variables.</strong></p>
+            <p>This chart takes variables to the extreme: there is probably too much going on here for it to be useful, but worth knowing it is possible.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartScatter4"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-CDSI.json">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartScatter4.json">Code</a>
+            <a class="libraryButton" href="usa">Dashboard</a>             
+        </div>
+    
+    </div>
+
+
+<!-- Area charts -->
+<div class="wrap">
+    <span style="display:block; height: 50px;"></span>
+    <p class="rubric"><strong>Area charts</strong></p>
+    </div>
+
+    <div class="grid_items">
+        <div class="grid_item">
+            <p><strong>Area | Interactive | Click legend</strong></p>
+            <p>Adding interactivity by allowing the user to click on the legend to highlight the series they are interested in.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartArea1"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-CDSI.json">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartArea1.json">Code</a>
+            <a class="libraryButton" href="covidUK">Dashboard</a>             
+        </div>
+    </div>
+
+
+<!-- ///////////////////////////////// JAVASCRIPT STARTS HERE  /////////////////////////////////////////   -->        
+
+<script>
+    // Line charts:
+    var line1 = "charts/library/chartLine1.json";
+    var line2 = "charts/library/chartLine2.json";
+    var line3 = "charts/library/chartLine3.json";
+    var line4 = "charts/library/chartLine4.json";
+    var line5 = "charts/library/chartLine5.json";
+    var line6 = "charts/library/chartLine6.json";
+    var line7 = "charts/library/chartLine7.json";
+    var line8 = "charts/library/chartLine8.json";
+    var line9 = "charts/library/chartLine9.json";
+    var line10 = "charts/library/chartLine10.json";
+    var line11 = "charts/library/chartLine11.json";
+    var line12 = "charts/library/chartLine12.json";
+    var line13 = "charts/library/chartLine13.json";
+    var line14 = "charts/library/chartLine14.json";
+    var line15 = "charts/library/chartLine15.json";
+    var line16 = "charts/library/chartLine16.json";
+
+    // Bar charts:
+    var bar1 = "charts/library/chartBar1.json";
+    var bar2 = "charts/library/chartBar2.json";
+    var bar3 = "charts/library/chartBar3.json";
+    var bar4 = "charts/library/chartBar4.json";
+    var bar5 = "charts/library/chartBar5.json";
+    var bar6 = "charts/library/chartBar6.json";
+    var bar7 = "charts/library/chartBar7.json";
+    var bar8 = "charts/library/chartBar8.json";
+    var bar9 = "charts/library/chartBar9.json";
+    var bar10 = "charts/library/chartBar10.json";
+    var bar11 = "charts/library/chartBar11.json";
+    var bar12 = "charts/library/chartBar12.json";
+    var bar13 = "charts/library/chartBar13.json";
+    var bar14 = "charts/library/chartBar14.json";
+    var bar15 = "charts/library/chartBar15.json";
+    var bar16 = "charts/library/chartBar16.json";
+
+    // Scatter charts:
+    var scatter1 = "charts/library/chartScatter1.json";
+    var scatter2 = "charts/library/chartScatter2.json";
+    var scatter3 = "charts/library/chartScatter3.json";
+    var scatter4 = "charts/library/chartScatter4.json";
+    var scatter5 = "charts/library/chartScatter5.json";
+    var scatter6 = "charts/library/chartScatter6.json";
+    var scatter7 = "charts/library/chartScatter7.json";
+    var scatter8 = "charts/library/chartScatter8.json";
+    var scatter9 = "charts/library/chartScatter9.json";
+    var scatter10 = "charts/library/chartScatter10.json";
+    var scatter11 = "charts/library/chartScatter11.json";
+    var scatter12 = "charts/library/chartScatter12.json";
+    var scatter13 = "charts/library/chartScatter13.json";
+    var scatter14 = "charts/library/chartScatter14.json";
+    var scatter15 = "charts/library/chartScatter15.json";
+    var scatter16 = "charts/library/chartScatter16.json";
+
+    // Area charts:
+    var area1 = "charts/library/chartArea1.json";
+    var area2 = "charts/library/chartArea2.json";
+    var area3 = "charts/library/chartArea3.json";
+    var area4 = "charts/library/chartArea4.json";
+    var area5 = "charts/library/chartArea5.json";
+    var area6 = "charts/library/chartArea6.json";
+    var area7 = "charts/library/chartArea7.json";
+    var area8 = "charts/library/chartArea8.json";
+    var area9 = "charts/library/chartArea9.json";
+    var area10 = "charts/library/chartArea10.json";
+    var area11 = "charts/library/chartArea11.json";
+    var area12 = "charts/library/chartArea12.json";
+    var area13 = "charts/library/chartArea13.json";
+    var area14 = "charts/library/chartArea14.json";
+    var area15 = "charts/library/chartArea15.json";
+    var area16 = "charts/library/chartArea16.json";
+    
+   
+
+    // Now embed the charts in the divs set above:
+    vegaEmbed('#chartLine1', line1, {"actions": false});   
+    vegaEmbed('#chartLine2', line2, {"actions": false});
+    vegaEmbed('#chartLine3', line3, {"actions": false});   
+    vegaEmbed('#chartLine4', line4, {"actions": false});
+    vegaEmbed('#chartLine5', line5, {"actions": false});   
+    vegaEmbed('#chartLine6', line6, {"actions": false});
+    vegaEmbed('#chartLine7', line7, {"actions": false});   
+    vegaEmbed('#chartLine8', line8, {"actions": false});
+    vegaEmbed('#chartLine9', line9, {"actions": false});   
+    vegaEmbed('#chartLine10', line10, {"actions": false});
+    vegaEmbed('#chartLine11', line11, {"actions": false});   
+    vegaEmbed('#chartLine12', line12, {"actions": false}); 
+    vegaEmbed('#chartLine13', line13, {"actions": false});   
+    vegaEmbed('#chartLine14', line14, {"actions": false});
+    vegaEmbed('#chartLine15', line15, {"actions": false});   
+    vegaEmbed('#chartLine16', line16, {"actions": false});
+
+    // Now embed the charts in the divs set above:
+    vegaEmbed('#chartBar1', bar1, {"actions": false});   
+    vegaEmbed('#chartBar2', bar2, {"actions": false});
+    vegaEmbed('#chartBar3', bar3, {"actions": false});   
+    vegaEmbed('#chartBar4', bar4, {"actions": false});
+    vegaEmbed('#chartBar5', bar5, {"actions": false});   
+    vegaEmbed('#chartBar6', bar6, {"actions": false});
+    vegaEmbed('#chartBar7', bar7, {"actions": false});   
+    vegaEmbed('#chartBar8', bar8, {"actions": false});
+    vegaEmbed('#chartBar9', bar9, {"actions": false});   
+    vegaEmbed('#chartBar10', bar10, {"actions": false});
+    vegaEmbed('#chartBar11', bar11, {"actions": false});   
+    vegaEmbed('#chartBar12', bar12, {"actions": false}); 
+    vegaEmbed('#chartBar13', bar13, {"actions": false});   
+    vegaEmbed('#chartBar14', bar14, {"actions": false});
+    vegaEmbed('#chartBar15', bar15, {"actions": false});   
+    vegaEmbed('#chartBar16', bar16, {"actions": false});
+
+    // Now embed the charts in the divs set above:
+    vegaEmbed('#chartArea1', area1, {"actions": false});   
+    vegaEmbed('#chartArea2', area2, {"actions": false});
+    vegaEmbed('#chartArea3', area3, {"actions": false});   
+    vegaEmbed('#chartArea4', area4, {"actions": false});
+    vegaEmbed('#chartArea5', area5, {"actions": false});   
+    vegaEmbed('#chartArea6', area6, {"actions": false});
+    vegaEmbed('#chartArea7', area7, {"actions": false});   
+    vegaEmbed('#chartArea8', area8, {"actions": false});
+    vegaEmbed('#chartArea9', area9, {"actions": false});   
+    vegaEmbed('#chartArea10', area10, {"actions": false});
+    vegaEmbed('#chartArea11', area11, {"actions": false});   
+    vegaEmbed('#chartArea12', area12, {"actions": false}); 
+    vegaEmbed('#chartArea13', area13, {"actions": false});   
+    vegaEmbed('#chartArea14', area14, {"actions": false});
+    vegaEmbed('#chartArea15', area15, {"actions": false});   
+    vegaEmbed('#chartArea16', area16, {"actions": false});
+
+    // Now embed the charts in the divs set above:
+    vegaEmbed('#chartScatter1', scatter1, {"actions": false});   
+    vegaEmbed('#chartScatter2', scatter2, {"actions": false});
+    vegaEmbed('#chartScatter3', scatter3, {"actions": false});   
+    vegaEmbed('#chartScatter4', scatter4, {"actions": false});
+    vegaEmbed('#chartScatter5', scatter5, {"actions": false});   
+    vegaEmbed('#chartScatter6', scatter6, {"actions": false});
+    vegaEmbed('#chartScatter7', scatter7, {"actions": false});   
+    vegaEmbed('#chartScatter8', scatter8, {"actions": false});
+    vegaEmbed('#chartScatter9', scatter9, {"actions": false});   
+    vegaEmbed('#chartScatter10', scatter10, {"actions": false});
+    vegaEmbed('#chartScatter11', scatter11, {"actions": false});   
+    vegaEmbed('#chartScatter12', scatter12, {"actions": false}); 
+    vegaEmbed('#chartScatter13', scatter13, {"actions": false});   
+    vegaEmbed('#chartScatter14', scatter14, {"actions": false});
+    vegaEmbed('#chartScatter15', scatter15, {"actions": false});   
+    vegaEmbed('#chartScatter16', scatter16, {"actions": false});
+    
+
+</script>
+
+
+
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+<span style="display:block; height: 30px;"></span>
+
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+              <div class="column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+              </div>
+              <div class="column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://nuggetcharts.com/stream">Nugget</a></li>
+                        <li><a href="datascience">Course</a></li>
+                    </ul>
+              </div>
+              </div>
+                
+                <div class="footer-finalrow">
+                    <h3>Rapid Charts</h3>
+                    <p>Automated and interactive data analysis.</p>                    </div>
+                
+                <div class="col item social">
+                  <a href="https://www.economicsobservatory.com" class="fa fa-university"></a>
+                  <a href="https://twitter.com/RD_Economist" class="fa fa-twitter"></a>
+                  <a href="https://twitter.com/rapidcharts" class="fa fa-instagram"></a>
+                  <a href="https://www.linkedin.com/in/richard-davies-820b66a4/" class="fa fa-linkedin"></a>
+                </div>
+            
+              </div>
+            <p class="copyright">Richard Davies © 2021</p>
+      </footer>          
+</div>
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+</body>
+
+
+</html>
