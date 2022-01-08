@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<!-- ///////////////////  HEAD //////////////////////////////////// -->
+
+<head>
+    <!--Meta stuff-->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!--Facebook meta - this comes up when you post a link to the site-->
+    <meta property="og:title" content="Jamie Prince">
+    <meta property="og:description" content="Data Science Project">
+    <meta property="og:image" content="favicon.jpg">
+    <meta property="og:url" content="https://jamieprince.github.io/project">
+
+    <!--Title - this is the bit that comes up in the tab-->
+    <title>Jamie's Project</title>
+    <link rel="icon" type="image/png" href="favicon.jpg">
+
+    <!--Linking to CSS & JS-->
+    <link rel="stylesheet" href="index.css">
+    <script src="project.js"></script>
+
+    <!--Importing fonts-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+    </style>
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
+
+    <!--Opens links in a new tab-->
+    <base target="_blank">
+
+</head>
+
+<!-- ///////////////////  HEAD //////////////////////////////////// -->
+
+
+<!-- ///////////////////  START BODY //////////////////////////////////// -->
+
+<body>
+    <!-- ////// HEADING/TITLE ////////// -->
+    <h3><span style="color:#F1F0F4">Jamie Prince Guneratnam </span><span style="color:#FF9900">|</span><span
+            style="color:#F1F0F4"> Student ID: 2067526</span></h3>
+
+    <div style='vertical-align:middle; display:inline;'>
+        <h1><span style="color:#F1F0F4">how educated are our</span><span style="color:#FF9900">
+                billionaires</span> <img style='vertical-align:middle; height: 55px; width: 34px;'
+                src='question_mark2.png'></b></h1>
+    </div>
+
+    <p>The importance of education is often unquestionable but does the education level of not just an individual but
+        the country as a whole play a part in determining where our world's wealthiest come from? Do countries with more
+        educated populations produce more billionaires? Is a university degree crucial for achieving exorbitant amounts
+        of wealth?
+    </p>
+
+    <p> This project seeks to investigate if there are obvious links between wealth and education, with a primary focus
+        on billionaires and education at the undergraduate level.
+    </p>
+
+    <p>Let us first look at the trend in wealth over the years. We observe that both the number of billionaires and the
+        share of total net worth held by the top 1% have an average upward trend. Adjusting Chart 2 to begin in 2008, we
+        see the trend in both charts are very similar- there being a drop in 2009 and in 2020 before a dramatic increase
+        in 2021.
+    </p>
+
+    <!-- //////// START OF CHARTS //////// -->
+
+    <!-- //////// CHART 1 //////// -->
+    <div class="container">
+
+        <div class="chart" id="nineteenthChart">
+            <script>
+                var myChart19 = "chart19_covidUKRegions.json";
+                vegaEmbed('#chart19', myChart19);
+            </script>
+        </div>
+    </div>
+    <div class="container">
+        <a class="dashboardButton" href="https://en.wikipedia.org/wiki/The_World%27s_Billionaires">Source</a>
+        <a class="dashboardButton"
+            href="https://github.com/jamieprince/jamieprince.github.io/blob/main/PWikipedia_Scraper.ipynb">Colab</a>
+        <a class="dashboardButton"
+            href="https://raw.githubusercontent.com/jamieprince/jamieprince.github.io/main/billionaires.csv">Data</a>
+        <a class="dashboardButton"
+            href="https://github.com/jamieprince/jamieprince.github.io/blob/main/pchart1_billionaires.json">Code</a>
+    </div>
+
+    <!-- //////// CHART 2 //////// -->
+    <div class="container">
+        <div class="chart" id="chart2">
+            <script>
+                var myChart2 = "pchart2_wealthshare1.json";
+                vegaEmbed('#chart2', myChart2);
+            </script>
+        </div>
+    </div>
+    <div class="container">
+        <a class="codeButton" href="https://fred.stlouisfed.org/series/WFRBST01134">Source</a>
+        <a class="codeButton"
+            href="https://github.com/jamieprince/jamieprince.github.io/blob/main/LoopFREDdownloader.ipynb">Colab</a>
+        <a class="codeButton"
+            href="https://raw.githubusercontent.com/jamieprince/jamieprince.github.io/main/data_FRED-WFRBST01134.json">Data</a>
+        <a class="codeButton"
+            href="https://github.com/jamieprince/jamieprince.github.io/blob/main/pchart2_wealthshare1.json">Code</a>
+    </div>
+
+    <p> Data for both charts were obtained using Python in Google Colab- the notebooks for which are linked in the Colab
+        button under the respective charts. Chart 1 used a scrapper to easily save data from Wikipedia tables into a CSV
+        file. Chart 2’s data was obtained using a loop that batch downloads FRED data in the JSON format.
+    </p>
+
+    <p> Unable to find complete data on the most common degrees studies by the wealthiest, I gathered data from a
+        written article published by Forbes on the 400 richest in the United States to create a bar chart with inline
+        data. Unsurprisingly, the top 3 degrees are business, economics and engineering. Interestingly we see a larger
+        number who have dropped out of university than those who did not attend at all.
+    </p>
+
+    <!-- //////// CHART 3 //////// -->
+    <div class="container">
+        <div class="chart" id="chart3">
+            <script>
+                var myChart3 = "pchart3_degree.json";
+                vegaEmbed('#chart3', myChart3);
+            </script>
+        </div>
+    </div>
+    <div class="container">
+        <a class="codeButton"
+            href="https://www.forbes.com/sites/mattdurot/2021/10/08/want-to-be-a-billionaire-these-are-the-most-popular-majors-of-the-richest-americans/?sh=6df8ddc626ef">Source</a>
+        <a class="codeButton"
+            href="https://github.com/jamieprince/jamieprince.github.io/blob/main/pchart3_degree.json">Code</a>
+    </div>
+
+    <p>With that, I sought to find out how many of the world’s billionaires actually had a bachelor’s degree or had
+        tertiary education. To do this, I selected the 5 countries with the highest number of billionaires in 2021 and
+        gathered data on the 10 richest individuals of each country. To find out whether each individual had attended
+        university, I again used the Bloomberg Billionaire Index’s webpage. I encountered a limit to the number of
+        profiles of billionaires I could read and gather data from freely without paying for a subscription. To solve
+        this, I used the ‘view page source’ function and was able to read and obtain what I was looking for.
+    </p>
+
+    <p>In addition to the 5 countries, I thought it would also be interesting to look at the 10 richest women in 2021.
+        It is worth noting that 9/10 of the women had a bachelors’ degree 9/10 also were said to have obtained their
+        wealth from their family or late husbands.
+    </p>
+
+    <!-- //////// CHART 7 //////// -->
+    <div class="container">
+        <div class="chart" id="chart7">
+            <script>
+                var myChart7 = "pchart7_billion_yesno.json";
+                vegaEmbed('#chart7', myChart7);
+            </script>
+        </div>
+    </div>
+    <div class="container">
+        <a class="codeButton" href="https://www.bloomberg.com/billionaires/">Source</a>
+        <a class="codeButton"
+            href="https://raw.githubusercontent.com/jamieprince/jamieprince.github.io/main/chart7.csv">Data</a>
+        <a class="codeButton"
+            href="https://github.com/jamieprince/jamieprince.github.io/blob/main/pchart7_billion_yesno.json">Code</a>
+    </div>
+
+    <p> Data for Chart 5 was obtained from the Bloomberg’s Billionaires index. I ran into some issues scrapping this
+        site as it protects itself from mining. However, upon inspecting the page source I noticed that all the data I
+        was looking for were visible in divs. To circumvent this issue, I saved the html of the page externally and
+        uploaded it to my GitHub repository to run my codes through that instead. I was then able to obtain and clean
+        all the data I wanted using the Python scrapper linked in Colab.
+    </p>
+
+    <!-- //////// CHART 8 //////// -->
+    <div class="container">
+        <div class="chart" id="chart8">
+            <script>
+                var myChart8 = "pchart8_billion_industry.json";
+                vegaEmbed('#chart8', myChart8);
+            </script>
+        </div>
+    </div>
+    <div class="container">
+        <a class="codeButton" href="https://www.bloomberg.com/billionaires/">Source</a>
+        <a class="codeButton"
+            href="https://github.com/jamieprince/jamieprince.github.io/blob/main/BB_Index_Scraper.ipynb">Colab</a>
+        <a class="codeButton"
+            href="https://raw.githubusercontent.com/jamieprince/jamieprince.github.io/main/Bloomberg_Billionaires_Index.csv">Data</a>
+        <a class="codeButton"
+            href="https://github.com/jamieprince/jamieprince.github.io/blob/main/pchart8_billion_industry.json">Code</a>
+    </div>
+
+    <p> Selecting the same 5 countries as above, I was able to see which industry have brought the most wealth in 2021
+        as a whole and in the selected countries.
+    </p>
+
+    <h2><span style="color:#F1F0F4">Looking at</span><span style="color:#FF9900">
+            correlations.</span></h2>
+
+    <div class="container">
+        <a class="codeButton"
+            href="https://github.com/jamieprince/jamieprince.github.io/blob/main/Regression.ipynb">Linear Regression</a>
+    </div>
+
+    <!-- //////// CHART 4 //////// -->
+    <div class="container">
+        <div class="chart" id="chart4">
+            <script>
+                var myChart4 = "pchart4_bil_edu.json";
+                vegaEmbed('#chart4', myChart4);
+            </script>
+        </div>
+
+        <!-- //////// CHART 5 //////// -->
+        <div class="chart" id="chart5">
+            <script>
+                var myChart5 = "pchart5_gdp_edu.json";
+                vegaEmbed('#chart5', myChart5);
+            </script>
+        </div>
+
+        <!-- //////// CHART 6 //////// -->
+        <div class="chart" id="chart6">
+            <script>
+                var myChart6 = "pchart6_gdp_bil.json";
+                vegaEmbed('#chart6', myChart6);
+            </script>
+        </div>
+    </div>
+
+    <div class="container">
+        <a class="codeButton"
+            href="https://github.com/jamieprince/jamieprince.github.io/blob/main/WorldBankDataDownloader.ipynb">Colab
+            1</a>
+        <a class="codeButton"
+            href="https://github.com/jamieprince/jamieprince.github.io/blob/main/WorldBankAPIData.ipynb">Colab 2</a>
+        <a class="codeButton"
+            href="https://raw.githubusercontent.com/jamieprince/jamieprince.github.io/main/correlation.csv">Data</a>
+        <a class="codeButton"
+            href="https://github.com/jamieprince/jamieprince.github.io/blob/main/pchart4_bil_edu.json">Code</a>
+    </div>
+
+    <p> We do not observe a clear trend in billionaires and education. However, there exists a clear trend in GDP per
+        capita and education attainment
+        Which industries have brought the most wealth to the world’s billionaires?
+        Finally, I looked at the correlation between a country’s number of billionaires and the education attainment of
+        the country. Data from the world bank was obtained using the following python code
+        Gathered data from 2015-2020 from the world bank and Forbes. The data was combined and cleaned in Microsoft
+        excel.
+
+    </p>
+
+    <h2><span style="color:#F1F0F4">In</span><span style="color:#FF9900">
+            conclusion.</span></h2>
+
+    <div class="container">
+        <a class="codeButton"
+            href="https://github.com/jamieprince/jamieprince.github.io/tree/main/Project%20Data">Additional Data</a>
+    </div>
+
+    <p> More countries and wider data, causation cannot be determined. Other factors of wealth, investigating how many
+        of the world’s wealthiest obtain their wealth by inheritance, do you need to come from a rich family to.
+        How many billionaires are self-made vs generational wealth? The difference between western and Asian countries.
+
+    </p>
+
+    <div class="container">
+        <button onclick="topFunction()" id="myBtn" title="Back to top">Back to top</button>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
