@@ -45,8 +45,9 @@ p{font-size:18px}
     justify-content: center;
     align-items: center;
     padding: 5px;
-    width: 45%;
-    min-width: 350px;
+
+    width: auto;
+    height: auto;
 }
 
 .container {
