@@ -1,7 +1,9 @@
 body{
     background-color: #fffdfd;
+    max-width: auto;
     margin: auto;
-    max-width: 95%;
+    text-align: center;
+    width: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -68,7 +70,7 @@ p{font-size:20px}
   position: fixed;
   margin: 0;
   padding: 0;
-  width: 24px;
+  width: 2opx;
   height: 30%;
   background: #fffdfd no-repeat center fixed;
   transition: 0.7s;
@@ -79,7 +81,7 @@ p{font-size:20px}
 
 .navigation:hover,
 .navigation.active {
-  width: 30px;
+  width: 25px;
 }
 
 .navigation ul {
@@ -129,7 +131,7 @@ p{font-size:20px}
 }
 
 .navigation ul li a .icon .fa {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .navigation ul li a .title {
