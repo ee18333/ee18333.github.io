@@ -45,6 +45,12 @@ p{font-size:18px}
     align-items: center;
     padding: 5px;
 }
+
+.vega-embed.has-actions {
+    padding-right: 5px !important;
+    width: 380px
+}
+
 .container{
     flex-flow: row wrap;
     justify-content: center;
