@@ -39,8 +39,8 @@ p{font-size:18px}
 .chart {
     width: 45%;
     min-width: 350px;
-    margin: 5px;
-    padding: 5px;
+    margin: 10px;
+    padding: 10px;
     background-color: #fffdfd;
     border: transparent;
 }
