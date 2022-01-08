@@ -52,15 +52,13 @@ p{font-size:18px}
 }
 
 .container{
-    flex-flow: row wrap;
     justify-content: center;
 }
 
 #containerbutton{
-    flex-flow: row wrap;
     justify-content: center;
     text-align: center;
-    padding: 25px;
+    padding: 10px;
 }
 
 /*inspired by Chris Brierley */
