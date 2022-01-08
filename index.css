@@ -1,6 +1,10 @@
 body{
     background-color: #fffdfd;
     min-width: 320px;
+    max-width: auto;
+    margin: auto;
+    text-align: center;
+    width: 100%;
 }
 
 ::-webkit-scrollbar {
