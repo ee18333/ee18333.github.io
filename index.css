@@ -1,6 +1,6 @@
 body{
     background-color: #fffdfd;
-    max-width: 560px;
+    max-width: 700px;
     margin: auto;
 }
 
@@ -37,16 +37,15 @@ p{font-size:18px}
 }
 
 .chart {
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 25px;
-  border-color: rgb(219, 188, 188);
-  text-align: center;
-  padding: 50px;
-  transition: border-radius 400ms, flex-grow 1000ms;
-  width: 60%;
-  min-width: 350px;
-  transition: transform 1000ms;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    background-color: #fffdfd;
+    border: rgb(219, 188, 188) solid 5px;
+    border-radius: 10px;
+    font-family: Inter,sans-serif;
+    font-size: 10pxp;
 }
 
 .container {
