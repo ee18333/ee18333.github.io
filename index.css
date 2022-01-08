@@ -146,11 +146,10 @@ p{font-size:18px}
     border-radius: 50px;
     text-align: center;
    
-
 #containerbutton{
     justify-content: center;
     text-align: center;
-    padding: 0px;
+    padding: 10px;
 }
 
     
