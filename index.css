@@ -19,17 +19,23 @@ body{
 }
 
 
-h1, h2, h3, p{
+h1, h2, h3 {
     color: #000000;
     font-family: 'Bodoni Moda', serif;
     text-align: center;
     letter-spacing: -2.0px;
 }
 
+p{
+    color:#000000;
+    font-family: 'Bodoni Moda', serif;
+    text-align: justify;
+}
+
 h1{font-size:40px}
 h2{font-size:30px}
 h3{font-size:20px}
-p{font-size:18px}
+p{font-size:20px}
 
 
 .bold {
