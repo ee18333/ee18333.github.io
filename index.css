@@ -52,7 +52,9 @@ p{font-size:18px}
     min-width: 350px;
 }
 
-.container{
+.container {
+    display: flex;
+    flex-flow: row wrap;
     justify-content: center;
 }
 
