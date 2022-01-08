@@ -1,11 +1,6 @@
 body{
     background-color: #fffdfd;
-    margin: auto;
-    max-width: auto;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
+    min-width: 320px;
 }
 
 ::-webkit-scrollbar {
@@ -49,9 +44,17 @@ p{font-size:18px}
     justify-content: center;
     align-items: center;
     padding: 5px;
-    transition: border-radius 500ms, flex-grow 1000ms;
-    width: 45%;
-    min-width: 350px;
+}
+.container{
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#containerbutton{
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
 }
 
 /*inspired by Chris Brierley */
