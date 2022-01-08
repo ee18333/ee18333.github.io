@@ -37,17 +37,15 @@ p{font-size:18px}
 }
 
 .chart {
-    background-color:#fffdfd;
-    border: #fffdfd;
-    border-radius: 5px;
-    border-width: 10px;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-
-    width: auto;
-    height: auto;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 20px;
+  transition: border-radius 400ms, flex-grow 1000ms;
+  width: 45%;
+  min-width: 350px;
+  transition: transform 1000ms;
 }
 
 .container {
