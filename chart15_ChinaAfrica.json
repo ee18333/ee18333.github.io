@@ -18,7 +18,7 @@
   "width": "container",
   "mark": {
     "type": "bar",
-    "width": 40,
+    "width": 30,
     "color": "darkgreen"
   },
   "encoding": {
