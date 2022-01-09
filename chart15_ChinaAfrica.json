@@ -9,7 +9,6 @@
     "fontSize": 16,
     "font": "Italic"
   },
-  
   "data": {
     "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/w7.csv",
     "format": {"type": "csv"}
@@ -17,20 +16,25 @@
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "height": 300,
   "width": "container",
-  "mark": {"type": "line", "point": false},
+  "mark": {
+    "type": "bar",
+    "width": 40,
+    "color": "darkgreen"
+  },
   "encoding": {
     "x": {
       "field": "Year",
       "type": "temporal",
       "title": "Year",
       "axis": {"grid": false}
+      
     },
     "y": {
       "field": "Chinese trade in US$ billions to Africa as a percentage of the world",
       "type": "quantitative",
       "title": null,
-      "axis": {"grid": false},
-      "scale": {"domain": [1.5, 3.5]}
+      "axis": {"format": ".2s", "title": ""},  
+      "scale": {"domain": [0, 3.5]}
     }
   }
 }
