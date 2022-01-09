@@ -310,7 +310,7 @@ The charts below looks at the economy in HK.
 
 <h3> <br> W7: Data story</h3>
   
- <p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:5em; text-align: center;">
+ <p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:4em; text-align: center;">
 Dawn Holland from NIESR believes that the rise in inflation is a temporary 
   phenomenon because the rise in energy price is transitory. 
 However, the chart shows that the sharp increase in energy price around April 
@@ -388,7 +388,26 @@ The continuous increase in energy price has created an inflationary
   <!-- ///////////////////  CONTAINER WITH WEEK 3 WORK //////////////////////////////////// -->
 <h3><br>W3: Editing and writing Data</h3>
   
+<!--Mannual input Chart -->  
+    
+   <p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:2em; text-align: center;">
+     It shows the annual revenue of TikTok from 2017 to 2020. Data is <strong>mannually</strong> entered as <strong>values</strong> in a <strong>JSON file<strong>.
+     </p>
+     <container class="bcontainer">
+      <div class="chart" id="sixthChart">    
+    <script>
+    var myChart6 = "chart6_Mannual input chart.json";
+    vegaEmbed('#sixthChart', myChart6);
+  </script>
+<div>
+     </container>
 
+<container class="bcontainer">
+<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/chart6_Mannual%20input%20chart.json">Code</a>
+  <a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/cumLFTDate.csv">Data</a>
+<a class="dashboardButton " href="https://www.businessofapps.com/data/tik-tok-statistics/">Source</a>  
+  </container>
+        
 <!--Manipulate CSV data -->  
  <p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:2em; text-align: center;">
  It looks at Real Residential Property Price in HK. I have put a predicated value for 2050 in the csv file.
@@ -409,25 +428,7 @@ The continuous increase in energy price has created an inflationary
 <a class="dashboardButton " href="https://fred.stlouisfed.org/series/QHKR628BIS" >Source</a>
   </container>
 
-<!--Mannual input Chart -->  
-    
-   <p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:2em; text-align: center;">
-     It shows the annual revenue of TikTok from 2017 to 2020. Data is <strong>mannually</strong> entered as <strong>values</strong> in a <strong>JSON file<strong>.
-     </p>
-     <container class="bcontainer">
-      <div class="chart" id="sixthChart">    
-    <script>
-    var myChart6 = "chart6_Mannual input chart.json";
-    vegaEmbed('#sixthChart', myChart6);
-  </script>
-<div>
-     </container>
 
-<container class="bcontainer">
-<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/chart6_Mannual%20input%20chart.json">Code</a>
-  <a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/cumLFTDate.csv">Data</a>
-<a class="dashboardButton " href="https://www.businessofapps.com/data/tik-tok-statistics/">Source</a>  
-  </container>
         
 <!-- ///////////////////  END CONTAINER WITH WEEK 3 WORK //////////////////////////////////// -->
   
