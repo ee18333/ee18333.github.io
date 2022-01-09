@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Military spending as a % of GDP",
-    "subtitle": "Source: FRED",
+    "subtitle": "Source: World Bank",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
     "anchor": "start",
