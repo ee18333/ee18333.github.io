@@ -3,7 +3,7 @@
   "description": "A simple bar chart with embedded data.",
   "title": {
     "text": "Tiktok Anuual Revenue",
-    "subtitle": "in $ in millions",
+    "subtitle": "in $ in millions. Source: Business of Apps",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
     "anchor": "start",
@@ -13,9 +13,10 @@
   },
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "height": 300,
-  "width": "container",
+  "width": 300,
   "data": {
     "values": [
+      {"x": "2016", "y": 0},
       {"x": "2017", "y": 63},
       {"x": "2018", "y": 150},
       {"x": "2019", "y": 350},
@@ -23,18 +24,21 @@
     ]
   },
   "mark": {
-    "type": "line",
-    "interpolate": "monotone",
-    "color": "darkolivegreen",
-    "strokeWidth": 4
+    "type": "bar",
+    "color":"peachpuff",
+    "width": 40
   },
   "encoding": {
     "x": {
       "field": "x",
       "type": "temporal",
-      "axis": {"labelAngle": 0},
+      "axis": {"labelAngle": 0, "format":"%Y"},
       "title": ""
+      
     },
-    "y": {"field": "y", "type": "quantitative", "title": ""}
+    "y": {"field": "y", "type": "quantitative", "title": ""},
+    "tooltip": [{"field": "x","type": "temporal","title":"Year","format":"%Y"
+    }, {"field": "y","title":"Anuual revenue in $ in millions"}]
   }
+  
 }
