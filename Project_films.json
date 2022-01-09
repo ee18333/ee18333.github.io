@@ -1,13 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Positive relationship between amount grossed in China and in the world",
+    "text": "Films grossed in China and in the world",
     "subtitle": ["source: Wikipedia. Amount grossed in US dollar ($)"],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
     "color": "black",
-    "fontSize": 18,
+    "fontSize": 17,
     "font": "Italic"
   },
   "data": {
@@ -36,11 +36,12 @@
       "scale": {"domain": [850, 3200]},
       "title": "Amount grossed in China"
     },
-     "color": {
+    "color": {
       "field": "Rank in the world",
       "type": "quantitative",
       "scale": {"scheme": "redyellowgreen"},
       "legend": {
+        "orient": "bottom-right",
         "title": ["World Rank"],
         "titleFont": "Italic",
         "titleFontSize": 12,
