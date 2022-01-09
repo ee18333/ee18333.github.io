@@ -39,21 +39,23 @@
 <!-- ///////////////////  START BODY //////////////////////////////////// -->
 <body>
   
-   <!--Navigation bar and title-->
+   <body>
+  
+  <!--Navigation bar and title-->
   <div class="navigation">
       <ul style= "padding-left: 0px;margin-top: 0px;">
 
         <li>
-          <a class="active" href="portfolio.html">
-            <span class="icon"><i class="fa fa-home"></i></span>
-            <span class="title">Portfolio</span>
+          <a class="active" href="project.html">
+            <span class="icon"><i class="fa fa-book"></i></span>
+            <span class="title">Project</span>
           </a>
         </li>
 
         <li>
-          <a href="project">
-            <span class="icon"><i class="fa fa-book"></i></span>
-            <span class="title">Project</span>
+          <a href="portfolio.html">
+            <span class="icon"><i class="fa fa-home"></i></span>
+            <span class="title">Portfolio</span>
           </a>
         </li>
 
@@ -68,9 +70,9 @@
     </div>
 
   <div style="margin-left:0%;margin-right:0%;padding:0px 0px;height:1000px;">
-
+  
   </header>
-  <h1>Portfolio</h1>
+  <h1>Project: China's influence in the World</h1>
   <h2>Kate Yu | Student number: 1876959</h2>
   </header>
 
@@ -82,7 +84,7 @@
   <div class="container">
 <div class="chart" id="nineteenthChart">
   <script>
-    var myChart19 = "chart19_covidUKRegions.json";
+    var myChart19 = "Project_films.json";
     vegaEmbed('#nineteenthChart', myChart19);
   </script>
 </div>
@@ -96,7 +98,7 @@
     <div class="container">
 <div class="chart" id="secondChart">
   <script>
-    var myChart2 = "chart2_ukProductivity.json";
+    var myChart2 = "Project_firms.json";
     vegaEmbed('#secondChart', myChart2);
   </script>
 </div>
@@ -111,7 +113,7 @@
     <div class="container">
 <div class="chart" id="thirdChart">    
     <script>
-    var myChart3 = "chart3_Ageing population.json";
+    var myChart3 = "Project_hk.json";
     vegaEmbed('#thirdChart', myChart3);
   </script>
  </div>
@@ -137,7 +139,7 @@ The Number of LFD test taken in the UK. It uses the <strong>raw csv data</strong
 <!--Vaccinations Chart 1 --> 
     <div class="chart" id="fourthChart">    
     <script>
-    var myChart4 = "chart4_Number of LFD test taken.json";
+    var myChart4 = "Project_tourism_millions.json";
     vegaEmbed('#fourthChart', myChart4);
   </script>
  </div>
@@ -156,7 +158,7 @@ The cummulated deaths rate by 60 days from Covid-19 in the UK. It uses <strong>A
  <!--Vaccinations chart 2--> 
     <div class="chart" id="fifthChart">    
     <script>
-    var myChart5 = "chart5_Cumulated Death rate.json";
+    var myChart5 = "Project_tourism_rebased.json";
     vegaEmbed('#fifthChart', myChart5);
   </script>
  </div>
@@ -169,265 +171,6 @@ The cummulated deaths rate by 60 days from Covid-19 in the UK. It uses <strong>A
 
 <!-- ///////////////////  END CONTAINER WITH WEEK 2 WORK //////////////////////////////////// -->
 
-
-
-
-
-
-<!-- ///////////////////  CONTAINER WITH WEEK 4 WORK //////////////////////////////////// -->
-
-  <h3><br>W4: APIs</h3>
-<div class="container">
-<!--API edited -->   
- <p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:2em; text-align: center;">
-API Driven Charts - Two charts from an API I have found and gained access to.
-This chart looks at the emission data in the US by changing the country code name and the time period of the API.
- </p>
-  <div class="chart" id="EighthChart">      
-    <script>
-    var myChart8 = "chart8_Apiedited.json";
-    vegaEmbed('#EighthChart', myChart8);
-  </script>
- </div>
-       </div>
-<div class="container">
-<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/chart8_Apiedited.json">Code</a>
-<a class="dashboardButton " href="https://api.v2.emissions-api.org/api/v2/carbonmonoxide/average.json?country=us&begin=2012-07-01&end=2022-07-01">Data</a>
-<a class="dashboardButton " href="https://api.v2.emissions-api.org/ui/" >Source</a>
-<div>
-
-  <div class="container">
-  <p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:2em; text-align: center;">
-I gained access to this API by signing up to the website <a href = "https://www.coinapi.io/."> CoinAPI</a> for the unique API key.
-It looks at the 10 day average price of US dollars.
-    </p>
-   <div class="chart" id="fourteenthChart">      
-    <script>
-    var myChart14 = "chart14_apiUSDexchangerate.json";
-    vegaEmbed('#fourteenthChart', myChart14);
-  </script>
- </div>
-    </div>
-<div class="container">
-<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/chart14_apiUSDexchangerate.json">Code</a>
-<a class="dashboardButton " href="https://rest.coinapi.io/v1/exchangerate/EUR/USD/history?apikey=B578B5D2-30DE-4330-B461-F63E36E6D125&period_id=10DAY&time_start=2010-01-01T00:00:00&time_end=2020-01-01T00:00:00&limit=100">Data</a>
-<a class="dashboardButton " href="https://www.coinapi.io/" >Source</a>
-<div>
-
-<!-- ///////////////////  END CONTAINER WITH WEEK 4 WORK //////////////////////////////////// -->
-
-
-<!-- ///////////////////  CONTAINER WITH WEEK 5 WORK //////////////////////////////////// -->
-
-<h3><br>W5: Loops and API fetch</h3>
- <p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:2em; text-align: center;">
-The charts below looks at the economy in HK.
-  </p>
-<div class="container">
-  <div class="chart" id="NinthChart">      
-    <script>
-    var myChart9 = "chart9_NetMigration.json";
-    vegaEmbed('#NinthChart', myChart9);
-  </script>
- </div>
-        </div>
-<div class="container">
-<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/chart9_NetMigration.json">Code</a>
-<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Net%20migration%20for%20Hong%20Kong%20SAR%2C%20China%20.json">Data</a>
-<a class="dashboardButton " href="https://fred.stlouisfed.org/series/SMPOPNETMHKG" >Source</a> 
-</div>
-    
-  <div class="container">
-  <div class="chart" id="TenthChart">      
-    <script>
-    var myChart10 = "chart10_YouthUnemployment.json";
-    vegaEmbed('#TenthChart', myChart10);
-  </script>
- </div>
-        </div>
-<div class="container">
-<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/chart10_YouthUnemployment.json">Code</a>
-<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Youth%20Unemployment%20Rate%20for%20Hong%20Kong%20SAR%2C%20China.json">Data</a>
-<a class="dashboardButton " href="https://fred.stlouisfed.org/series/SLUEM1524ZSHKG" >Source</a> 
-</div>
-    
-    <div class="container">
-  <div class="chart" id="EleventhChart">      
-    <script>
-    var myChart11 = "chart11_GDPhk.json";
-    vegaEmbed('#EleventhChart', myChart11);
-  </script>
- </div>
-        </div>
-<div class="container">
-<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/chart1_covidUKRegions.json">Code</a>
-<a class="dashboardButton " href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-CDSI.json">Data</a>
-<a class="dashboardButton " href="https://rapidcharts.io/library" >Source</a> 
-</div>
-  <p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:2em; text-align: center;">
-    This chart looks at Covid cases in a range of countries.
-  </p>
-      <div class="container">
-  <div class="chart" id="TwelvethChart">      
-    <script>
-    var myChart12 = "chart12_loopApiCovid.json";
-    vegaEmbed('#TwelvethChart', myChart12);
-  </script>
- </div>
-      </div>
-<div class="container">
-<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/chart1_covidUKRegions.json">Code</a>
-<a class="dashboardButton " href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-CDSI.json">Data</a>
-<a class="dashboardButton " href="https://rapidcharts.io/library" >Source</a> 
-</div>
-
-<!-- ///////////////////  END CONTAINER WITH WEEK 5 WORK //////////////////////////////////// -->
-    
- 
-<!-- ///////////////////  CONTAINER WITH WEEK 6 WORK //////////////////////////////////// -->
-
-<h3><br>  W6: Scrapers </h3>
- 
-<div class="container">
-<!--python -->   
-   <div class="chart" id="fifteenthChart">      
-    <script>
-    var myChart15 = "chart15_ChinaAfrica.json";
-    vegaEmbed('#fifteenthChart', myChart15);
-  </script>
- </div>
-    </div>
-<div class="container">
-<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/W7_HW.ipynb" >Python</a>  
-<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/chart1_covidUKRegions.json">Code</a>
-<a class="dashboardButton " href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-CDSI.json">Data</a>
-<a class="dashboardButton " href="https://rapidcharts.io/library" >Source</a>
-</div>
-<!-- ///////////////////  END CONTAINER WITH WEEK 6 WORK //////////////////////////////////// -->
-
-
-<!-- ///////////////////  CONTAINER WITH WEEK 7 WORK //////////////////////////////////// -->
-
-<h3> <br> W7: Data story</h3>
-  
- <p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:2em; text-align: center;">
-Dawn Holland from NIESR believes that the rise in inflation is a temporary 
-  phenomenon because the rise in energy price is transitory. 
-However, the chart shows that the sharp increase in energy price around April 
-  2021 <strong>intersects at where general price starts to increase<strong>.
-Since then, energy price <strong>keeps increasing persistently<strong>, 
-  with little signs of coming back down.
-The continuous increase in energy price has created an <strong>inflationary 
-  environment that could be lasting<strong>.
-   </p>
-  
-<!--Talking economics -->   
-   <div class="container">
-   <div class="chart" id="sixteenthChart">      
-    <script>
-    var myChart16 = "chart16_talkingeconomics.json";
-    vegaEmbed('#sixteenthChart', myChart16);
-  </script>
- </div>
-    </div>
-    
-<div class="container">
-<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/chart1_covidUKRegions.json">Code</a>
-<a class="dashboardButton " href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-CDSI.json">Data</a>
-<a class="dashboardButton " href="https://rapidcharts.io/library" >Source</a> 
-</div>
-
-<!-- ///////////////////  END CONTAINER WITH WEEK 7 WORK //////////////////////////////////// -->
-
-
- <!-- ///////////////////  CONTAINER WITH WEEK 8 WORK //////////////////////////////////// -->
-
-<h3> <br> W8: Advanced Analytics</h3>
-<!--Regression -->   
-     <div class="container">
-   <div class="chart" id="seventeenthChart">      
-    <script>
-    var myChart17 = "chart17_regression.json";
-    vegaEmbed('#seventeenthChart', myChart17);
-  </script>
- </div>
-    </div>
-<div class="container">
-<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/chart1_covidUKRegions.json">Code</a>
-<a class="dashboardButton " href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-CDSI.json">Data</a>
-<a class="dashboardButton " href="https://rapidcharts.io/library" >Source</a> 
-</div>
-
- 
-  
-<!-- ///////////////////  END CONTAINER WITH WEEK 8 WORK //////////////////////////////////// -->
-
-
-  
- <!-- ///////////////////  CONTAINER WITH WEEK 9 WORK //////////////////////////////////// -->
-
-<h3> <br> W9: Interactivity</h3>
-     <div class="container">
-   <div class="chart" id="eighteenthChart">      
-    <script>
-    var myChart18 = "chart18_interactivity.json";
-    vegaEmbed('#eighteenthChart', myChart18);
-  </script>
- </div>
-    </div>
-<div class="container">
-<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/chart1_covidUKRegions.json">Code</a>
-<a class="dashboardButton " href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-CDSI.json">Data</a>
-<a class="dashboardButton " href="https://rapidcharts.io/library" >Source</a> 
-</div>
-
-
-<!-- ///////////////////  END CONTAINER WITH WEEK 9 WORK //////////////////////////////////// -->
-
-  
-  <!-- ///////////////////  CONTAINER WITH WEEK 3 WORK //////////////////////////////////// -->
-<h3><br>W3: Editing and writing Data</h3>
-  
-
-<!--Manipulate CSV data -->  
- <p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:2em; text-align: center;">
- It looks at Real Residential Property Price in HK. I have put a predicated value for 2050 in the csv file.
-   </p>
-  
-    <div class="container">
-  <div class="chart" id="seventhChart">    
-    <script>
-    var myChart7 = "chart7_realpropertypricehk.json";
-    vegaEmbed('#seventhChart', myChart7);
-  </script>
- </div>
-    </div>
-<div class="container">
-<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/chart4_Number%20of%20LFD%20test%20taken.json">Code</a>
-<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/cumLFTDate.csv">Data</a>
-<a class="dashboardButton " href="https://fred.stlouisfed.org/series/QHKR628BIS" >Source</a>
-<div>
-
-
-<!--Mannual input Chart -->  
-    
-   <p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:2em; text-align: center;">
-     It shows the annual revenue of TikTok from 2017 to 2020. Data is <strong>mannually</strong> entered as <strong>values</strong> in a <strong>JSON file<strong>.
-     </p>
-
-    <div class="container">
-      <div class="chart" id="sixthChart">    
-    <script>
-    var myChart6 = "chart6_Mannual input chart.json";
-    vegaEmbed('#sixthChart', myChart6);
-  </script>
-<div>
-    </div>
-<div class="container">
-<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/chart6_Mannual%20input%20chart.json">Code</a>
-<a class="dashboardButton " href="https://www.businessofapps.com/data/tik-tok-statistics/">Source</a>  
-<div>
-<!-- ///////////////////  END CONTAINER WITH WEEK 3 WORK //////////////////////////////////// -->
   
 </body>
  
