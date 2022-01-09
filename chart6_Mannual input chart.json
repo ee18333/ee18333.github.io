@@ -36,7 +36,7 @@
       "title": ""
       
     },
-    "y": {"field": "y", "type": "quantitative", "title": ""},
+    "y": {"field": "y", "type": "quantitative", "title": "","axis": {"format": ".2s", "title": ""}},
     "tooltip": [{"field": "x","type": "temporal","title":"Year","format":"%Y"
     }, {"field": "y","title":"Anuual revenue in $ in millions"}]
   }
