@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Youth Unemployment Rate for Hong Kong SAR, China",
-    "subtitle": "Source: FRED",
+    "subtitle": "in percentage. Source: FRED",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
     "anchor": "start",
@@ -18,25 +18,35 @@
   "height": 300,
   "width": "container",
   "mark": {
-    "type": "line",
-    "interpolate": "monotone",
-    "color": "darkcyan",
-    "strokeWidth": 4
+    "type": "area",
+    "cursor": "pointer",
+    "line": {"color": "#4b56b1"},
+    "color": {
+      "x1": 1,
+      "y1": 1,
+      "x2": 1,
+      "y2": 0,
+      "gradient": "linear",
+      "stops": [
+        {"offset": 0, "color": "white"},
+        {"offset": 1, "color": "#4b56b1"}
+      ]
+    }
   },
-  
   "encoding": {
     "x": {
       "field": "date",
       "type": "temporal",
       "title": null,
       "axis": {"grid": false}
-
     },
     "y": {
       "field": "value",
       "type": "quantitative",
       "title": null,
       "axis": {"grid": true}
-    }
+    },
+    "tooltip": [{"field": "date","type": "temporal","title":"Year","format":"%Y"
+    }, {"field": "value","title":"Youth Unemployment Rate"}]
   }
 }
