@@ -22,7 +22,7 @@
   },
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "width": 300,
-  "height": 300,
+  "height": "container",
   "encoding": {
     "x": {
       "field": "China gross in millions",
