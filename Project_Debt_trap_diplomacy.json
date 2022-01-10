@@ -9,7 +9,7 @@
   "width": "container",
   "title": {
     "text": "Debt-trap diplomacy",
-    "subtitle": "Debt measured in US dollars in billions. Source: Wikipedia",
+    "subtitle": "measured in US dollars in billions. Source: Wikipedia",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
@@ -34,7 +34,7 @@
     "size": {
       "field": "debt",
       "type": "quantitative",
-      "scale": {"rangeMin": 0, "rangeMax": 7000},
+      "scale": {"rangeMin": 0, "rangeMax": 4000},
       "legend": null
     },
     "color": {
