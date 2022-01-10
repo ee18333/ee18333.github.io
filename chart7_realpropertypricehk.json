@@ -1,7 +1,7 @@
 {
   "title": {
     "text": "Real Residential Property Price in HK",
-    "subtitle": "created by manipulating CSV data",
+    "subtitle": "Index 2010=100. Created by manipulating CSV data",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
     "anchor": "start",
@@ -16,12 +16,17 @@
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "height": 300,
   "width": "container",
-  "mark": {"type": "line", "point": false, "strokeWidth":4, "color": "darkgoldenrod"},
+  "mark": {
+    "type": "line",
+    "point": false,
+    "strokeWidth": 4,
+    "color": "darkgoldenrod"
+  },
   "encoding": {
     "x": {
       "field": "DATE",
       "type": "temporal",
-      "title": "Year",
+      "title": null,
       "axis": {"grid": false}
     },
     "y": {
@@ -30,6 +35,14 @@
       "title": null,
       "axis": {"grid": false},
       "scheme": "yellowgreenblue"
-    }
+    },
+    "tooltip": [
+      {"field": "DATE", "type":"temporal","title": "Date", "format":"%Y"},
+      {
+        "field": "Real Residential Property Price HK",
+        "type": "quantitative",
+        "title": "Real Residential Property Price HK"
+      }
+    ]
   }
 }
