@@ -12,7 +12,7 @@
   },
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "width": 300,
-  "height": 300,
+  "height": "container",
   "data": {
     "name": "myData",
     "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/All%20firms.csv"
