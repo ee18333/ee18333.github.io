@@ -11,8 +11,8 @@
     "font": "Italic"
   },
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
-  "width": 300,
-  "height": "container",
+  "width": "container",
+  "height": 300,
   "data": {
     "name": "myData",
     "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/All%20firms.csv"
