@@ -31,6 +31,14 @@
       "title": "",
       "scale": {"domain": [1, 1.6]},
       "axis": {"grid": true, "format": "$"}
-    }
+    },
+    "tooltip": [
+      {"field": "time_period_end", "type": "temporal", "title": "Date", "format": "%b %Y"},
+      {
+        "field": "rate_open",
+        "type": "quantitative",
+        "title": "Rate"
+      }
+    ]
   }
 }
