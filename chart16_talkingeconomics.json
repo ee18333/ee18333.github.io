@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "CPI of all items and energy price comparison",
-    "subtitle": "of the UK. Source: FRED",
+    "text": "CPI of all items and energy",
+    "subtitle": "of the UK. Index 2015=100. Source: FRED",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
     "anchor": "start",
@@ -10,18 +10,22 @@
     "fontSize": 16,
     "font": "Italic"
   },
-  
   "data": {
     "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/W8.csv",
     "format": {"type": "csv"}
   },
   "transform": [
-    {"filter": {"field": "category", "oneOf": ["CPI: Energy for UK", "CPI of All Items in the UK"]}}
+    {
+      "filter": {
+        "field": "category",
+        "oneOf": ["CPI: Energy for UK", "CPI of All Items in the UK"]
+      }
+    }
   ],
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "height": 300,
   "width": "container",
-  "mark": {"type": "line", "point": false},
+  "mark": {"type": "line", "point": false, "strokeWidth":4},
   "encoding": {
     "x": {
       "field": "DATE",
@@ -42,7 +46,15 @@
       "type": "nominal",
       "scale": {"scheme": "tableau10"},
       "title": "",
-      "legend": {"orient": "top-left", "fillColor": "#FcFdFd"}
-    }
+      "legend": {"orient": "top-left", "fillColor": "#fffdfd"}
+    },
+    "tooltip": [
+      {"field": "DATE", "type":"temporal", "title": "Date", "format":"%b %Y"},
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "value"
+      }
+    ]
   }
 }
