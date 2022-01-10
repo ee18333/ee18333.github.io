@@ -35,6 +35,14 @@
       "field": "end",
       "timeUnit": "year",
       "scale": {"scheme": "inferno"}
-    }
+    },
+    "tooltip": [
+      {"field": "end", "type": "temporal", "title": "Date", "format": "%b %Y"},
+      {
+        "field": "average",
+        "type": "quantitative",
+        "title": "Emission"
+      }
+    ]
   }
 }
