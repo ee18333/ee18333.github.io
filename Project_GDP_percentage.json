@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Project/share%20of%20world%20GDP.csv"},
+ "title": {
+    "text": "Percentage of the World GDP",
+    "subtitle": ["Change from 2000 to 2020. Source: World Bank"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black",
+    "fontSize": 17,
+    "font": "Italic"
+  },
+  "height": 300,
+  "width": "container",
+"config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
+  "encoding": {
+    "x": {
+      "field": "Percentage_of_the _world_GDP",
+      "type": "quantitative",
+      "title":"Percentage of the World GDP"
+    },
+    "y": {
+      "field": "Country_Name",
+      "type": "nominal",
+      "title": null,
+      "axis": {
+        "offset": 2,
+        "ticks": false,
+        "domain": false
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "detail": {
+          "field": "Country_Name",
+          "type": "nominal"
+        },
+        "color": {"value": "#C93BC9"}
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "color": {
+          "field": "Year",
+          "type": "ordinal",
+          "scale": {
+            "range": ["#ffd0d6", "#ff0000"]
+          },
+        "legend": {
+        "orient": "top-right",
+        "title": ["Year"],
+        "titleFont": "Italic",
+        "titleFontSize": 14,
+        "titleFontWeight": 500
+      }
+        },
+        "size": {"value": 400},
+        "opacity": {"value": 1}
+        
+      }
+    }
+  ]
+}
