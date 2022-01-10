@@ -11,8 +11,8 @@
     "font": "Italic"
   },
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
-  "height": 300,
-  "width": 320,
+  "height": 150,
+  "width": 300,
   "data": {
     "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Hong%20Kong.csv"
   },
