@@ -12,7 +12,7 @@
   },
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "height": 150,
-  "width": 280,
+  "width": 240,
   "data": {
     "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Hong%20Kong.csv"
   },
