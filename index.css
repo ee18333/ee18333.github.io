@@ -30,13 +30,13 @@ h1, h2, h3 {
 p{
     color:#000000;
     font-family: 'Bodoni Moda', serif;
-    text-align: justify;
+    text-align: center;
 }
 
 h1{font-size:35px}
 h2{font-size:25px}
 h3{font-size:20px}
-p{font-size:18px}
+p{font-size:16px}
 
 
 .bold {
