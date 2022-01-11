@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-    "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/debt.csv",
+    "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Project/debt.csv",
     "format": {"type": "csv"}
   },
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
