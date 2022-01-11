@@ -17,7 +17,7 @@
     "name": "myData",
     "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Project/All%20firms.csv"
   },
-  "encoding": {"x": {"field": "Date", "title": null, "type": "temporal"}},
+  "encoding": {"x": {"field": "Date", "title": null, "type": "temporal","axis": {"grid": false}}},
   "layer": [
     {
       "mark": {"type": "line", "point": false, "strokeWidth": 3, "width": 1},
