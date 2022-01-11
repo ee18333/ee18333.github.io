@@ -11,7 +11,7 @@
     "font": "Italic"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Tourism_countries.csv",
+    "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Project/Tourism_countries.csv",
     "format": {"type": "csv"}
   },
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
