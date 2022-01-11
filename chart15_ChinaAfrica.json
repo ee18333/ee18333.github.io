@@ -16,25 +16,28 @@
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "height": 300,
   "width": "container",
-  "mark": {
-    "type": "bar",
-    "width": 30,
-    "color": "darkgreen"
-  },
+  "mark": {"type": "bar", "width": 30, "color": "darkgreen"},
   "encoding": {
     "x": {
       "field": "Year",
       "type": "temporal",
       "title": "Year",
       "axis": {"grid": false}
-      
     },
     "y": {
       "field": "Chinese trade in US$ billions to Africa as a percentage of the world",
       "type": "quantitative",
       "title": null,
-      "axis": {"format": ".2s", "title": ""},  
+      "axis": {"format": ".2s", "title": ""},
       "scale": {"domain": [0, 3.5]}
-    }
+    },
+    "tooltip": [
+      {"field": "Year", "type": "temporal", "title": "Year", "format": "%Y"},
+      {
+        "field": "Chinese trade in US$ billions to Africa as a percentage of the world",
+        "type": "quantitative",
+        "title": "Chinese trade to Africa as a percentage of the world"
+      }
+    ]
   }
 }
