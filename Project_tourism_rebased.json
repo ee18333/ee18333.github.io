@@ -46,7 +46,10 @@
           "y": {
               "field": {"repeat": "layer"},
               "type": "quantitative",
-              "title": null},
+              "title": null,
+              "axis":{
+                "grid": false
+              }},
   
           "color": {
               "datum": {"repeat": "layer"},
