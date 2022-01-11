@@ -33,11 +33,11 @@
       "field": "Real Residential Property Price HK",
       "type": "quantitative",
       "title": null,
-      "axis": {"grid": false},
+      "axis": {"grid": true},
       "scheme": "yellowgreenblue"
     },
     "tooltip": [
-      {"field": "DATE", "type":"temporal","title": "Date", "format":"%Y"},
+      {"field": "DATE", "type": "temporal", "title": "Date", "format": "%Y"},
       {
         "field": "Real Residential Property Price HK",
         "type": "quantitative",
