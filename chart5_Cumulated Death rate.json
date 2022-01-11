@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": " Cumulated Death Rate from Covid",
-    "subtitle": "by 60 days",
+    "text": " Number of Lateral Flow Test taken",
+    "subtitle": "",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
     "anchor": "start",
@@ -11,16 +11,32 @@
     "font": "Italic"
   },
   "data": {
-    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=ltla&metric=cumDeaths60DaysByDeathDateRate&format=csv",
+    "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/cumLFTDate.csv",
     "format": {"type": "csv"}
+  },
+    "selection": {
+    "Region": {
+      "type": "single",
+      "fields": ["areaName"],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Hounslow", "Westminster", "Surrey Heath"
+        ],
+        "name": "Pick a region"
+      }
+    }
   },
   "transform": [
     {
       "filter": {
         "field": "areaName",
-        "oneOf": ["Hounslow", "Westminster", "Surrey Heath"]
+        "oneOf": ["Hounslow", "Westminster", "Surrey Heath"
+        ]
       }
-    }
+    },
+   {"filter": {"selection": "Region"}}
   ],
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "height": 300,
@@ -34,7 +50,7 @@
       "axis": {"grid": false}
     },
     "y": {
-      "field": "cumDeaths60DaysByDeathDateRate",
+      "field": "cumLFDTests",
       "type": "quantitative",
       "title": null,
       "axis": {"grid": false}
@@ -45,6 +61,14 @@
       "scale": {"scheme": "yellowgreenblue"},
       "title": "Region",
       "legend": {"orient": "top-left", "fillColor": "#fffdfd"}
-    }
+    },
+    "tooltip": [
+      {"field": "date", "type": "temporal", "title": "Date", "format": "%b"},
+      {
+        "field": "cumLFDTests",
+        "type": "quantitative",
+        "title": "Number of LFT taken"
+      }
+    ]
   }
 }
