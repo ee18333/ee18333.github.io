@@ -33,7 +33,7 @@
       "field": "Date",
       "type": "temporal",
       "title": null,
-      "axis": {"grid": false}
+      "axis": {"grid": true}
     },
     "y": {"field": "value", "type": "quantitative", "title": null},
     "facet": {"field": "indicator", "columns": 2, "title": null}
