@@ -14,16 +14,13 @@
     "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/cumLFTDate.csv",
     "format": {"type": "csv"}
   },
-    "selection": {
+  "selection": {
     "Region": {
       "type": "single",
       "fields": ["areaName"],
       "bind": {
         "input": "select",
-        "options": [
-          null,
-          "Hounslow", "Westminster", "Surrey Heath"
-        ],
+        "options": [null, "Hounslow", "Westminster", "Bolton"],
         "name": "Pick a region"
       }
     }
@@ -32,11 +29,10 @@
     {
       "filter": {
         "field": "areaName",
-        "oneOf": ["Hounslow", "Westminster", "Surrey Heath"
-        ]
+        "oneOf": ["Hounslow", "Westminster", "Bolton"]
       }
     },
-   {"filter": {"selection": "Region"}}
+    {"filter": {"selection": "Region"}}
   ],
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "height": 300,
