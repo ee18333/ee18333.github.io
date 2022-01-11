@@ -17,7 +17,29 @@
     "name": "myData",
     "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Project/All%20firms.csv"
   },
-  "encoding": {"x": {"field": "Date", "title": null, "type": "temporal","axis": {"grid": false}}},
+  
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "title": null,
+      "type": "temporal",
+      "axis": {"grid": false}
+    },
+    "tooltip": [
+      {"field": "key", "type": "nominal"},
+      {"field": "value", "type": "quantitative"},
+      {"field": "Date", "type": "temporal"}
+    ]
+  },
+  "transform": [
+    {
+      "fold": [
+        "Tiktok",
+        "Shein",
+        "Xiaomi"
+      ]
+      }
+  ],
   "layer": [
     {
       "mark": {"type": "line", "point": false, "strokeWidth": 3, "width": 1},
@@ -32,7 +54,51 @@
           "datum": "Xiaomi",
           "scale": {"range": ["darkorange", "green", "darkolivegreen"]},
           "legend": {"orient": "top-left"}
-        }
+        },
+        "tooltip": [
+       {"field": "Xiaomi",  "title": "Xiaomi market share in %","type": "quantitative"},
+      {"field": "Date", "type": "temporal", "format":"%b %Y"}
+    ]
+      }
+    },
+    {
+      "mark": {"type": "point", "point": false, "strokeWidth": 3, "width": 1},
+      "encoding": {
+        "y": {
+          "field": "Xiaomi",
+          "type": "quantitative",
+          "title": "",
+          "axis": {"grid": false, "labelColor": "white", "format": ","}
+        },
+        "color": {
+          "datum": "Xiaomi",
+          "scale": {"range": ["darkorange", "green", "darkolivegreen"]},
+          "legend": {"orient": "top-left"}
+        },
+        "tooltip": [
+       {"field": "Xiaomi",  "title": "Xiaomi market share in %","type": "quantitative"},
+      {"field": "Date", "type": "temporal", "format":"%b %Y"}
+    ]
+      }
+    },    
+    {
+      "mark": {"type": "point", "point": false, "strokeWidth": 3, "width": 2},
+      "encoding": {
+        "y": {
+          "field": "Tiktok",
+          "type": "quantitative",
+          "title": "",
+          "axis": {"grid": "false", "labelColor": "green", "format": false}
+        },
+        "color": {
+          "datum": "Tiktok",
+          "scale": {"range": ["darkorange", "green", "darkolivegreen"]},
+          "legend": {"orient": "top-left"}
+        },
+        "tooltip": [
+       {"field": "Tiktok",  "title": "Tiktok app downloaded","type": "quantitative"},
+      {"field": "Date", "type": "temporal", "format":"%b %Y"}
+    ]
       }
     },
     {
@@ -48,7 +114,11 @@
           "datum": "Tiktok",
           "scale": {"range": ["darkorange", "green", "darkolivegreen"]},
           "legend": {"orient": "top-left"}
-        }
+        },
+        "tooltip": [
+       {"field": "Tiktok",  "title": "Tiktok app downloaded","type": "quantitative"},
+      {"field": "Date", "type": "temporal", "format":"%b %Y"}
+    ]
       }
     },
     {
@@ -69,9 +139,39 @@
           "datum": "Shein",
           "scale": {"range": ["darkorange", "green", "darkolivegreen"]},
           "legend": {"orient": "top-left"}
-        }
+        },
+        "tooltip": [
+      {"field": "Shein",  "title": "Shein app downloaded","type": "quantitative"},
+      {"field": "Date", "type": "temporal", "format":"%b %Y"}
+    ]
+      }
+    },{
+      "mark": {
+        "type": "point",
+        "point": false,
+        "color": "skyblue",
+        "strokeWidth": 3
+      },
+      "encoding": {
+        "y": {
+          "field": "Shein",
+          "type": "quantitative",
+          "title": "",
+          "axis": {"grid": null, "labelColor": false, "format": ""}
+        },
+        "color": {
+          "datum": "Shein",
+          "scale": {"range": ["darkorange", "green", "darkolivegreen"]},
+          "legend": {"orient": "top-left"}
+        },
+        "tooltip": [
+      {"field": "Shein",  "title": "Shein app downloaded","type": "quantitative"},
+      {"field": "Date", "type": "temporal", "format":"%b %Y"}
+    ]
       }
     }
+  
   ],
+  
   "resolve": {"scale": {"y": "independent"}}
 }
