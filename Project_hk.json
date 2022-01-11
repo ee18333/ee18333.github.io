@@ -13,6 +13,7 @@
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "height": 150,
   "width": 240,
+  
   "data": {
     "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Project/Hong%20Kong.csv"
   },
@@ -25,6 +26,33 @@
         "GDP growth (annual %)"
       ],
       "as": ["indicator", "value"]
+    },
+    {"calculate": "year(datum.Date)", "as": "year"},
+    {"filter": "datum.year>=minYear"},
+    {"filter": "datum.year<=maxYear"}
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1995,
+      "bind": {
+        "input": "range",
+        "min": 1995,
+        "max": 2020,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2020,
+      "bind": {
+        "input": "range",
+        "min": 1995,
+        "max": 2020,
+        "step": 1,
+        "name": "End year:"
+      }
     }
   ],
   "mark": {"type": "line", "strokeWidth": 4},
@@ -36,7 +64,11 @@
       "axis": {"grid": true}
     },
     "y": {"field": "value", "type": "quantitative", "title": null},
-    "facet": {"field": "indicator", "columns": 2, "title": null}
+    "facet": {"field": "indicator", "columns": 2, "title": null},
+     "tooltip": [
+      {"field": "value", "type": "quantitative"},
+      {"field": "Date", "type": "temporal","format":"%Y"}
+    ]
   },
   "resolve": {"scale": {"y": "independent"}}
 }
