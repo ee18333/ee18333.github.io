@@ -14,10 +14,40 @@
     "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Project/Tourism_countries.csv",
     "format": {"type": "csv"}
   },
+  
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
   "height": 300,
   "width": "container",
   "mark": {"type": "line", "point": false, "strokeWidth": 3},
+  "transform": [
+    {"calculate": "year(datum.Year)", "as": "year"},
+    {"filter": "datum.year>=minYear"},
+    {"filter": "datum.year<=maxYear"}
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1997,
+      "bind": {
+        "input": "range",
+        "min": 1997,
+        "max": 2018,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2018,
+      "bind": {
+        "input": "range",
+        "min": 1997,
+        "max": 2018,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
   "encoding": {
     "x": {
       "field": "Year",
@@ -29,7 +59,7 @@
       "field": "Tourism in millions",
       "type": "quantitative",
       "title": null,
-      "axis": {"grid": false}
+      "axis": {"grid": true}
     },
     "color": {
       "condition": {
@@ -44,7 +74,11 @@
     },
     "tooltip": [
       {"field": "Country_name", "title": "Country"},
-      {"field": "Tourism in millions", "type": "quantitative", "title": "Tourism departure in millions"}
+      {
+        "field": "Tourism in millions",
+        "type": "quantitative",
+        "title": "Tourism departure in millions"
+      }
     ],
     "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.2}
   },
@@ -62,16 +96,18 @@
           }
         }
       ],
-    "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
+      "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
     },
     {"mark": "line"},
-    {"encoding": {
+    {
+      "encoding": {
         "x": {"aggregate": "max", "field": "Tourism"},
         "y": {"aggregate": {"argmax": "Tourism"}, "field": "Tourism"}
       },
       "layer": [
         {"mark": {"type": "circle"}},
-        {"mark": {"type": "text", "align": "bottom"},
+        {
+          "mark": {"type": "text", "align": "bottom"},
           "encoding": {
             "text": {
               "field": "Country_name",
