@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Tourism departure",
-    "subtitle": ["in millions. Source: World Bank.", ""],
+    "text": "Tourism departure in millions",
+    "subtitle": ["Source: World Bank.", ""],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
