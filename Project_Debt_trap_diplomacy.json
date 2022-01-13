@@ -1,5 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "inspired by Max Moore",
   "data": {
     "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Project/debt.csv",
     "format": {"type": "csv"}
