@@ -11,9 +11,8 @@
     "font": "Italic"
   },
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
-  "height": 150,
-  "width": 200,
-  
+  "height": 130,
+  "width": 150,
   "data": {
     "url": "https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Project/Hong%20Kong.csv"
   },
@@ -34,10 +33,10 @@
   "params": [
     {
       "name": "minYear",
-      "value": 1995,
+      "value": 1998,
       "bind": {
         "input": "range",
-        "min": 1995,
+        "min": 1998,
         "max": 2020,
         "step": 1,
         "name": "Start year:"
@@ -48,7 +47,7 @@
       "value": 2020,
       "bind": {
         "input": "range",
-        "min": 1995,
+        "min": 1998,
         "max": 2020,
         "step": 1,
         "name": "End year:"
@@ -65,9 +64,9 @@
     },
     "y": {"field": "value", "type": "quantitative", "title": null},
     "facet": {"field": "indicator", "columns": 2, "title": null},
-     "tooltip": [
+    "tooltip": [
       {"field": "value", "type": "quantitative"},
-      {"field": "Date", "type": "temporal","format":"%Y"}
+      {"field": "Date", "type": "temporal", "format": "%Y"}
     ]
   },
   "resolve": {"scale": {"y": "independent"}}
