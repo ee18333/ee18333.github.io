@@ -77,9 +77,14 @@
   </header>
 
   
-<!-- /////////////////// CONTAINER WEEK 1  //////////////////////////////////// -->
- 
-<h3><br> W1: Getting started</h3>
+
+
+<p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:4em; text-align: center;">
+The super-size of the Chinese economy means China has considerable influence internationally. 
+The chart below shows the GDP of China as a percentage of World GDP has increased from 4% (light pink dot) in 2000 to 17% (bright red dot) in 2020, 
+  whilst the GDP share of other large economies has decreased.
+The movements that China make has a global impact. This project investigates the extent of China’s influence in the world.
+</p>
   
 <div class="container">
 <div class="chart" id="firstChart">
@@ -96,7 +101,80 @@
 <a class="dashboardButton " href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?end=2020&start=2000" >Source</a> 
  </div>
  
+   <h3><br>The private sector</h3>
+  <p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:4em; text-align: center;">
+  Pre-pandemic, Chinese tourists are everywhere in the world. The growth of tourism departure from China is an anomaly. 
+  The two charts below depict the same data, which is the evolution of tourism departure from various countries from 1997 to 2019. 
+  The first one uses raw data and the second uses rebased index, with 1997=100. Rebasing a dataset of multiple variables compare and emphasises change, 
+  as their base unit have been reduced to the same value. After rebasing, all the lines except the one representing China are flattened. 
+  The tourism departure from other countries have hardly changed. 
+  The only upward sloping red line breaking up the chart represents the continuous growth of tourism departure from China all these years.
+    </p>
   
+  <div class="container">
+    <div class="chart" id="fourthChart">    
+    <script>
+    var myChart4 = "Project_tourism_millions.json";
+    vegaEmbed('#fourthChart', myChart4);
+  </script>
+ </div>
+    </div>
+<div class="container">
+<a class="dashboardButton " href="https://github.com/ee18333/ee18333.github.io/blob/main/Python/TourismOneApi.ipynb" >Python</a>    
+<a class="dashboardButton " href="https://github.com/ee18333/ee18333.github.io/blob/main/Project_tourism_millions.json">Code</a>
+<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Project/Tourism_countries.csv">Data</a>
+<a class="dashboardButton " href="https://data.worldbank.org/indicator/ST.INT.DPRT" >Source</a>
+<div>
+  
+  <div class="container">
+   <div class="chart" id="fifteenthChart">      
+    <script>
+    var myChart15 = "Project_tourism_rebased.json";
+    vegaEmbed('#fifteenthChart', myChart15);
+  </script>
+ </div>
+    </div>
+<div class="container">
+<a class="dashboardButton " href="https://github.com/ee18333/ee18333.github.io/blob/main/Python/TourismOneApi.ipynb" >Python</a>   
+<a class="dashboardButton " href="https://github.com/ee18333/ee18333.github.io/blob/main/Project_tourism_rebased.json">Code</a>
+<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Project/Tourism_countries_rebased.csv">Data</a>
+<a class="dashboardButton " href="https://data.worldbank.org/indicator/ST.INT.DPRT" >Source</a>
+</div>
+
+  <p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:4em; text-align: center;">
+  Some Chinese companies have successfully established their dominance in the global market which is depicated in the chart below. 
+  The market share of XiaoMi and the monthly active users of Tiktok and Shein have skyrocketed. 
+  In the third quarters of 2021, XiaoMi became the smartphone vendors with the third biggest market share of mobile phones. 
+  In September 2021, TikTok reported 1 billion monthly active users worldwide.
+      </p>
+  
+  <div class="container">
+<div class="chart" id="secondChart">
+  <script>
+    var myChart2 = "Project_firms.json";
+    vegaEmbed('#secondChart', myChart2);
+  </script>
+</div>
+    </div>
+<div class="container">
+<a class="dashboardButton " href="https://github.com/ee18333/ee18333.github.io/blob/main/Python/tiktok_scrape.ipynb" >Python1</a>   
+<a class="dashboardButton " href="https://github.com/ee18333/ee18333.github.io/blob/main/Python/Xiaomi_Market_share.ipynb">Python2</a>   
+<a class="dashboardButton " href="https://github.com/ee18333/ee18333.github.io/blob/main/Project_firms.json">Code</a>
+<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Project/All%20firms.csv">Data</a>
+ </div>
+  
+<div class="container">
+<a class="dashboardButton " href="https://www.statista.com/statistics/271496/global-market-share-held-by-smartphone-vendors-since-4th-quarter-2009/" >Source1</a>
+<a class="dashboardButton " href="https://www.statista.com/statistics/1267892/tiktok-global-mau/" >Source2</a>
+<a class="dashboardButton " href="https://daxueconsulting.com/shein-market-strategy/" >Source3</a>
+</div>
+  
+  <p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:4em; text-align: center;">
+  China even had an impact on Hollywood because of how lucrative the Chinese market is. 
+  The chart below shows that there is positive correlation between the amount films grossed in China and in the world.
+  </p>
+  
+ 
   <div class="container">
 <div class="chart" id="nineteenthChart">
   <script>
@@ -118,27 +196,69 @@
 <a class="dashboardButton " href="https://en.wikipedia.org/wiki/List_of_highest-grossing_films_in_China" >Source2</a> 
  </div>
 
-    <div class="container">
-<div class="chart" id="secondChart">
-  <script>
-    var myChart2 = "Project_firms.json";
-    vegaEmbed('#secondChart', myChart2);
-  </script>
-</div>
-    </div>
-<div class="container">
-<a class="dashboardButton " href="https://github.com/ee18333/ee18333.github.io/blob/main/Python/tiktok_scrape.ipynb" >Python1</a>   
-<a class="dashboardButton " href="https://github.com/ee18333/ee18333.github.io/blob/main/Python/Xiaomi_Market_share.ipynb">Python2</a>   
-<a class="dashboardButton " href="https://github.com/ee18333/ee18333.github.io/blob/main/Project_firms.json">Code</a>
-<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Project/All%20firms.csv">Data</a>
- </div>
+ 
+  <h3><br>The public sector </h3>
+  <h3><br>? Positive influence ?</h3>
   
-<div class="container">
-<a class="dashboardButton " href="https://www.statista.com/statistics/271496/global-market-share-held-by-smartphone-vendors-since-4th-quarter-2009/" >Source1</a>
-<a class="dashboardButton " href="https://www.statista.com/statistics/1267892/tiktok-global-mau/" >Source2</a>
-<a class="dashboardButton " href="https://daxueconsulting.com/shein-market-strategy/" >Source3</a>
-</div>
+  <p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:4em; text-align: center;">
+  Not only China has involvement in the private businesses of the globe, but it also furthers its influence in the national affairs of other countries. 
+  Through the Belt and Road Initiative, China has invested vastly in Africa. 
+  There is a strong correlation between the turnover of completed projects by China in Africa and GDP per capita of Africa. 
+  The R-squared in the regression chart is 0.75. 
+  It suggests that the turnover of completed projects by China in Africa explains 75% of the variation of GDP per capita growth in Africa. 
+  But we cannot conclude that GDP growth in Africa is caused by Chinese investment in Africa because there are likely to be confounding variables.
+</p>
+  
+  <div class="container"> 
+<container class="bcontainer">     
+<img src='Project/AfricaChina.png' class='image-wk9'>
+<container>
+  </div>
+ 
+  <div class="container">
+<a class="dashboardButton " href="https://github.com/ee18333/ee18333.github.io/blob/main/Python/AfricaGrowthandChina.ipynb">Python</a>
+<a class="dashboardButton " href="https://github.com/ee18333/ee18333.github.io/blob/main/Project/AfricaGrowthandChina.csv">Data</a>
+<a class="dashboardButton " href="https://data.stats.gov.cn/easyquery.htm?cn=C01&zb=A060I0103&sj=2020" >Source1</a>
+<a class="dashboardButton " href="https://fred.stlouisfed.org/series/NYGDPPCAPCDSSF" >Source2</a>                                                                                                                                                                                                           
+<div>
 
+  <h3><br>? Negative influence ?</h3>
+   <p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:4em; text-align: center;">
+  The Belt and Road Initiative has been criticised for dragging low-income countries into a ‘debt-trap diplomacy’. 
+  Debt of Maldives and Pakistan to China has doubled within 3 years. 
+  Africa’s debt reached 30 billion dollars in 2016 which suggests that its debt to China now after 4 years should be very high, 
+  indicated by the trend of steady increases throughout the years.
+     </p>
+  
+  <div class="container">
+   <div class="chart" id="sixteenthChart">      
+    <script>
+    var myChart16 = "Project_Debt_trap_diplomacy.json";
+    vegaEmbed('#sixteenthChart', myChart16);
+  </script>
+ </div>
+    </div>
+    
+<div class="container">
+<a class="dashboardButton " href="https://github.com/ee18333/ee18333.github.io/blob/main/Python/AfricaDebtToChina.ipynb">Python</a>
+<a class="dashboardButton " href="https://github.com/ee18333/ee18333.github.io/blob/main/Project_Debt_trap_diplomacy.json">Code</a>
+<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Project/debt.csv">Data</a>
+</div>
+                                                                                                                    
+<div class="container">                                                                                                                    
+<a class="dashboardButton " href="https://en.wikipedia.org/wiki/Debt-trap_diplomacy" >Source1</a> 
+<a class="dashboardButton " href="https://cabar.asia/en/living-in-debt-to-whom-and-how-much-does-tajikistan-owe" >Source2</a> 
+<a class="dashboardButton " href="https://economictimes.indiatimes.com/news/international/world-news/chinese-debt-casts-shadow-over-maldives-economy/articleshow/78172615.cms?from=mdr" >Source3</a>   
+</div>
+  
+  <p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:4em; text-align: center;">
+  China brought disruption to Hong Kong by enforcing authoritarian laws and regulations since 2010. 
+  The indicators of political stability in the lower panel in the chart below start to drop around 2010, 
+  suggests its worsening political and social stability. An uncertain and unpredictable political environment discourages spending and investment. 
+  This is reflected in the decrease of GDP growth and capital formation around 2010. 
+  *drag the slider to 2010 to see that the lines start to fall at the same time.
+  </p>
+  
     <div class="container">
 <div class="chart" id="thirdChart">    
     <script>
@@ -160,93 +280,44 @@
 </div>
 
 
-
-
-<h3><br>W2: Hosting Data </h3>
- <p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:2em; text-align: center;">
-The Number of LFD test taken in the UK. It uses the <strong>raw csv data</strong>.
-</p>
-
-<div class="container">
-<!--Vaccinations Chart 1 --> 
-    <div class="chart" id="fourthChart">    
-    <script>
-    var myChart4 = "Project_tourism_millions.json";
-    vegaEmbed('#fourthChart', myChart4);
-  </script>
- </div>
-    </div>
-<div class="container">
-<a class="dashboardButton " href="https://github.com/ee18333/ee18333.github.io/blob/main/Python/TourismOneApi.ipynb" >Python</a>    
-<a class="dashboardButton " href="https://github.com/ee18333/ee18333.github.io/blob/main/Project_tourism_millions.json">Code</a>
-<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Project/Tourism_countries.csv">Data</a>
-<a class="dashboardButton " href="https://data.worldbank.org/indicator/ST.INT.DPRT" >Source</a>
-<div>
-  
-  <div class="container">
-<!--python -->   
-   <div class="chart" id="fifteenthChart">      
-    <script>
-    var myChart15 = "Project_tourism_rebased.json";
-    vegaEmbed('#fifteenthChart', myChart15);
-  </script>
- </div>
-    </div>
-<div class="container">
-<a class="dashboardButton " href="https://github.com/ee18333/ee18333.github.io/blob/main/Python/TourismOneApi.ipynb" >Python</a>   
-<a class="dashboardButton " href="https://github.com/ee18333/ee18333.github.io/blob/main/Project_tourism_rebased.json">Code</a>
-<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Project/Tourism_countries_rebased.csv">Data</a>
-<a class="dashboardButton " href="https://data.worldbank.org/indicator/ST.INT.DPRT" >Source</a>
-</div>
-
-
-<h3> <br> W7: Data story</h3>
+<h3> <br>Conclusion</h3>
   
  <p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:2em; text-align: center;">
-Dawn Holland from NIESR believes that the rise in inflation is a temporary 
-  phenomenon because the rise in energy price is transitory. 
-However, the chart shows that the sharp increase in energy price around April 
-  2021 <strong>intersects at where general price starts to increase<strong>.
-Since then, energy price <strong>keeps increasing persistently<strong>, 
-  with little signs of coming back down.
-The continuous increase in energy price has created an <strong>inflationary 
-  environment that could be lasting<strong>.
+Whether China brings positive or negative impact to the world overall requires more quantitative, qualitative and causal analysis of the data. 
+What this project has demonstrated is the undeniable influence of China in the world due to its consuming and investing capacity. 
+The authoritarian government is another key factor in explaining the far-reaching and deepening influence of China in other countries as it is ambitious in becoming a global leader.
    </p>
    
-   <div class="container">
-   <div class="chart" id="sixteenthChart">      
-    <script>
-    var myChart16 = "Project_Debt_trap_diplomacy.json";
-    vegaEmbed('#sixteenthChart', myChart16);
-  </script>
- </div>
-    </div>
-    
-<div class="container">
-<a class="dashboardButton " href="https://github.com/ee18333/ee18333.github.io/blob/main/Python/AfricaDebtToChina.ipynb">Python</a>
-<a class="dashboardButton " href="https://github.com/ee18333/ee18333.github.io/blob/main/Project_Debt_trap_diplomacy.json">Code</a>
-<a class="dashboardButton " href="https://raw.githubusercontent.com/ee18333/ee18333.github.io/main/Project/debt.csv">Data</a>
-</div>
-                                                                                                                    
-<div class="container">                                                                                                                    
-<a class="dashboardButton " href="https://en.wikipedia.org/wiki/Debt-trap_diplomacy" >Source1</a> 
-<a class="dashboardButton " href="https://cabar.asia/en/living-in-debt-to-whom-and-how-much-does-tajikistan-owe" >Source2</a> 
-<a class="dashboardButton " href="https://economictimes.indiatimes.com/news/international/world-news/chinese-debt-casts-shadow-over-maldives-economy/articleshow/78172615.cms?from=mdr" >Source3</a>   
-</div>
+  <h3> <br>Notes on data</h3>
+  
+  <p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:2em; text-align: center;">
+API data downloaded from FRED and World Bank using Python.<br>
+Other CSV data downloaded directly from Chinese government website which does not provide APIs. Those data are hardly replicable. <br>
+Access to data on Chinese government websites are limited to users who can read Chinese. When the website language is switched to English, 
+the data section of their website disappears.<br>
+The rest of the data are scraped from websites. Python codes are provided under the charts and replicable.
+</p>
+  
+<h3> <br>Challenges</h3>
+  
+<p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:0em; text-align: center;">
+  Scraping
+  </p>
+  
+  <p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:4em; text-align: center;">
+Hidden data. Data on private firms are only available on payment required websites. When I try to scrape them, the value of the data appears as dashes. 
+    So I copied the data into excel. <br>
+Cannot be scraped. Data is found in a picture or embedded in a paragraph. So I copied the data into excel.
+    </p>
+  
+<p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:0em; text-align: center;">
+  Cleaning
+  </p>
+  
+  <p style="border:1px; border-radius: 10px; border-style:solid; border-color:#fffdfd; padding:4em; text-align: center;">
+Creating new variable. Complex calculations are difficult to do in Python, so I made the calculations in Excel.
+</p>
 
-<div class="container"> 
-<container class="bcontainer">     
-<img src='Project/AfricaChina.png' class='image-wk9'>
-<container>
-  </div>
- 
-  <div class="container">
-<a class="dashboardButton " href="https://github.com/ee18333/ee18333.github.io/blob/main/Python/AfricaGrowthandChina.ipynb">Python</a>
-<a class="dashboardButton " href="https://github.com/ee18333/ee18333.github.io/blob/main/Project/AfricaGrowthandChina.csv">Data</a>
-<a class="dashboardButton " href="https://data.stats.gov.cn/easyquery.htm?cn=C01&zb=A060I0103&sj=2020" >Source1</a>
-<a class="dashboardButton " href="https://fred.stlouisfed.org/series/NYGDPPCAPCDSSF" >Source2</a>                                                                                                      
-                                                                                                      
-<div>
 
   
   
