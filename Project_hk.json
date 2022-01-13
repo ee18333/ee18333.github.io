@@ -1,13 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Chinese government's influence on Hong Kong",
+    "text": "CHN government's influence on Hong Kong",
     "subtitle": ["Source: WorldBank"],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
     "anchor": "start",
     "color": "black",
-    "fontSize": 18,
+    "fontSize": 16,
     "font": "Italic"
   },
   "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
